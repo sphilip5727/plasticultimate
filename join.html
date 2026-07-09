@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — Plastic Ultimate Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
+  .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .nav-logo img{width:32px;height:32px;object-fit:contain;}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
+  .nav-links a:hover{color:var(--black);}
+  .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
+  .btn-nav:hover{background:var(--orange-light)!important;}
+
+  .page-top{margin-top:64px;padding:4rem 2.5rem 3rem;border-bottom:1px solid var(--orange-border);background:var(--orange-pale);}
+  .breadcrumb{font-size:.78rem;color:var(--grey-30);margin-bottom:1.5rem;display:flex;align-items:center;gap:.4rem;}
+  .breadcrumb a{color:var(--grey-30);text-decoration:none;}
+  .page-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--black);margin-bottom:.75rem;}
+  .page-sub{font-size:1rem;color:var(--grey-50);max-width:520px;line-height:1.7;}
+
+  .steps-bar{background:var(--orange);padding:.9rem 2.5rem;display:flex;align-items:center;gap:0;overflow-x:auto;}
+  .step-item{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
+  .step-num{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,0.25);color:var(--white);font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step-text{font-size:.78rem;font-weight:600;color:rgba(255,255,255,0.9);}
+  .step-arrow{color:rgba(255,255,255,0.4);margin:0 1rem;font-size:.8rem;flex-shrink:0;}
+
+  .join-layout{display:grid;grid-template-columns:1fr 300px;gap:0;align-items:start;}
+  .form-area{padding:3rem 3rem;border-right:1px solid var(--grey-08);}
+
+  .block-title{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);padding-bottom:.75rem;border-bottom:1px solid var(--orange-border);margin-bottom:1.25rem;margin-top:2.5rem;}
+  .block-title:first-of-type{margin-top:0;}
+
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  .ff{display:flex;flex-direction:column;gap:.4rem;}
+  .ff.full{grid-column:1/-1;}
+  label{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--grey-50);}
+  input,select,textarea{background:var(--white);border:1px solid var(--grey-08);color:var(--black);font-family:'Inter',sans-serif;font-size:.875rem;padding:.7rem 1rem;outline:none;border-radius:8px;transition:border-color .15s;width:100%;}
+  input::placeholder,textarea::placeholder{color:var(--grey-30);}
+  input:focus,select:focus,textarea:focus{border-color:var(--orange);}
+  textarea{resize:vertical;min-height:110px;}
+
+  .radio-group{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.2rem;}
+  .radio-opt{display:flex;align-items:center;gap:.5rem;cursor:pointer;}
+  .radio-opt input[type="radio"]{width:16px;height:16px;accent-color:var(--orange);cursor:pointer;padding:0;flex-shrink:0;}
+  .radio-opt span{font-size:.875rem;color:var(--grey-70);}
+
+  .checkbox-row{display:flex;align-items:flex-start;gap:.75rem;grid-column:1/-1;margin-top:.25rem;}
+  .checkbox-row input[type="checkbox"]{width:16px;height:16px;accent-color:var(--orange);cursor:pointer;padding:0;flex-shrink:0;margin-top:3px;}
+  .checkbox-row label{font-size:.82rem;line-height:1.55;letter-spacing:0;text-transform:none;color:var(--grey-50);font-weight:400;}
+
+  .submit-row{display:flex;align-items:center;justify-content:space-between;margin-top:2rem;flex-wrap:wrap;gap:1rem;}
+  .submit-note{font-size:.78rem;color:var(--grey-30);max-width:260px;line-height:1.5;}
+
+  .btn-primary{background:var(--orange);color:var(--white);padding:.8rem 1.9rem;border-radius:8px;font-size:.9rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:background .15s,transform .15s;display:inline-flex;align-items:center;gap:.4rem;font-family:'Inter',sans-serif;}
+  .btn-primary:hover{background:var(--orange-light);transform:translateY(-1px);}
+
+  .form-success{display:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:12px;padding:2.5rem;margin-top:2rem;text-align:center;}
+  .form-success h3{font-size:1.3rem;font-weight:700;color:var(--orange);margin-bottom:.6rem;}
+  .form-success p{font-size:.9rem;color:var(--grey-50);line-height:1.65;}
+
+  .sidebar{padding:3rem 2rem;display:flex;flex-direction:column;gap:1rem;position:sticky;top:84px;background:var(--orange-pale);}
+  .sb-box{border:1px solid var(--orange-border);border-radius:12px;overflow:hidden;}
+  .sb-box-header{background:var(--orange-mid);padding:.85rem 1.25rem;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--orange-border);}
+  .sb-box-body{background:var(--white);padding:1rem 1.25rem;}
+  .sb-list{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .sb-list li{font-size:.82rem;color:var(--grey-70);display:flex;align-items:flex-start;gap:.6rem;line-height:1.5;}
+  .sb-list li::before{content:'✓';color:var(--orange);font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px;}
+  .price-display{text-align:center;padding:.5rem 0;}
+  .price-big{font-size:2.8rem;font-weight:700;letter-spacing:-.04em;color:var(--black);line-height:1;}
+  .price-big sup{font-size:1.3rem;font-weight:600;color:var(--orange);vertical-align:top;margin-top:.4rem;display:inline-block;}
+  .price-per{font-size:.75rem;color:var(--grey-50);margin-top:.2rem;letter-spacing:.04em;}
+  .club-note{background:var(--orange-mid);border:1px solid var(--orange-border);border-radius:10px;padding:1rem 1.25rem;font-size:.8rem;color:var(--grey-70);line-height:1.6;}
+  .club-note strong{color:var(--black);display:block;margin-bottom:.25rem;}
+
+  .footer-wrap{border-top:1px solid var(--orange-border);background:var(--orange-pale);}
+  footer{padding:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;max-width:1080px;margin:0 auto;}
+  .footer-logo{font-size:.9rem;font-weight:700;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .footer-logo img{width:26px;height:26px;object-fit:contain;}
+  .footer-links{display:flex;gap:1.8rem;list-style:none;}
+  .footer-links a{color:var(--grey-50);text-decoration:none;font-size:.82rem;transition:color .15s;}
+  .footer-links a:hover{color:var(--orange);}
+  .footer-copy{font-size:.78rem;color:var(--grey-30);}
+
+  @media(max-width:860px){
+    nav{padding:0 1rem;}
+    .nav-links li:not(:last-child){display:none;}
+    .page-top{padding:3rem 1.25rem 2rem;}
+    .steps-bar{padding:.9rem 1.25rem;}
+    .join-layout{grid-template-columns:1fr;}
+    .form-area{padding:2rem 1.25rem;border-right:none;}
+    .form-grid{grid-template-columns:1fr;}
+    .sidebar{position:static;padding:1.5rem 1.25rem;}
+    footer{padding:2rem 1.25rem;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform" target="_blank" class="btn-nav">Apply now →</a></li>
+  </ul>
+</nav>
+
+<div class="page-top">
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Apply</div>
+  <h1 class="page-title">Join the Academy.</h1>
+  <p class="page-sub">20 spaces. One cohort. Starts 7th May 2026. Fill out your expression of interest and we'll be in touch within 48 hours.</p>
+</div>
+
+<div class="steps-bar">
+  <div class="step-item"><span class="step-num">1</span><span class="step-text">Expression of interest</span></div>
+  <div class="step-arrow">→</div>
+  <div class="step-item"><span class="step-num">2</span><span class="step-text">Call with Plastic Ultimate Rep</span></div>
+  <div class="step-arrow">→</div>
+  <div class="step-item"><span class="step-num">3</span><span class="step-text">In-person pre-session</span></div>
+  <div class="step-arrow">→</div>
+  <div class="step-item"><span class="step-num">4</span><span class="step-text">Acceptance & onboarding</span></div>
+</div>
+
+<div class="join-layout">
+  <div class="form-area">
+    <form id="joinForm">
+      <div class="block-title">Personal information</div>
+      <div class="form-grid">
+        <div class="ff"><label>First name *</label><input type="text" placeholder="First name" required></div>
+        <div class="ff"><label>Last name *</label><input type="text" placeholder="Last name" required></div>
+        <div class="ff"><label>Email *</label><input type="email" placeholder="you@example.com" required></div>
+        <div class="ff"><label>Phone *</label><input type="tel" placeholder="+44 ..." required></div>
+        <div class="ff"><label>Date of birth</label><input type="date"></div>
+        <div class="ff"><label>Borough / area</label><input type="text" placeholder="e.g. Hackney, London"></div>
+      </div>
+
+      <div class="block-title">Ultimate background</div>
+      <div class="form-grid">
+        <div class="ff full">
+          <label>Player category *</label>
+          <div class="radio-group">
+            <label class="radio-opt"><input type="radio" name="cat" value="MMPs" required><span>Male Matching Player (MMP)</span></label>
+            <label class="radio-opt"><input type="radio" name="cat" value="FMP"><span>Female Matching Player (FMP)</span></label>
+          </div>
+        </div>
+        <div class="ff"><label>Current club</label><input type="text" placeholder="Club name"></div>
+        <div class="ff"><label>Years playing</label>
+          <select><option value="">Select...</option><option>Less than 1 year</option><option>1–2 years</option><option>3–5 years</option><option>6–10 years</option><option>10+ years</option></select>
+        </div>
+        <div class="ff full"><label>Highest level played</label>
+          <select><option value="">Select...</option><option>Social / Recreational</option><option>Local League</option><option>Regional / Divisional</option><option>National League / UKUA</option><option>International / GB</option></select>
+        </div>
+        <div class="ff full"><label>Primary position(s)</label><input type="text" placeholder="e.g. Handler, Cutter, Hybrid"></div>
+      </div>
+
+      <div class="block-title">Your goals</div>
+      <div class="form-grid">
+        <div class="ff full"><label>Why do you want to join the Academy? *</label><textarea placeholder="Tell us about your goals and what you're hoping to get from the programme..." required></textarea></div>
+        <div class="ff full"><label>What aspect of your game do you most want to develop?</label><textarea placeholder="e.g. disc skills, fitness, reading the game, mental side..."></textarea></div>
+        <div class="ff full">
+          <label>Availability commitment</label>
+          <div class="radio-group" style="margin-top:.3rem;">
+            <label class="radio-opt"><input type="radio" name="avail" value="yes"><span>Fully committed for 12 weeks</span></label>
+            <label class="radio-opt"><input type="radio" name="avail" value="mostly"><span>Mostly — some constraints</span></label>
+            <label class="radio-opt"><input type="radio" name="avail" value="unsure"><span>Unsure — want to discuss</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-title">Referral</div>
+      <div class="form-grid">
+        <div class="ff full"><label>Referred by a club or coach?</label><input type="text" placeholder="Name of club or coach (if applicable)"></div>
+        <div class="ff full"><label>How did you hear about us?</label>
+          <select><option value="">Select...</option><option>Club coach / referral</option><option>Friend / teammate</option><option>Social media</option><option>UKUA / tournament</option><option>Other</option></select>
+        </div>
+      </div>
+
+      <div class="form-grid" style="margin-top:1.5rem;">
+        <div class="checkbox-row">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I understand this is an Expression of Interest and does not guarantee a place. I agree to be contacted by Plastic Ultimate Academy to discuss my application. *</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="clubcommit">
+          <label for="clubcommit">If referred by a club, I understand I'm expected to play for that club in the current and following season.</label>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <p class="submit-note">We'll be in touch within 48 hours to schedule your call with our Rep.</p>
+        <button type="submit" class="btn-primary">Submit application →</button>
+      </div>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <h3>Application received!</h3>
+      <p>Thanks for applying to Plastic Ultimate Academy. We'll be in touch within 48 hours to schedule your call with our Rep.<br><br><span style="font-size:.8rem;color:var(--grey-30);">Call windows: Mon–Fri 07:00–09:00 & 14:00–23:00. Weekends by arrangement.</span></p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sb-box">
+      <div class="sb-box-header">What's included</div>
+      <div class="sb-box-body">
+        <ul class="sb-list">
+          <li>1× coached Ultimate session / week</li>
+          <li>1× GB-level PT session / week</li>
+          <li>Monthly virtual physio assessment</li>
+          <li>Physical treatment at reduced cost</li>
+          <li>Monthly multi-discipline feedback</li>
+          <li>Personalised coaching throughout</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sb-box">
+      <div class="sb-box-header">Spaces available</div>
+      <div class="sb-box-body">
+        <ul class="sb-list">
+          <li>10 Male Matching Players (MMPs)</li>
+          <li>10 Female Matching Players (FMPs)</li>
+          <li>20 total — first cohort only</li>
+        </ul>
+      </div>
+    </div>
+    <div class="club-note">
+      <strong>Club referrals</strong>
+      Referred players are expected to continue playing for their club during and after the programme. A Plastic Ultimate Scout will observe you at club training before acceptance.
+    </div>
+  </div>
+</div>
+
+<div class="footer-wrap">
+  <footer>
+    <a href="index.html" class="footer-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate Academy</a>
+    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li><li><a href="join.html">Join</a></li></ul>
+    <div class="footer-copy">© 2025 Plastic Ultimate Academy · London</div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('joinForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform','_blank');
+    this.style.display='none';
+    const s=document.getElementById('formSuccess');
+    s.style.display='block';
+    window.scrollTo({top:s.offsetTop-100,behavior:'smooth'});
+  });
+</script>
+</body>
+</html>

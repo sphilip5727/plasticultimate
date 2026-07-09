@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Plastic Ultimate Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
+  .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .nav-logo img{width:32px;height:32px;object-fit:contain;}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--black);}
+  .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
+  .btn-nav:hover{background:var(--orange-light)!important;}
+
+  .page-top{margin-top:64px;padding:4rem 2.5rem 3rem;border-bottom:1px solid var(--orange-border);background:var(--orange-pale);}
+  .breadcrumb{font-size:.78rem;color:var(--grey-30);margin-bottom:1.5rem;display:flex;align-items:center;gap:.4rem;}
+  .breadcrumb a{color:var(--grey-30);text-decoration:none;}
+  .page-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--black);margin-bottom:.75rem;}
+  .page-sub{font-size:1rem;color:var(--grey-50);max-width:500px;line-height:1.7;}
+
+  .contact-layout{display:grid;grid-template-columns:280px 1fr;min-height:calc(100vh - 220px);}
+  .contact-sidebar{background:var(--orange-mid);border-right:1px solid var(--orange-border);padding:3rem 2rem;display:flex;flex-direction:column;gap:2.5rem;}
+  .sb-section h4{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:.75rem;}
+  .sb-section p,.sb-section a{font-size:.875rem;color:var(--grey-70);line-height:1.65;text-decoration:none;display:block;}
+  .sb-section a:hover{color:var(--orange);}
+  .avail-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--orange-border);font-size:.82rem;}
+  .avail-row:last-child{border-bottom:none;}
+  .avail-label{color:var(--grey-50);}
+  .avail-time{font-weight:600;color:var(--black);}
+
+  .contact-form-section{padding:3rem 3rem;}
+  .form-heading{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;color:var(--black);margin-bottom:.4rem;}
+  .form-sub{font-size:.875rem;color:var(--grey-50);margin-bottom:2rem;line-height:1.6;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  .ff{display:flex;flex-direction:column;gap:.4rem;}
+  .ff.full{grid-column:1/-1;}
+  label{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--grey-50);}
+  input,select,textarea{background:var(--white);border:1px solid var(--grey-08);color:var(--black);font-family:'Inter',sans-serif;font-size:.875rem;padding:.7rem 1rem;outline:none;border-radius:8px;transition:border-color .15s;width:100%;}
+  input::placeholder,textarea::placeholder{color:var(--grey-30);}
+  input:focus,select:focus,textarea:focus{border-color:var(--orange);}
+  textarea{resize:vertical;min-height:120px;}
+
+  .btn-primary{background:var(--orange);color:var(--white);padding:.75rem 1.75rem;border-radius:8px;font-size:.9rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:background .15s,transform .15s;display:inline-flex;align-items:center;gap:.4rem;font-family:'Inter',sans-serif;}
+  .btn-primary:hover{background:var(--orange-light);transform:translateY(-1px);}
+
+  .form-success{display:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:12px;padding:2rem;margin-top:1.5rem;text-align:center;}
+  .form-success h3{font-size:1.1rem;font-weight:700;color:var(--orange);margin-bottom:.5rem;}
+  .form-success p{font-size:.875rem;color:var(--grey-50);line-height:1.65;}
+
+  .footer-wrap{border-top:1px solid var(--orange-border);background:var(--orange-pale);}
+  footer{padding:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;max-width:1080px;margin:0 auto;}
+  .footer-logo{font-size:.9rem;font-weight:700;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .footer-logo img{width:26px;height:26px;object-fit:contain;}
+  .footer-links{display:flex;gap:1.8rem;list-style:none;}
+  .footer-links a{color:var(--grey-50);text-decoration:none;font-size:.82rem;transition:color .15s;}
+  .footer-links a:hover{color:var(--orange);}
+  .footer-copy{font-size:.78rem;color:var(--grey-30);}
+
+  @media(max-width:860px){
+    nav{padding:0 1rem;}
+    .nav-links li:not(:last-child){display:none;}
+    .page-top{padding:3rem 1.25rem 2rem;}
+    .contact-layout{grid-template-columns:1fr;}
+    .contact-sidebar{border-right:none;border-bottom:1px solid var(--orange-border);padding:2rem 1.25rem;}
+    .contact-form-section{padding:2rem 1.25rem;}
+    .form-grid{grid-template-columns:1fr;}
+    footer{padding:2rem 1.25rem;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform" target="_blank" class="btn-nav">Apply now →</a></li>
+  </ul>
+</nav>
+
+<div class="page-top">
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Contact</div>
+  <h1 class="page-title">Contact us.</h1>
+  <p class="page-sub">Have a question about the academy, the programme, or the application process? We'll get back to you within 24 hours.</p>
+</div>
+
+<div class="contact-layout">
+  <div class="contact-sidebar">
+    <div class="sb-section">
+      <h4>About</h4>
+      <p>London's first dedicated Ultimate Frisbee Academy — a 12-week programme for players who want to accelerate their development.</p>
+    </div>
+    <div class="sb-section">
+      <h4>Call availability</h4>
+      <div class="avail-row"><span class="avail-label">Mon–Fri morning</span><span class="avail-time">07:00–09:00</span></div>
+      <div class="avail-row"><span class="avail-label">Mon–Fri evening</span><span class="avail-time">14:00–23:00</span></div>
+      <div class="avail-row"><span class="avail-label">Weekends</span><span class="avail-time">By arrangement</span></div>
+    </div>
+    <div class="sb-section">
+      <h4>Location</h4>
+      <p>London, United Kingdom</p>
+      <p style="color:var(--grey-30);font-size:.8rem;margin-top:.3rem;">Sessions at Tottenham Hale (Ultimate) & Clapham Junction (PT).</p>
+    </div>
+    <div class="sb-section">
+      <h4>Follow us</h4>
+      <a href="https://www.instagram.com/plasticultimate?igsh=MXh1aGtwN2JpNDM0aw==" target="_blank">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter / X</a>
+    </div>
+    <div class="sb-section">
+      <h4>Venues</h4>
+      <div class="avail-row"><span class="avail-label">🏟 Ultimate sessions</span><span class="avail-time">Tottenham Hale</span></div>
+      <div class="avail-row"><span class="avail-label">💪 PT sessions</span><span class="avail-time">Clapham Junction</span></div>
+      <p style="color:var(--grey-30);font-size:.78rem;margin-top:.5rem;">Exact addresses shared on acceptance.</p>
+    </div>
+  </div>
+
+  <div class="contact-form-section">
+    <div class="form-heading">Send us a message</div>
+    <div class="form-sub">Fill in the form and we'll be in touch shortly.</div>
+    <form id="contactForm">
+      <div class="form-grid">
+        <div class="ff"><label>First name</label><input type="text" placeholder="First name" required></div>
+        <div class="ff"><label>Last name</label><input type="text" placeholder="Last name" required></div>
+        <div class="ff"><label>Email</label><input type="email" placeholder="you@example.com" required></div>
+        <div class="ff"><label>Phone</label><input type="tel" placeholder="+44 ..."></div>
+        <div class="ff full"><label>Subject</label>
+          <select>
+            <option value="">Select a topic...</option>
+            <option>General enquiry</option>
+            <option>Application process</option>
+            <option>Club referral</option>
+            <option>Pricing & schedule</option>
+            <option>Physio / PT support</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="ff full"><label>Message</label><textarea placeholder="Tell us about yourself or your question..."></textarea></div>
+      </div>
+      <div style="margin-top:1.2rem;"><button type="submit" class="btn-primary">Send message →</button></div>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <h3>Message received!</h3>
+      <p>Thanks for getting in touch. A member of the Plastic Ultimate team will respond within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer-wrap">
+  <footer>
+    <a href="index.html" class="footer-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate Academy</a>
+    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li><li><a href="join.html">Join</a></li></ul>
+    <div class="footer-copy">© 2025 Plastic Ultimate Academy · London</div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('formSuccess').style.display='block';});
+</script>
+</body>
+</html>
