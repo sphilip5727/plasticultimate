@@ -63,9 +63,14 @@
   .shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
   .product{display:flex;flex-direction:column;border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;background:var(--white);transition:transform .15s,box-shadow .15s;}
   .product:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);}
-  .product-media{position:relative;aspect-ratio:4/3;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;}
+  .product-media{position:relative;aspect-ratio:4/3;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;overflow:hidden;}
   .product-media svg{width:44%;height:44%;}
-  .badge-soft{position:absolute;top:.75rem;left:.75rem;background:var(--white);border:1px solid var(--orange-border);color:var(--orange);font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.25rem .6rem;border-radius:100px;}
+  .product-media.photo{background:#fff;}
+  .product-media .swap-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:.5rem;transition:opacity .35s ease;}
+  .product-media .swap-b{opacity:0;}
+  .product:hover .product-media .swap-a{opacity:0;}
+  .product:hover .product-media .swap-b{opacity:1;}
+  .badge-soft{position:absolute;top:.75rem;left:.75rem;z-index:2;background:var(--white);border:1px solid var(--orange-border);color:var(--orange);font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.25rem .6rem;border-radius:100px;}
   .product-body{padding:1.25rem 1.4rem 1.5rem;}
   .product-body h4{font-size:1rem;font-weight:700;letter-spacing:-.01em;color:var(--black);margin-bottom:.3rem;}
   .product-body p{font-size:.82rem;color:var(--grey-50);line-height:1.55;}
@@ -148,26 +153,22 @@
   <div class="shop-grid">
 
     <div class="product">
-      <div class="product-media">
+      <div class="product-media photo">
         <span class="badge-soft">Coming soon</span>
-        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-          <path d="M42 26 L28 33 L20 47 L31 53 L34 49 L34 82 L66 82 L66 49 L69 53 L80 47 L72 33 L58 26 C54 32 46 32 42 26 Z"/>
-        </svg>
+        <img class="swap-img swap-a" src="jersey-front.png" alt="The Plastic Jersey — white match jersey with orange and black chest stripe, front view">
+        <img class="swap-img swap-b" src="jersey-back.png" alt="The Plastic Jersey, back view" loading="lazy">
       </div>
       <div class="product-body">
-        <h4>The Plastic Tee</h4>
-        <p>Soft cotton tee with the academy mark. In development.</p>
+        <h4>The Plastic Jersey</h4>
+        <p>Sublimated match jersey in the academy kit. In development.</p>
       </div>
     </div>
 
     <div class="product">
-      <div class="product-media">
+      <div class="product-media photo" style="background:#f3f3f3">
         <span class="badge-soft">Coming soon</span>
-        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" aria-hidden="true">
-          <ellipse cx="50" cy="52" rx="34" ry="14"/>
-          <ellipse cx="50" cy="52" rx="21" ry="8"/>
-          <path d="M16 52 C16 60 84 60 84 52" stroke-linecap="round"/>
-        </svg>
+        <img class="swap-img swap-a" src="disc-top.png" alt="Pro Disc — orange Plastic Ultimate flying disc, top view">
+        <img class="swap-img swap-b" src="disc-angle.png" alt="Pro Disc — orange Plastic Ultimate flying disc, angled view" loading="lazy">
       </div>
       <div class="product-body">
         <h4>Pro Disc</h4>
@@ -176,17 +177,14 @@
     </div>
 
     <div class="product">
-      <div class="product-media">
+      <div class="product-media photo">
         <span class="badge-soft">Coming soon</span>
-        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-          <path d="M26 60 C26 34 74 34 74 60"/>
-          <rect x="22" y="60" width="56" height="12" rx="6"/>
-          <circle cx="50" cy="30" r="5"/>
-        </svg>
+        <img class="swap-img swap-a" src="preworkout-a.png" alt="Plastic Pre-Workout — sugarcane juice pre-workout can, front view">
+        <img class="swap-img swap-b" src="preworkout-b.png" alt="Plastic Pre-Workout can, angled view" loading="lazy">
       </div>
       <div class="product-body">
-        <h4>The Plastic Beanie</h4>
-        <p>Ribbed cuffed beanie for cold-morning sessions. In development.</p>
+        <h4>Plastic Pre-Workout</h4>
+        <p>Sugarcane-juice pre-workout — clean energy, naturally sweetened. In development.</p>
       </div>
     </div>
 
