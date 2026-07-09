@@ -35,8 +35,11 @@
   .news-wrap{max-width:1080px;margin:0 auto;padding:3.5rem 2.5rem 5rem;}
 
   /* FEATURED */
-  .featured{display:block;text-decoration:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:16px;padding:2.5rem;margin-bottom:2.5rem;transition:transform .15s,box-shadow .15s;}
+  .featured{display:block;text-decoration:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:16px;overflow:hidden;margin-bottom:2.5rem;transition:transform .15s,box-shadow .15s;}
   .featured:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,100,10,.1);}
+  .art{display:block;width:100%;}
+  .featured .art{height:240px;}
+  .featured-body{padding:2.5rem;}
   .card-meta{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem;}
   .tag{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);background:var(--white);border:1px solid var(--orange-border);border-radius:100px;padding:.25rem .7rem;}
   .date{font-size:.78rem;color:var(--grey-30);font-weight:500;}
@@ -46,8 +49,10 @@
 
   /* GRID */
   .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
-  .news-card{display:flex;flex-direction:column;text-decoration:none;background:var(--white);border:1px solid var(--orange-border);border-radius:14px;padding:1.75rem;transition:transform .15s,box-shadow .15s,background .15s;}
+  .news-card{display:flex;flex-direction:column;text-decoration:none;background:var(--white);border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;transition:transform .15s,box-shadow .15s,background .15s;}
   .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);background:var(--orange-pale);}
+  .news-card .art{height:150px;}
+  .news-body{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.75rem 1.75rem;}
   .news-card h3{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.25;color:var(--black);margin-bottom:.6rem;}
   .news-card p{font-size:.875rem;color:var(--grey-50);line-height:1.65;margin-bottom:1.1rem;flex-grow:1;}
 
@@ -69,7 +74,8 @@
     .nav-links li:not(:last-child){display:none;}
     .page-top{padding:3rem 1.25rem 2rem;}
     .news-wrap{padding:2.5rem 1.25rem 3.5rem;}
-    .featured{padding:1.75rem;}
+    .featured .art{height:190px;}
+    .featured-body{padding:1.75rem;}
     .news-grid{grid-template-columns:1fr;}
     footer{padding:2rem 1.25rem;}
   }
@@ -97,56 +103,145 @@
 
   <!-- FEATURED -->
   <a class="featured" href="https://wfdf.sport/2026/07/gb-joins-usa-and-canada-among-gold-medalists-at-the-wfdf-2026-wmucc/" target="_blank" rel="noopener">
-    <div class="card-meta">
-      <span class="tag">World Masters · Nottingham</span>
-      <span class="date">4 July 2026</span>
+    <svg class="art" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a flying disc arcing over an Ultimate Frisbee field">
+      <defs>
+        <linearGradient id="fSky" x1="0" y1="0" x2="0.35" y2="1">
+          <stop offset="0" stop-color="#ff9a4d"/><stop offset="0.55" stop-color="#f5640a"/><stop offset="1" stop-color="#e04e00"/>
+        </linearGradient>
+        <radialGradient id="fSun" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="800" height="240" fill="url(#fSky)"/>
+      <circle cx="620" cy="80" r="150" fill="url(#fSun)"/>
+      <path d="M0 190 Q400 168 800 190 V240 H0 Z" fill="#0a0a0a" opacity="0.10"/>
+      <path d="M0 210 Q400 196 800 210 V240 H0 Z" fill="#0a0a0a" opacity="0.12"/>
+      <g stroke="#fff" stroke-opacity="0.18" stroke-width="2">
+        <line x1="130" y1="195" x2="95" y2="240"/><line x1="320" y1="190" x2="300" y2="240"/>
+        <line x1="500" y1="190" x2="525" y2="240"/><line x1="670" y1="195" x2="710" y2="240"/>
+      </g>
+      <path d="M70 196 Q300 10 560 118" fill="none" stroke="#fff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
+      <ellipse cx="150" cy="158" rx="14" ry="5" fill="#fff" opacity="0.32"/>
+      <ellipse cx="300" cy="60" rx="11" ry="4" fill="#fff" opacity="0.5"/>
+      <g transform="translate(560,118) rotate(-16)">
+        <ellipse cy="0" rx="54" ry="17" fill="#d9741f"/>
+        <ellipse cy="-10" rx="54" ry="17" fill="#ffffff"/>
+        <ellipse cy="-10" rx="35" ry="10" fill="none" stroke="#f5640a" stroke-opacity="0.25" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="featured-body">
+      <div class="card-meta">
+        <span class="tag">World Masters · Nottingham</span>
+        <span class="date">4 July 2026</span>
+      </div>
+      <h2>USA dominate the 2026 World Masters Club Championships — and Clapham make history at home</h2>
+      <p>The WFDF 2026 World Masters Ultimate Club Championships wrapped up in Nottingham, with the United States claiming seven of the nine world titles on offer. On home soil, Great Britain's Clapham Masters won the Masters Open crown for the very first time, downing reigning champions Boneyard in front of a roaring local crowd — with Canada also celebrating gold on finals weekend.</p>
+      <span class="read-more">Read the report on WFDF →</span>
     </div>
-    <h2>USA dominate the 2026 World Masters Club Championships — and Clapham make history at home</h2>
-    <p>The WFDF 2026 World Masters Ultimate Club Championships wrapped up in Nottingham, with the United States claiming seven of the nine world titles on offer. On home soil, Great Britain's Clapham Masters won the Masters Open crown for the very first time, downing reigning champions Boneyard in front of a roaring local crowd — with Canada also celebrating gold on finals weekend.</p>
-    <span class="read-more">Read the report on WFDF →</span>
   </a>
 
   <!-- GRID -->
   <div class="news-grid">
 
     <a class="news-card" href="https://wfdf.sport/2026/07/first-world-champions-crowned-at-2026-wmucc/" target="_blank" rel="noopener">
-      <div class="card-meta">
-        <span class="tag">Results</span>
-        <span class="date">3 July 2026</span>
+      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#ff9a4d"/><stop offset="1" stop-color="#f5640a"/></linearGradient>
+          <radialGradient id="sA" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="400" height="150" fill="url(#gA)"/>
+        <circle cx="300" cy="52" r="82" fill="url(#sA)"/>
+        <path d="M30 120 Q170 18 320 66" fill="none" stroke="#fff" stroke-opacity="0.65" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        <g transform="translate(318,66) rotate(-15)">
+          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
+          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
+        </g>
+      </svg>
+      <div class="news-body">
+        <div class="card-meta">
+          <span class="tag">Results</span>
+          <span class="date">3 July 2026</span>
+        </div>
+        <h3>First world champions crowned in Nottingham</h3>
+        <p>Finals weekend opened with the Great Grand Masters titles: Canada's Vintage edged Nor'Easter 12–11 for women's gold, while Surly (15–9) and Endless Sunset (15–8) sealed divisions for the USA.</p>
+        <span class="read-more">Read more →</span>
       </div>
-      <h3>First world champions crowned in Nottingham</h3>
-      <p>Finals weekend opened with the Great Grand Masters titles: Canada's Vintage edged Nor'Easter 12–11 for women's gold, while Surly (15–9) and Endless Sunset (15–8) sealed divisions for the USA.</p>
-      <span class="read-more">Read more →</span>
     </a>
 
     <a class="news-card" href="https://wfdf.sport/" target="_blank" rel="noopener">
-      <div class="card-meta">
-        <span class="tag">World U20 · Spain</span>
-        <span class="date">Preview · 11 July 2026</span>
+      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="gB" x1="0.1" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#ffb15e"/><stop offset="1" stop-color="#f5640a"/></linearGradient>
+          <radialGradient id="sB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="400" height="150" fill="url(#gB)"/>
+        <circle cx="110" cy="48" r="80" fill="url(#sB)"/>
+        <path d="M360 118 Q220 14 80 68" fill="none" stroke="#fff" stroke-opacity="0.65" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        <g transform="translate(82,68) rotate(14)">
+          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
+          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
+        </g>
+      </svg>
+      <div class="news-body">
+        <div class="card-meta">
+          <span class="tag">World U20 · Spain</span>
+          <span class="date">Preview · 11 July 2026</span>
+        </div>
+        <h3>World U20 Championships begin in Logroño</h3>
+        <p>The next generation takes the stage as the WFDF World U20 Ultimate Championships get underway in Logroño, Spain from 11–18 July, with junior national teams from across the globe chasing world titles.</p>
+        <span class="read-more">Follow on WFDF →</span>
       </div>
-      <h3>World U20 Championships begin in Logroño</h3>
-      <p>The next generation takes the stage as the WFDF World U20 Ultimate Championships get underway in Logroño, Spain from 11–18 July, with junior national teams from across the globe chasing world titles.</p>
-      <span class="read-more">Follow on WFDF →</span>
     </a>
 
     <a class="news-card" href="https://wucc.sport/" target="_blank" rel="noopener">
-      <div class="card-meta">
-        <span class="tag">World Clubs · Ireland</span>
-        <span class="date">Coming 15 Aug 2026</span>
+      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="gC" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#f5640a"/><stop offset="1" stop-color="#d94500"/></linearGradient>
+          <radialGradient id="sC" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="400" height="150" fill="url(#gC)"/>
+        <circle cx="205" cy="46" r="88" fill="url(#sC)"/>
+        <path d="M40 122 Q200 6 360 84" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        <ellipse cx="120" cy="96" rx="15" ry="5" fill="#fff" opacity="0.3"/>
+        <g transform="translate(300,74) rotate(-12)">
+          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
+          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
+        </g>
+      </svg>
+      <div class="news-body">
+        <div class="card-meta">
+          <span class="tag">World Clubs · Ireland</span>
+          <span class="date">Coming 15 Aug 2026</span>
+        </div>
+        <h3>Road to Limerick: 136 clubs set for the 2026 World Ultimate Club Championships</h3>
+        <p>The biggest club event of the year lands at the University of Limerick from 15–22 August. A record 136 teams — 48 open, 48 mixed and 40 women's — from more than 30 nations will chase world club glory.</p>
+        <span class="read-more">See the teams →</span>
       </div>
-      <h3>Road to Limerick: 136 clubs set for the 2026 World Ultimate Club Championships</h3>
-      <p>The biggest club event of the year lands at the University of Limerick from 15–22 August. A record 136 teams — 48 open, 48 mixed and 40 women's — from more than 30 nations will chase world club glory.</p>
-      <span class="read-more">See the teams →</span>
     </a>
 
     <a class="news-card" href="https://results.wfdf.sport/wmucc-2026/" target="_blank" rel="noopener">
-      <div class="card-meta">
-        <span class="tag">Scores</span>
-        <span class="date">Live archive</span>
+      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="gD" x1="0" y1="0" x2="0.45" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e85400"/></linearGradient>
+          <radialGradient id="sD" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="400" height="150" fill="url(#gD)"/>
+        <circle cx="300" cy="58" r="80" fill="url(#sD)"/>
+        <path d="M40 116 Q160 24 300 60" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        <g transform="translate(300,60) rotate(-18)">
+          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
+          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
+        </g>
+      </svg>
+      <div class="news-body">
+        <div class="card-meta">
+          <span class="tag">Scores</span>
+          <span class="date">Live archive</span>
+        </div>
+        <h3>Every result from WMUCC 2026</h3>
+        <p>Browse the full schedule, pools and finals scores across all nine divisions from the World Masters Club Championships in Nottingham.</p>
+        <span class="read-more">Open the results hub →</span>
       </div>
-      <h3>Every result from WMUCC 2026</h3>
-      <p>Browse the full schedule, pools and finals scores across all nine divisions from the World Masters Club Championships in Nottingham.</p>
-      <span class="read-more">Open the results hub →</span>
     </a>
 
   </div>
