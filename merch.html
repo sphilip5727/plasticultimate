@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch — Plastic Ultimate Academy</title>
+<meta name="description" content="Plastic Ultimate Academy merch — kit and gear for the sideline and beyond. The Plastic Hat and more, coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
+  .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .nav-logo img{width:32px;height:32px;object-fit:contain;}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--black);}
+  .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
+  .btn-nav:hover{background:var(--orange-light)!important;}
+
+  .page-top{margin-top:64px;padding:4rem 2.5rem 3rem;border-bottom:1px solid var(--orange-border);background:var(--orange-pale);text-align:center;}
+  .breadcrumb{font-size:.78rem;color:var(--grey-30);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:.4rem;}
+  .breadcrumb a{color:var(--grey-30);text-decoration:none;}
+  .page-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--black);margin-bottom:.75rem;}
+  .page-sub{font-size:1rem;color:var(--grey-50);max-width:560px;line-height:1.7;margin-left:auto;margin-right:auto;}
+  .update-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;background:var(--white);border:1px solid var(--orange-border);color:var(--grey-70);font-size:.78rem;font-weight:500;padding:.4rem .9rem;border-radius:100px;}
+  .update-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+  .update-badge strong{color:var(--black);font-weight:600;}
+
+  .shop-wrap{max-width:1080px;margin:0 auto;padding:3.5rem 2.5rem 5rem;}
+
+  /* HERO PRODUCT */
+  .hero-product{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;border:1px solid var(--orange-border);border-radius:18px;overflow:hidden;background:var(--white);}
+  .hp-media{position:relative;background:#efece8;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;}
+  .hp-media img{width:100%;height:100%;object-fit:cover;display:block;}
+  .badge{position:absolute;top:1rem;left:1rem;z-index:2;background:var(--orange);color:var(--white);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .8rem;border-radius:100px;}
+  .hp-info{padding:2.5rem 2.5rem 2.5rem 0;}
+  .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:.7rem;}
+  .hp-info h2{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:700;letter-spacing:-.025em;line-height:1.1;color:var(--black);margin-bottom:.9rem;}
+  .hp-info p{font-size:.95rem;color:var(--grey-50);line-height:1.7;margin-bottom:1.5rem;max-width:440px;}
+  .price{font-size:1rem;font-weight:600;color:var(--black);margin-bottom:1.5rem;}
+  .price span{color:var(--grey-30);font-weight:500;}
+  .btn-primary{background:var(--orange);color:var(--white);padding:.8rem 1.9rem;border-radius:8px;font-size:.9rem;font-weight:600;border:none;font-family:'Inter',sans-serif;display:inline-flex;align-items:center;gap:.4rem;}
+  .btn-primary[disabled]{background:var(--grey-15);color:var(--white);cursor:not-allowed;}
+  .notify{display:block;margin-top:1rem;font-size:.85rem;font-weight:600;color:var(--orange);text-decoration:none;}
+  .notify:hover{text-decoration:underline;}
+
+  /* MORE COMING */
+  .more-head{margin:4rem 0 1.75rem;text-align:center;}
+  .more-head h3{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;color:var(--black);}
+  .more-head p{font-size:.9rem;color:var(--grey-50);margin-top:.3rem;}
+  .shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  .product{display:flex;flex-direction:column;border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;background:var(--white);transition:transform .15s,box-shadow .15s;}
+  .product:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);}
+  .product-media{position:relative;aspect-ratio:4/3;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;}
+  .product-media svg{width:44%;height:44%;}
+  .badge-soft{position:absolute;top:.75rem;left:.75rem;background:var(--white);border:1px solid var(--orange-border);color:var(--orange);font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.25rem .6rem;border-radius:100px;}
+  .product-body{padding:1.25rem 1.4rem 1.5rem;}
+  .product-body h4{font-size:1rem;font-weight:700;letter-spacing:-.01em;color:var(--black);margin-bottom:.3rem;}
+  .product-body p{font-size:.82rem;color:var(--grey-50);line-height:1.55;}
+
+  .shop-foot{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--orange-border);text-align:center;font-size:.85rem;color:var(--grey-50);line-height:1.7;}
+  .shop-foot a{color:var(--orange);text-decoration:none;font-weight:600;}
+  .shop-foot a:hover{text-decoration:underline;}
+
+  .footer-wrap{border-top:1px solid var(--orange-border);background:var(--orange-pale);}
+  footer{padding:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;max-width:1080px;margin:0 auto;}
+  .footer-logo{font-size:.9rem;font-weight:700;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .footer-logo img{width:26px;height:26px;object-fit:contain;}
+  .footer-links{display:flex;gap:1.8rem;list-style:none;}
+  .footer-links a{color:var(--grey-50);text-decoration:none;font-size:.82rem;transition:color .15s;}
+  .footer-links a:hover{color:var(--orange);}
+  .footer-copy{font-size:.78rem;color:var(--grey-30);}
+
+  @media(max-width:860px){
+    nav{padding:0 1rem;}
+    .nav-links li:not(:last-child){display:none;}
+    .page-top{padding:3rem 1.25rem 2rem;}
+    .shop-wrap{padding:2.5rem 1.25rem 3.5rem;}
+    .hero-product{grid-template-columns:1fr;gap:0;}
+    .hp-info{padding:1.75rem;}
+    .shop-grid{grid-template-columns:1fr;}
+    footer{padding:2rem 1.25rem;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="merch.html" class="active">Merch</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform" target="_blank" class="btn-nav">Apply now →</a></li>
+  </ul>
+</nav>
+
+<div class="page-top">
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Merch</div>
+  <h1 class="page-title">Merch.</h1>
+  <p class="page-sub">Kit and gear for the sideline and everywhere else. Our first drop is on the way — here's a first look.</p>
+  <div class="update-badge"><span class="update-dot"></span><strong>Store opening soon</strong> · Drop 01 · 2026</div>
+</div>
+
+<div class="shop-wrap">
+
+  <!-- HERO PRODUCT -->
+  <div class="hero-product">
+    <div class="hp-media">
+      <span class="badge">Coming soon</span>
+      <img src="plastic-hat.png" alt="The Plastic Hat — a stone washed-cotton dad cap with the Plastic Ultimate figure embroidered on the front">
+    </div>
+    <div class="hp-info">
+      <div class="tag">Headwear · Drop 01</div>
+      <h2>The Plastic Hat</h2>
+      <p>A washed-cotton six-panel dad cap in stone, with the Plastic Ultimate mark embroidered on the front. Low profile, adjustable strap, and soft enough to break in from day one — built for the sideline, the trip home, and everywhere in between.</p>
+      <div class="price">£<span>—</span> · Price &amp; launch date coming soon</div>
+      <button class="btn-primary" disabled>Coming soon</button>
+      <a class="notify" href="https://www.instagram.com/plasticultimate?igsh=MXh1aGtwN2JpNDM0aw==" target="_blank" rel="noopener">Follow @plasticultimate for the drop →</a>
+    </div>
+  </div>
+
+  <!-- MORE COMING -->
+  <div class="more-head">
+    <h3>More dropping soon</h3>
+    <p>The rest of the range is in the works.</p>
+  </div>
+
+  <div class="shop-grid">
+
+    <div class="product">
+      <div class="product-media">
+        <span class="badge-soft">Coming soon</span>
+        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <path d="M42 26 L28 33 L20 47 L31 53 L34 49 L34 82 L66 82 L66 49 L69 53 L80 47 L72 33 L58 26 C54 32 46 32 42 26 Z"/>
+        </svg>
+      </div>
+      <div class="product-body">
+        <h4>The Plastic Tee</h4>
+        <p>Soft cotton tee with the academy mark. In development.</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-media">
+        <span class="badge-soft">Coming soon</span>
+        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" aria-hidden="true">
+          <ellipse cx="50" cy="52" rx="34" ry="14"/>
+          <ellipse cx="50" cy="52" rx="21" ry="8"/>
+          <path d="M16 52 C16 60 84 60 84 52" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="product-body">
+        <h4>Pro Disc</h4>
+        <p>Match-weight Ultimate disc in Plastic orange. In development.</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-media">
+        <span class="badge-soft">Coming soon</span>
+        <svg viewBox="0 0 100 100" fill="none" stroke="#f5640a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <path d="M26 60 C26 34 74 34 74 60"/>
+          <rect x="22" y="60" width="56" height="12" rx="6"/>
+          <circle cx="50" cy="30" r="5"/>
+        </svg>
+      </div>
+      <div class="product-body">
+        <h4>The Plastic Beanie</h4>
+        <p>Ribbed cuffed beanie for cold-morning sessions. In development.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="shop-foot">
+    Want first dibs when the store opens? Follow
+    <a href="https://www.instagram.com/plasticultimate?igsh=MXh1aGtwN2JpNDM0aw==" target="_blank" rel="noopener">@plasticultimate</a>
+    — drops are announced there first.
+  </div>
+
+</div>
+
+<div class="footer-wrap">
+  <footer>
+    <a href="index.html" class="footer-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate Academy</a>
+    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="merch.html">Merch</a></li><li><a href="join.html">Join</a></li></ul>
+    <div class="footer-copy">© 2026 Plastic Ultimate Academy · London</div>
+  </footer>
+</div>
+
+</body>
+</html>
