@@ -37,8 +37,10 @@
   /* FEATURED */
   .featured{display:block;text-decoration:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:16px;overflow:hidden;margin-bottom:2.5rem;transition:transform .15s,box-shadow .15s;}
   .featured:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,100,10,.1);}
-  .art{display:block;width:100%;}
-  .featured .art{height:240px;}
+  .cover{position:relative;overflow:hidden;background:var(--orange-mid);}
+  .art{display:block;width:100%;height:100%;}
+  .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;}
+  .featured .cover{height:240px;}
   .featured-body{padding:2.5rem;}
   .card-meta{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem;}
   .tag{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);background:var(--white);border:1px solid var(--orange-border);border-radius:100px;padding:.25rem .7rem;}
@@ -51,7 +53,7 @@
   .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
   .news-card{display:flex;flex-direction:column;text-decoration:none;background:var(--white);border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;transition:transform .15s,box-shadow .15s,background .15s;}
   .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);background:var(--orange-pale);}
-  .news-card .art{height:150px;}
+  .news-card .cover{height:150px;}
   .news-body{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.75rem 1.75rem;}
   .news-card h3{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.25;color:var(--black);margin-bottom:.6rem;}
   .news-card p{font-size:.875rem;color:var(--grey-50);line-height:1.65;margin-bottom:1.1rem;flex-grow:1;}
@@ -74,7 +76,7 @@
     .nav-links li:not(:last-child){display:none;}
     .page-top{padding:3rem 1.25rem 2rem;}
     .news-wrap{padding:2.5rem 1.25rem 3.5rem;}
-    .featured .art{height:190px;}
+    .featured .cover{height:190px;}
     .featured-body{padding:1.75rem;}
     .news-grid{grid-template-columns:1fr;}
     footer{padding:2rem 1.25rem;}
@@ -103,6 +105,7 @@
 
   <!-- FEATURED -->
   <a class="featured" href="https://wfdf.sport/2026/07/gb-joins-usa-and-canada-among-gold-medalists-at-the-wfdf-2026-wmucc/" target="_blank" rel="noopener">
+    <div class="cover">
     <svg class="art" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a flying disc arcing over an Ultimate Frisbee field">
       <defs>
         <linearGradient id="fSky" x1="0" y1="0" x2="0.35" y2="1">
@@ -129,6 +132,8 @@
         <ellipse cy="-10" rx="35" ry="10" fill="none" stroke="#f5640a" stroke-opacity="0.25" stroke-width="2"/>
       </g>
     </svg>
+      <img class="cover-img" src="https://wfdf.sport/wp-content/uploads/2026/07/GB-Joins-USA-and-Canada-Among-Gold-Medalists-at-the-WFDF-2026-WMUCC-1600x900.jpg" alt="Gold medallists celebrate at the WFDF 2026 World Masters Ultimate Club Championships in Nottingham" loading="lazy" onerror="this.remove()">
+    </div>
     <div class="featured-body">
       <div class="card-meta">
         <span class="tag">World Masters · Nottingham</span>
@@ -144,6 +149,7 @@
   <div class="news-grid">
 
     <a class="news-card" href="https://wfdf.sport/2026/07/first-world-champions-crowned-at-2026-wmucc/" target="_blank" rel="noopener">
+      <div class="cover">
       <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
           <linearGradient id="gA" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#ff9a4d"/><stop offset="1" stop-color="#f5640a"/></linearGradient>
@@ -157,6 +163,8 @@
           <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
         </g>
       </svg>
+      <img class="cover-img" src="https://wfdf.sport/wp-content/uploads/2026/07/First-World-Champions-Crowned-at-2026-WMUCC-1600x900.jpg" alt="Great Grand Masters champions crowned at the 2026 WMUCC in Nottingham" loading="lazy" onerror="this.remove()">
+      </div>
       <div class="news-body">
         <div class="card-meta">
           <span class="tag">Results</span>
