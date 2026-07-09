@@ -36,8 +36,14 @@
 
   /* HERO PRODUCT */
   .hero-product{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;border:1px solid var(--orange-border);border-radius:18px;overflow:hidden;background:var(--white);}
-  .hp-media{position:relative;background:#efece8;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;}
-  .hp-media img{width:100%;height:100%;object-fit:cover;display:block;}
+  .hp-gallery{display:flex;flex-direction:column;background:#efece8;}
+  .hp-media{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;}
+  .hp-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+  .hp-thumbs{display:flex;gap:.6rem;padding:.85rem;justify-content:center;background:rgba(255,255,255,.35);border-top:1px solid var(--orange-border);}
+  .thumb{width:66px;height:66px;padding:0;border:1px solid var(--orange-border);border-radius:9px;overflow:hidden;background:#efece8;cursor:pointer;transition:border-color .15s,transform .15s;}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .thumb:hover{transform:translateY(-1px);}
+  .thumb.is-active{border-color:var(--orange);box-shadow:0 0 0 1px var(--orange) inset;}
   .badge{position:absolute;top:1rem;left:1rem;z-index:2;background:var(--orange);color:var(--white);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .8rem;border-radius:100px;}
   .hp-info{padding:2.5rem 2.5rem 2.5rem 0;}
   .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:.7rem;}
@@ -112,9 +118,16 @@
 
   <!-- HERO PRODUCT -->
   <div class="hero-product">
-    <div class="hp-media">
-      <span class="badge">Coming soon</span>
-      <img src="plastic-hat.png" alt="The Plastic Hat — a stone washed-cotton dad cap with the Plastic Ultimate figure embroidered on the front">
+    <div class="hp-gallery">
+      <div class="hp-media">
+        <span class="badge">Coming soon</span>
+        <img id="hpMain" src="hat-front.png" alt="The Plastic Hat — a stone washed-cotton dad cap with the Plastic Ultimate figure embroidered on the front">
+      </div>
+      <div class="hp-thumbs">
+        <button class="thumb is-active" type="button" data-src="hat-front.png" aria-label="Front view"><img src="hat-front.png" alt="The Plastic Hat, front view"></button>
+        <button class="thumb" type="button" data-src="hat-angle.png" aria-label="Angled view"><img src="hat-angle.png" alt="The Plastic Hat, angled view"></button>
+        <button class="thumb" type="button" data-src="hat-side.png" aria-label="Side view"><img src="hat-side.png" alt="The Plastic Hat, side view"></button>
+      </div>
     </div>
     <div class="hp-info">
       <div class="tag">Headwear · Drop 01</div>
@@ -194,6 +207,17 @@
     <div class="footer-copy">© 2026 Plastic Ultimate Academy · London</div>
   </footer>
 </div>
+
+<script>
+  var main = document.getElementById('hpMain');
+  document.querySelectorAll('.thumb').forEach(function(t){
+    t.addEventListener('click', function(){
+      main.src = this.getAttribute('data-src');
+      document.querySelectorAll('.thumb').forEach(function(x){ x.classList.remove('is-active'); });
+      this.classList.add('is-active');
+    });
+  });
+</script>
 
 </body>
 </html>
