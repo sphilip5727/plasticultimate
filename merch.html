@@ -60,7 +60,7 @@
   .more-head{margin:4rem 0 1.75rem;text-align:center;}
   .more-head h3{font-size:1.3rem;font-weight:700;letter-spacing:-.02em;color:var(--black);}
   .more-head p{font-size:.9rem;color:var(--grey-50);margin-top:.3rem;}
-  .shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  .shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,340px));gap:1.5rem;justify-content:center;}
   .product{display:flex;flex-direction:column;border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;background:var(--white);transition:transform .15s,box-shadow .15s;}
   .product:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);}
   .product-media{position:relative;aspect-ratio:4/3;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;overflow:hidden;}
@@ -138,7 +138,7 @@
       <div class="tag">Headwear · Drop 01</div>
       <h2>The Plastic Hat</h2>
       <p>A washed-cotton six-panel dad cap in stone, with the Plastic Ultimate mark embroidered on the front. Low profile, adjustable strap, and soft enough to break in from day one — built for the sideline, the trip home, and everywhere in between.</p>
-      <div class="price">£<span>—</span> · Price &amp; launch date coming soon</div>
+      <div class="price">£80 · <span>launch date coming soon</span></div>
       <button class="btn-primary" disabled>Coming soon</button>
       <a class="notify" href="https://www.instagram.com/plasticultimate?igsh=MXh1aGtwN2JpNDM0aw==" target="_blank" rel="noopener">Follow @plasticultimate for the drop →</a>
     </div>
@@ -153,38 +153,14 @@
   <div class="shop-grid">
 
     <div class="product">
-      <div class="product-media photo">
-        <span class="badge-soft">Coming soon</span>
-        <img class="swap-img swap-a" src="jersey-front.png" alt="The Plastic Jersey — white match jersey with orange and black chest stripe, front view">
-        <img class="swap-img swap-b" src="jersey-back.png" alt="The Plastic Jersey, back view" loading="lazy">
-      </div>
-      <div class="product-body">
-        <h4>The Plastic Jersey</h4>
-        <p>Sublimated match jersey in the academy kit. In development.</p>
-      </div>
-    </div>
-
-    <div class="product">
       <div class="product-media photo" style="background:#f3f3f3">
         <span class="badge-soft">Coming soon</span>
-        <img class="swap-img swap-a" src="disc-top.png" alt="Pro Disc — orange Plastic Ultimate flying disc, top view">
-        <img class="swap-img swap-b" src="disc-angle.png" alt="Pro Disc — orange Plastic Ultimate flying disc, angled view" loading="lazy">
+        <img class="swap-img swap-a" src="disc-top.png" alt="Ultimate Disc — orange Plastic Ultimate flying disc, top view">
+        <img class="swap-img swap-b" src="disc-angle.png" alt="Ultimate Disc — orange Plastic Ultimate flying disc, angled view" loading="lazy">
       </div>
       <div class="product-body">
-        <h4>Pro Disc</h4>
-        <p>Match-weight Ultimate disc in Plastic orange. In development.</p>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="product-media photo">
-        <span class="badge-soft">Coming soon</span>
-        <img class="swap-img swap-a" src="preworkout-a.png" alt="Plastic Pre-Workout — sugarcane juice pre-workout can, front view">
-        <img class="swap-img swap-b" src="preworkout-b.png" alt="Plastic Pre-Workout can, angled view" loading="lazy">
-      </div>
-      <div class="product-body">
-        <h4>Plastic Pre-Workout</h4>
-        <p>Sugarcane-juice pre-workout — clean energy, naturally sweetened. In development.</p>
+        <h4>Ultimate Disc</h4>
+        <p>Match-weight flying disc in Plastic orange. In development.</p>
       </div>
     </div>
 
