@@ -1,0 +1,9 @@
+# Wrangler local dev cache / state (never commit)
+.wrangler/
+**/.wrangler/
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store

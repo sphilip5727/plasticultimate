@@ -1,0 +1,17 @@
+# Cloudflare Worker config for the Plastic Ultimate audit API.
+# Deploy:  cd worker && npx wrangler login && npx wrangler deploy
+# Local:   cd worker && npx wrangler dev      (serves http://localhost:8787)
+#
+# FREE-PLAN NOTE: this Worker is stateless — no KV, D1, Queues, cron, or secrets.
+# Keep it that way to stay on the Cloudflare free tier (100k requests/day).
+
+name = "plastic-audit"
+main = "audit-worker.js"
+compatibility_date = "2025-01-01"
+
+# Personal account (Samuelphilip2010@gmail.com's Account). Account IDs are not
+# secret. Change this if you want the Worker on a different Cloudflare account.
+account_id = "76469703fad79b15d9f41cff810e51a3"
+
+# Optional (only if you later add a free PageSpeed API key):
+#   npx wrangler secret put PSI_KEY

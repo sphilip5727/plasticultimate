@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Audit — Plastic Ultimate Academy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);--good:#16a34a;--good-bg:#e9f7ee;--warn:#e08e1a;--warn-bg:#fdf3e2;--bad:#dc2626;--bad-bg:#fdeaea;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--grey-04);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
+  .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .nav-logo img{width:32px;height:32px;object-fit:contain;}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--black);}
+  .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
+  .btn-nav:hover{background:var(--orange-light)!important;}
+
+  .wrap{max-width:900px;margin:0 auto;padding:0 1.5rem;}
+
+  /* PROGRESS VIEW */
+  #progressView{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 1.5rem 4rem;}
+  .prog-card{width:100%;max-width:640px;background:var(--white);border:1px solid var(--orange-border);border-radius:18px;box-shadow:0 8px 40px rgba(245,100,10,.1);padding:2.5rem;}
+  .prog-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange-pale);border:1px solid var(--orange-border);color:var(--orange);font-size:.75rem;font-weight:600;padding:.3rem .8rem;border-radius:100px;margin-bottom:1.25rem;}
+  .prog-badge .pulse{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:pulse 1.2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+  .prog-title{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.35rem;}
+  .prog-domain{color:var(--orange);}
+  .prog-sub{font-size:.9rem;color:var(--grey-50);margin-bottom:1.75rem;}
+  .pb-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem;}
+  .pb-now{font-size:.85rem;font-weight:500;color:var(--grey-70);}
+  .pb-pct{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;color:var(--orange);}
+  .pb-track{height:12px;background:var(--grey-08);border-radius:100px;overflow:hidden;}
+  .pb-fill{height:100%;width:0;background:linear-gradient(90deg,var(--orange),var(--orange-light));border-radius:100px;transition:width .4s cubic-bezier(.4,0,.2,1);}
+  .plist{margin-top:1.75rem;max-height:320px;overflow:hidden;}
+  .prow{display:flex;align-items:center;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--grey-08);font-size:.9rem;color:var(--grey-30);transition:color .25s;}
+  .prow:last-child{border-bottom:none;}
+  .prow.active{color:var(--black);font-weight:500;}
+  .prow.done{color:var(--grey-70);}
+  .pstat{width:20px;height:20px;border-radius:50%;border:2px solid var(--grey-15);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:transparent;}
+  .prow.active .pstat{border-color:var(--orange);border-top-color:transparent;animation:spin .6s linear infinite;}
+  .prow.done .pstat{border-color:var(--good);background:var(--good);color:#fff;animation:none;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .prow .picon{margin-left:auto;opacity:.5;}
+
+  /* RESULTS VIEW */
+  #resultView{display:none;padding:6rem 0 4rem;}
+  #resultView.show{display:block;}
+
+  .report-bar{position:sticky;top:64px;z-index:50;background:rgba(245,245,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--grey-08);padding:.85rem 0;margin-bottom:2rem;}
+  .report-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+  .rb-title{font-size:.9rem;font-weight:600;color:var(--grey-70);}
+  .rb-title span{color:var(--orange);}
+  .rb-actions{display:flex;gap:.6rem;flex-wrap:wrap;}
+  .btn{padding:.6rem 1.2rem;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;display:inline-flex;align-items:center;gap:.4rem;transition:background .15s,border-color .15s,transform .15s;}
+  .btn-primary{background:var(--orange);color:#fff;}
+  .btn-primary:hover{background:var(--orange-light);transform:translateY(-1px);}
+  .btn-ghost{background:var(--white);color:var(--grey-70);border:1px solid var(--grey-15);}
+  .btn-ghost:hover{border-color:var(--orange);color:var(--orange);}
+
+  .disclaimer{background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:10px;padding:.85rem 1.1rem;font-size:.8rem;color:var(--grey-70);line-height:1.5;margin-bottom:1.75rem;display:flex;gap:.6rem;}
+  .disclaimer b{color:var(--black);}
+
+  /* REPORT MASTHEAD (shows on screen AND in the PDF) */
+  .report-masthead{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-bottom:1.1rem;margin-bottom:1.5rem;border-bottom:2px solid var(--orange);}
+  .rm-brand{display:flex;align-items:center;gap:.7rem;}
+  .rm-brand img{width:38px;height:38px;object-fit:contain;}
+  .rm-name{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;color:var(--black);line-height:1;}
+  .rm-sub{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-top:.25rem;}
+  .rm-site{font-size:.82rem;color:var(--grey-50);text-align:right;}
+
+  /* OVERALL CARD */
+  .overall{background:var(--white);border:1px solid var(--orange-border);border-radius:18px;padding:2.25rem;display:grid;grid-template-columns:auto 1fr;gap:2.25rem;align-items:center;box-shadow:0 4px 24px rgba(245,100,10,.07);margin-bottom:1.5rem;}
+  .gauge{position:relative;width:168px;height:168px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .gauge::before{content:'';position:absolute;inset:15px;border-radius:50%;background:var(--white);}
+  .gauge-inner{position:relative;z-index:1;text-align:center;}
+  .gauge-num{font-size:3.1rem;font-weight:800;letter-spacing:-.05em;line-height:1;}
+  .gauge-max{font-size:.78rem;color:var(--grey-30);font-weight:600;margin-top:.15rem;}
+  .overall-info .oi-grade{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .8rem;border-radius:100px;margin-bottom:.9rem;}
+  .overall-info h1{font-size:1.6rem;font-weight:700;letter-spacing:-.025em;line-height:1.2;margin-bottom:.6rem;}
+  .overall-info p{font-size:.92rem;color:var(--grey-50);line-height:1.6;margin-bottom:1.1rem;}
+  .oi-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.82rem;color:var(--grey-50);}
+  .oi-meta b{color:var(--black);}
+
+  .tallies{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1.75rem;}
+  .tally{background:var(--white);border:1px solid var(--grey-08);border-radius:12px;padding:1.1rem 1.25rem;}
+  .tally-num{font-size:1.8rem;font-weight:800;letter-spacing:-.03em;line-height:1;}
+  .tally-label{font-size:.78rem;color:var(--grey-50);margin-top:.35rem;}
+  .tally.g .tally-num{color:var(--good);} .tally.w .tally-num{color:var(--warn);} .tally.b .tally-num{color:var(--bad);} .tally.m .tally-num{color:var(--grey-30);}
+
+  /* NEXT STEPS */
+  .next-steps{background:var(--white);border:1px solid var(--orange-border);border-radius:16px;padding:1.75rem 2rem;margin-bottom:1.75rem;box-shadow:0 4px 24px rgba(245,100,10,.06);}
+  .ns-tag{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:.35rem;}
+  .next-steps h2{font-size:1.2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.3rem;}
+  .ns-sub{font-size:.86rem;color:var(--grey-50);margin-bottom:1.35rem;line-height:1.5;}
+  .step-item{display:flex;gap:1rem;padding:1rem 0;border-top:1px solid var(--grey-08);}
+  .step-item:first-of-type{border-top:none;padding-top:.25rem;}
+  .step-rank{width:28px;height:28px;flex-shrink:0;border-radius:50%;background:var(--orange);color:#fff;font-size:.85rem;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  .step-body{flex:1;min-width:0;}
+  .step-head{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:.15rem;}
+  .step-title{font-size:.98rem;font-weight:700;color:var(--black);letter-spacing:-.01em;}
+  .step-sev{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.15rem .5rem;border-radius:100px;}
+  .step-sev.fail{color:var(--bad);background:var(--bad-bg);}
+  .step-sev.warn{color:var(--warn);background:var(--warn-bg);}
+  .step-why{font-size:.86rem;color:var(--grey-50);line-height:1.5;}
+  .step-why .sw-where{color:var(--grey-30);}
+  .ns-more{font-size:.82rem;color:var(--grey-50);margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--grey-08);}
+  .ns-none{display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;color:var(--grey-70);line-height:1.5;}
+
+  /* SUMMARY CHIPS */
+  .section-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin:2rem 0 1rem;}
+  .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-bottom:1rem;}
+  .chip{display:flex;align-items:center;gap:.75rem;background:var(--white);border:1px solid var(--grey-08);border-radius:10px;padding:.7rem .9rem;font-size:.85rem;text-decoration:none;color:var(--grey-70);transition:border-color .15s,transform .12s;}
+  .chip:hover{border-color:var(--orange-border);transform:translateY(-1px);}
+  .chip-ic{font-size:1rem;}
+  .chip-name{flex:1;font-weight:500;color:var(--black);}
+  .chip-score{font-weight:800;font-size:.9rem;letter-spacing:-.02em;}
+  .chip-manual{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--grey-30);}
+
+  /* PILLAR CARDS */
+  .pillar{background:var(--white);border:1px solid var(--grey-08);border-radius:14px;overflow:hidden;margin-bottom:1rem;}
+  .pillar-head{display:flex;align-items:center;gap:1rem;padding:1.4rem 1.5rem;border-bottom:1px solid var(--grey-08);}
+  .pillar-icon{width:44px;height:44px;border-radius:10px;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;}
+  .pillar-meta{flex:1;min-width:0;}
+  .pillar-name{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;}
+  .pillar-blurb{font-size:.82rem;color:var(--grey-50);margin-top:.15rem;}
+  .pillar-score{text-align:right;flex-shrink:0;min-width:110px;}
+  .ps-num{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;line-height:1;}
+  .ps-bar{height:6px;background:var(--grey-08);border-radius:100px;overflow:hidden;margin-top:.5rem;}
+  .ps-bar span{display:block;height:100%;border-radius:100px;}
+  .ps-manual{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--grey-50);background:var(--grey-04);border:1px solid var(--grey-08);padding:.3rem .6rem;border-radius:100px;}
+
+  .checks{list-style:none;padding:.4rem 1.5rem 1rem;}
+  .check{display:flex;align-items:flex-start;gap:.85rem;padding:.7rem 0;border-bottom:1px solid var(--grey-04);}
+  .check:last-child{border-bottom:none;}
+  .ci{width:22px;height:22px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;margin-top:.05rem;}
+  .check.pass .ci{background:var(--good);} .check.warn .ci{background:var(--warn);} .check.fail .ci{background:var(--bad);}
+  .check.manual .ci{background:var(--white);border:1.5px solid var(--grey-15);color:var(--grey-30);}
+  .cbody{flex:1;}
+  .cl{font-size:.9rem;color:var(--grey-90);line-height:1.45;}
+  .cnote{font-size:.78rem;margin-top:.15rem;}
+  .check.warn .cnote{color:var(--warn);} .check.fail .cnote{color:var(--bad);} .check.manual .cnote{color:var(--grey-30);}
+
+  /* RESULTS CTA */
+  .result-cta{background:var(--orange);border-radius:18px;padding:2.5rem;text-align:center;margin-top:2rem;}
+  .result-cta h2{color:#fff;font-size:1.5rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.6rem;}
+  .result-cta p{color:rgba(255,255,255,.8);font-size:.92rem;max-width:420px;margin:0 auto 1.5rem;line-height:1.6;}
+  .btn-light{background:#fff;color:var(--orange);padding:.8rem 1.9rem;border-radius:8px;font-weight:700;font-size:.88rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;}
+  .btn-light:hover{transform:translateY(-2px);}
+
+  .report-foot{text-align:center;font-size:.78rem;color:var(--grey-30);margin-top:2rem;line-height:1.6;}
+
+  .empty{max-width:460px;margin:0 auto;text-align:center;background:var(--white);border:1px solid var(--orange-border);border-radius:16px;padding:2.5rem;}
+  .empty h2{font-size:1.3rem;font-weight:700;margin-bottom:.6rem;}
+  .empty p{color:var(--grey-50);font-size:.9rem;margin-bottom:1.5rem;}
+
+  @media(max-width:720px){
+    nav{padding:0 1rem;}
+    .nav-links li:not(:last-child){display:none;}
+    .prog-card{padding:1.75rem;}
+    .overall{grid-template-columns:1fr;text-align:center;gap:1.5rem;justify-items:center;}
+    .oi-meta{justify-content:center;}
+    .tallies{grid-template-columns:repeat(2,1fr);}
+    .chips{grid-template-columns:1fr;}
+    .pillar-head{flex-wrap:wrap;}
+    .pillar-score{min-width:90px;}
+  }
+
+  /* PRINT / PDF */
+  @media print{
+    @page{margin:14mm;}
+    body{background:#fff;}
+    nav,.report-bar,.result-cta,.no-print{display:none!important;}
+    #resultView{padding:0!important;}
+    .wrap{max-width:none;padding:0;}
+    .overall,.pillar,.tally,.chip{box-shadow:none!important;break-inside:avoid;}
+    .pillar{break-inside:avoid;}
+    .disclaimer{break-inside:avoid;}
+    *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="no-print">
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="marketing.html" class="active">Partners</a></li>
+    <li><a href="marketing.html#audit" class="btn-nav">New audit →</a></li>
+  </ul>
+</nav>
+
+<!-- PROGRESS -->
+<div id="progressView">
+  <div class="prog-card">
+    <div class="prog-badge"><span class="pulse"></span> Running audit</div>
+    <div class="prog-title">Auditing <span class="prog-domain" id="progDomain">your site</span></div>
+    <div class="prog-sub">Scanning 13 areas of your marketing, including a live Google PageSpeed test. This usually takes 20–40 seconds.</div>
+    <div class="pb-head">
+      <div class="pb-now" id="pbNow">Starting…</div>
+      <div class="pb-pct" id="pbPct">0%</div>
+    </div>
+    <div class="pb-track"><div class="pb-fill" id="pbFill"></div></div>
+    <div class="plist" id="plist"></div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div id="resultView">
+  <div class="report-bar no-print">
+    <div class="wrap">
+      <div class="rb-title">Marketing Audit · <span id="rbDomain"></span></div>
+      <div class="rb-actions">
+        <button class="btn btn-ghost" onclick="location.href='marketing.html#audit'">↺ New audit</button>
+        <button class="btn btn-primary" id="downloadBtn">⬇ Download PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" id="reportBody"><!-- filled by JS --></div>
+</div>
+
+<script>
+/* ========================================================================
+   CONFIG — after `wrangler deploy`, paste your Worker URL here.
+   For local testing with `wrangler dev`, use 'http://localhost:8787/audit'.
+   ======================================================================== */
+var WORKER_URL = 'https://plastic-audit.plasticultimate.workers.dev/audit';
+
+/* ---------- Audit framework: 13 pillars ----------
+   Checks that the Worker can score for free carry an `id`; the rest are
+   shown but marked "Manual review" (they need account access / paid data). */
+var PILLARS = [
+  {icon:'🎯', title:'Brand & Positioning', blurb:'Is it instantly clear who you are and why you’re the better choice?', checks:[
+    {label:'Value proposition clear within 5 seconds of landing', id:'brand.valueprop'},
+    'Brand consistency — logo, colours, typography, tone of voice',
+    'Target audience defined and segmented (not assumed)',
+    'Competitive positioning vs. 3–5 direct competitors',
+    'Branded search volume and sentiment'
+  ]},
+  {icon:'⚙️', title:'Website Technical Health', blurb:'The engine under the bonnet — speed, security and crawlability.', checks:[
+    {label:'Core Web Vitals — LCP, INP, CLS', id:'tech.cwv'},
+    {label:'Page load speed (desktop and mobile)', id:'tech.speed'},
+    {label:'HTTPS, valid SSL, no mixed content', id:'tech.https'},
+    {label:'Crawlability, indexation, XML sitemap, robots.txt', id:'tech.crawl'},
+    {label:'Broken links, redirect chains and 404s', id:'tech.brokenlinks'},
+    {label:'Structured data / schema markup (LocalBusiness, Service, FAQ, Review)', id:'tech.schema'},
+    {label:'Hosting reliability and uptime', id:'tech.hosting'}
+  ]},
+  {icon:'📱', title:'Mobile Optimisation', blurb:'Where 65–80% of local traffic lives — and where money leaks.', checks:[
+    {label:'Responsive rendering — no horizontal scroll or cut-off content', id:'mobile.responsive'},
+    {label:'Tap targets ≥44px with adequate spacing', id:'mobile.taptargets'},
+    {label:'Mobile page speed — WebP/AVIF images, lazy loading, no render-blocking', id:'mobile.speed'},
+    {label:'Click-to-call: tappable tel: link, visible without scrolling', id:'mobile.clicktocall'},
+    'Sticky mobile CTA bar (call / book / WhatsApp)',
+    {label:'Mobile-friendly forms — correct input types and autofill', id:'mobile.forms'},
+    {label:'Mobile navigation usability — taps to reach booking', id:'mobile.nav'},
+    {label:'Above-the-fold offer clarity on mobile', id:'mobile.abovefold'},
+    'No intrusive pop-ups / interstitials',
+    'Mobile vs. desktop conversion-rate gap'
+  ]},
+  {icon:'🧭', title:'Website Ease of Use (UX)', blurb:'How effortless it is for a visitor to find and do what they came for.', checks:[
+    {label:'Navigation clarity — logical menu, ≤7 top-level items', id:'ux.nav'},
+    {label:'Information scent — links say where they go', id:'ux.infoscent'},
+    {label:'Visual hierarchy — the eye lands on the right thing first', id:'ux.hierarchy'},
+    'Scannability — short paragraphs, subheadings, bullets',
+    'Low cognitive load — few forced decisions',
+    'Consistency of buttons and layout patterns',
+    {label:'Accessibility — contrast, alt text, 16px+ body text', id:'ux.accessibility'},
+    'Clear form error states',
+    'Trust signals near decision points',
+    'No dead-end pages without an onward CTA'
+  ]},
+  {icon:'👉', title:'Calls to Action', blurb:'Usually the cheapest fix and the highest leverage on conversions.', checks:[
+    {label:'A CTA present on every page', id:'cta.presence'},
+    'A distinct CTA above the fold',
+    'CTA repeated at natural decision points on long pages',
+    'Action + benefit copy ("Book Your Free Consultation")',
+    'A single primary CTA per page',
+    'Low-commitment option for people not ready to buy',
+    {label:'CTA variety — phone, form, WhatsApp, chat, booking', id:'cta.channels'},
+    'Sticky / persistent CTA',
+    {label:'Lean form design — minimal required fields', id:'cta.form'},
+    'Thank-you page that sets expectations',
+    'CTA clicks tracked as events'
+  ]},
+  {icon:'📈', title:'Conversion Rate & Funnel', blurb:'Requires analytics access — confirmed in your full report.', checks:[
+    'Overall conversion rate by device, channel and landing page',
+    'Micro-conversions — CTA clicks, form starts, phone clicks',
+    'Form start → completion drop-off rate',
+    'Landing page bounce and engagement rates',
+    'Heatmaps / scroll depth / session recordings',
+    'Message match between ad/search intent and page',
+    'A/B testing in place'
+  ]},
+  {icon:'🔍', title:'Organic Search (SEO)', blurb:'How findable you are when people search for what you offer.', checks:[
+    'Keyword rankings vs. competitors',
+    'Organic traffic trend over 12–24 months',
+    'Keyword gap analysis',
+    {label:'On-page — titles, metas, H1s, internal links, alt text', id:'seo.onpage'},
+    'Content depth — a dedicated page per service',
+    'Backlink profile — referring domains, authority, toxicity',
+    'Local SEO — Google Business Profile, NAP, citations, local pack'
+  ]},
+  {icon:'💷', title:'Paid Advertising', blurb:'Requires ad account access — confirmed in your full report.', checks:[
+    'Account structure and campaign hygiene',
+    'Spend, CPC, CTR, CPA/CPL trends',
+    'Targeting quality and negative keywords',
+    'Ad copy, creative and extensions',
+    'Landing page alignment (dedicated pages, not the homepage)',
+    'Conversion tracking accuracy',
+    'Remarketing setup',
+    'Attribution model'
+  ]},
+  {icon:'💬', title:'Social Media', blurb:'Presence, consistency and engagement on the right platforms.', checks:[
+    {label:'Right platforms for the audience', id:'social.presence'},
+    'Profile completeness and branding',
+    'Posting frequency and content mix',
+    'Engagement rate relative to follower count',
+    'Community management and response times',
+    'Bio CTA and link destination',
+    'Competitor benchmarking'
+  ]},
+  {icon:'⭐', title:'Reputation & Reviews', blurb:'Social proof — the single biggest trust lever for local buyers.', checks:[
+    {label:'Reviews & ratings shown on your website (Google, Trustpilot, etc.)', id:'reviews.onsite'},
+    'Volume, average rating and recency across review platforms',
+    'Review response rate and quality',
+    'A systematic review-generation process',
+    'Any unaddressed negative sentiment online'
+  ]},
+  {icon:'✉️', title:'Content & Email', blurb:'Requires platform access — confirmed in your full report.', checks:[
+    'Content output frequency and funnel mapping',
+    'Lead magnets / gated content',
+    'Email list size, growth and hygiene',
+    'Open rates, click rates and automation flows',
+    'Video presence'
+  ]},
+  {icon:'⚡', title:'Lead Handling & Speed to Lead', blurb:'Where most revenue actually leaks — confirmed in your full report.', checks:[
+    'Speed to lead — enquiries answered within 5 minutes',
+    'Missed-call rate and call answer quality',
+    'Follow-up sequences for unconverted enquiries',
+    'CRM tracks leads from source to sale',
+    'Enquiry → consultation → sale conversion rates'
+  ]},
+  {icon:'📊', title:'Analytics & Measurement', blurb:'Requires analytics access — confirmed in your full report.', checks:[
+    'GA4 setup quality and event tracking',
+    'Revenue attribution by channel (not just leads)',
+    'Cost per lead and cost per acquisition by channel',
+    'CLV vs. CAC',
+    'Reporting cadence and dashboard access'
+  ]}
+];
+
+/* ---------- Helpers ---------- */
+function param(k){return new URLSearchParams(location.search).get(k)||'';}
+function domainOf(u){try{if(!/^https?:\/\//i.test(u))u='https://'+u;return new URL(u).hostname.replace(/^www\./,'');}catch(e){return (u||'').replace(/^https?:\/\//,'').replace(/^www\./,'').split('/')[0];}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function normCheck(c){return typeof c==='string'?{label:c}:c;}
+function iconFor(status){return status==='pass'?'✓':status==='warn'?'!':status==='fail'?'✕':'–';}
+var MANUAL_NOTE='Needs account access or paid data — reviewed in a full manual audit.';
+
+function band(s){
+  if(s>=80)return {label:'Strong',color:'#16a34a',bg:'var(--good-bg)',verdict:'a strong foundation, with a handful of high-value opportunities to capture more enquiries.'};
+  if(s>=65)return {label:'Good',color:'#f5640a',bg:'var(--orange-pale)',verdict:'a solid base, with clear opportunities to convert more of the visitors you already get.'};
+  if(s>=50)return {label:'Needs work',color:'#e08e1a',bg:'var(--warn-bg)',verdict:'several gaps that are likely costing you leads every month — most are quick to fix.'};
+  return {label:'Critical',color:'#dc2626',bg:'var(--bad-bg)',verdict:'significant issues to address — but that also means plenty of fast, high-impact wins.'};
+}
+
+/* Plain-language fix titles + importance weight (lower number = do first) for the action plan */
+var ACTION={
+  'tech.https':'Switch your site to HTTPS','tech.cwv':'Improve your Core Web Vitals','tech.speed':'Speed up your pages',
+  'tech.hosting':'Reduce your server response time','tech.crawl':'Fix search-engine crawling (robots & sitemap)',
+  'tech.brokenlinks':'Fix broken links and redirects','tech.schema':'Add structured data (schema markup)',
+  'mobile.responsive':'Make your site work properly on phones','mobile.taptargets':'Make buttons bigger and easier to tap',
+  'mobile.speed':'Speed up your site on mobile','mobile.clicktocall':'Add a tap-to-call phone link',
+  'mobile.forms':'Make your forms mobile-friendly','mobile.nav':'Simplify your navigation menu',
+  'mobile.abovefold':'Make your offer clear at the top of the page','ux.nav':'Simplify your navigation menu',
+  'ux.infoscent':'Use clearer link and button text','ux.hierarchy':'Fix your heading structure',
+  'ux.accessibility':'Improve accessibility (contrast, alt text, font size)','cta.presence':'Add a clear call-to-action',
+  'cta.channels':'Offer more ways to get in touch','cta.form':'Shorten your forms',
+  'brand.valueprop':'Make it obvious what you offer','seo.onpage':'Fix your on-page SEO basics',
+  'social.presence':'Link to your social media profiles','reviews.onsite':'Show your reviews on your website'
+};
+var IMPACT={
+  'mobile.responsive':1,'tech.https':1,'tech.crawl':1,
+  'cta.presence':2,'tech.cwv':2,'mobile.speed':2,'tech.speed':2,
+  'mobile.abovefold':3,'brand.valueprop':3,'seo.onpage':3,'mobile.clicktocall':3,'tech.brokenlinks':3,'reviews.onsite':3,
+  'ux.accessibility':4,'mobile.taptargets':4,'cta.channels':4,'cta.form':4,'mobile.nav':4,'ux.nav':4,'tech.hosting':4,'social.presence':4,
+  'ux.infoscent':5,'ux.hierarchy':5,'tech.schema':5
+};
+
+/* ---------- Merge Worker results onto the framework ---------- */
+function statusVal(status,score){return typeof score==='number'?score:(status==='pass'?100:status==='warn'?60:status==='fail'?25:0);}
+function applyResults(apiChecks){
+  apiChecks=apiChecks||{};
+  var rows=PILLARS.map(function(p,pi){
+    var real=[];
+    var checks=p.checks.map(function(raw){
+      var c=normCheck(raw);
+      if(c.id && apiChecks[c.id]){
+        var r=apiChecks[c.id];
+        var item={id:c.id,label:c.label,status:r.status,note:r.note||'',value:r.value||null,score:(typeof r.score==='number'?r.score:null)};
+        real.push(item);
+        return item;
+      }
+      return {label:c.label,status:'manual',note:MANUAL_NOTE,value:null,score:null};
+    });
+    var score=real.length?Math.round(real.reduce(function(a,c){return a+statusVal(c.status,c.score);},0)/real.length):null;
+    return {p:p,pi:pi,checks:checks,score:score,scored:real.length>0};
+  });
+  var scored=rows.filter(function(r){return r.scored;});
+  var overall=scored.length?Math.round(scored.reduce(function(a,r){return a+r.score;},0)/scored.length):0;
+  var counts={pass:0,warn:0,fail:0};
+  rows.forEach(function(r){r.checks.forEach(function(c){if(c.status==='pass'||c.status==='warn'||c.status==='fail')counts[c.status]++;});});
+  return {rows:rows,overall:overall,counts:counts,autoCount:scored.length,manualCount:rows.length-scored.length};
+}
+
+/* ---------- Render results ---------- */
+function slug(t){return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
+function renderReport(domain, data){
+  var b=band(data.overall);
+  var today=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  var h='';
+
+  h+='<div class="report-masthead"><div class="rm-brand"><img src="logo.png" alt="Plastic Ultimate"><div><div class="rm-name">Plastic Ultimate</div><div class="rm-sub">Marketing Audit</div></div></div><div class="rm-site">'+esc(domain)+'<br>'+today+'</div></div>';
+
+  h+='<div class="disclaimer">ℹ️ <div><b>Automated audit of your public website.</b> These scores come from a live scan of your site and Google’s PageSpeed data. Pillars that need account access — paid ads, analytics, CRM, email — are marked “Manual review” and aren’t scored here.</div></div>';
+
+  // Overall
+  h+='<div class="overall">';
+  h+='<div class="gauge" style="background:conic-gradient('+b.color+' '+(data.overall*3.6)+'deg, var(--grey-08) 0);">';
+  h+='<div class="gauge-inner"><div class="gauge-num" style="color:'+b.color+'">'+data.overall+'</div><div class="gauge-max">out of 100</div></div></div>';
+  h+='<div class="overall-info">';
+  h+='<span class="oi-grade" style="color:'+b.color+';background:'+b.bg+'">● '+b.label+'</span>';
+  h+='<h1>Your site scored '+data.overall+'/100 — '+b.label.toLowerCase()+'.</h1>';
+  h+='<p>Overall, '+esc(domain)+' shows '+b.verdict+'</p>';
+  h+='<div class="oi-meta"><div><b>'+esc(domain)+'</b> · audited '+today+'</div><div><b>'+data.autoCount+'</b> pillars scored · <b>'+data.manualCount+'</b> need manual review</div></div>';
+  h+='</div></div>';
+
+  // Tallies
+  h+='<div class="tallies">';
+  h+='<div class="tally g"><div class="tally-num">'+data.counts.pass+'</div><div class="tally-label">Checks passed</div></div>';
+  h+='<div class="tally w"><div class="tally-num">'+data.counts.warn+'</div><div class="tally-label">To improve</div></div>';
+  h+='<div class="tally b"><div class="tally-num">'+data.counts.fail+'</div><div class="tally-label">Need attention</div></div>';
+  h+='<div class="tally m"><div class="tally-num">'+data.manualCount+'</div><div class="tally-label">Manual review</div></div>';
+  h+='</div>';
+
+  // Next steps — ranked action plan (things to fix, most important first)
+  var todo=[];
+  data.rows.forEach(function(r){
+    r.checks.forEach(function(c){
+      if(c.status==='warn'||c.status==='fail'){ todo.push({id:c.id,status:c.status,score:(typeof c.score==='number'?c.score:0),note:c.note,value:c.value,pillar:r.p}); }
+    });
+  });
+  todo.sort(function(a,b){
+    var ia=(IMPACT[a.id]||5), ib=(IMPACT[b.id]||5); if(ia!==ib)return ia-ib;
+    var sa=(a.status==='fail'?0:1), sb=(b.status==='fail'?0:1); if(sa!==sb)return sa-sb;
+    return a.score-b.score;
+  });
+  var seenAct={}, steps=[];
+  todo.forEach(function(t){ var title=ACTION[t.id]||('Improve '+t.pillar.title); if(seenAct[title])return; seenAct[title]=1; steps.push({title:title,t:t}); });
+  h+='<div class="next-steps">';
+  h+='<div class="ns-tag">Next steps</div><h2>Your action plan</h2>';
+  if(steps.length){
+    var CAP=8, shown=steps.slice(0,CAP);
+    h+='<p class="ns-sub">The fixes below are ranked by impact — start at the top and work down. Anything scored green is already in good shape.</p>';
+    shown.forEach(function(s,i){
+      h+='<div class="step-item"><div class="step-rank">'+(i+1)+'</div><div class="step-body">';
+      h+='<div class="step-head"><span class="step-title">'+esc(s.title)+'</span><span class="step-sev '+s.t.status+'">'+(s.t.status==='fail'?'Fix now':'Improve')+'</span></div>';
+      h+='<div class="step-why">'+esc(s.t.note||'')+(s.t.value?' <span class="sw-where">('+esc(s.t.value)+')</span>':'')+'</div>';
+      h+='</div></div>';
+    });
+    if(steps.length>CAP){ h+='<div class="ns-more">+ '+(steps.length-CAP)+' more improvement'+((steps.length-CAP)>1?'s':'')+' in the full breakdown below.</div>'; }
+  } else {
+    h+='<div class="ns-none">✅ <div>No urgent fixes flagged — your site passed the automated checks well. The biggest remaining opportunities are in the “Manual review” areas below (ads, analytics, lead handling), which need account access.</div></div>';
+  }
+  h+='</div>';
+
+  // Summary chips
+  h+='<div class="section-label">Scores at a glance</div><div class="chips">';
+  data.rows.forEach(function(r){
+    h+='<a class="chip" href="#'+slug(r.p.title)+'">';
+    h+='<span class="chip-ic">'+r.p.icon+'</span><span class="chip-name">'+esc(r.p.title)+'</span>';
+    if(r.scored){var cb=band(r.score);h+='<span class="chip-score" style="color:'+cb.color+'">'+r.score+'</span>';}
+    else{h+='<span class="chip-manual">Manual</span>';}
+    h+='</a>';
+  });
+  h+='</div>';
+
+  // Detailed pillars
+  h+='<div class="section-label">Full breakdown</div>';
+  data.rows.forEach(function(r){
+    var cb=r.scored?band(r.score):null;
+    h+='<div class="pillar" id="'+slug(r.p.title)+'">';
+    h+='<div class="pillar-head">';
+    h+='<div class="pillar-icon">'+r.p.icon+'</div>';
+    h+='<div class="pillar-meta"><div class="pillar-name">'+(r.pi+1)+'. '+esc(r.p.title)+'</div><div class="pillar-blurb">'+esc(r.p.blurb)+'</div></div>';
+    h+='<div class="pillar-score">';
+    if(r.scored){h+='<div class="ps-num" style="color:'+cb.color+'">'+r.score+'</div><div class="ps-bar"><span style="width:'+r.score+'%;background:'+cb.color+'"></span></div>';}
+    else{h+='<span class="ps-manual">Manual review</span>';}
+    h+='</div></div>';
+    h+='<ul class="checks">';
+    r.checks.forEach(function(c){
+      h+='<li class="check '+c.status+'"><span class="ci">'+iconFor(c.status)+'</span><div class="cbody"><div class="cl">'+esc(c.label)+'</div>';
+      if(c.value){h+='<div class="cnote" style="color:var(--grey-30)">'+esc(c.value)+'</div>';}
+      if(c.note && c.status!=='pass'){h+='<div class="cnote">'+esc(c.note)+'</div>';}
+      h+='</div></li>';
+    });
+    h+='</ul></div>';
+  });
+
+  // CTA
+  h+='<div class="result-cta no-print"><h2>Want us to turn these fixes into growth?</h2><p>Sponsor Plastic Ultimate and we’ll put hands-on marketing support behind your brand — starting with the wins above.</p><a class="btn-light" href="marketing.html#sponsorship">Explore sponsorship →</a></div>';
+
+  h+='<div class="report-foot">Automated audit of '+esc(domain)+' on '+today+' · Plastic Ultimate Academy · London<br>Lab performance scores can vary slightly between runs. Pillars needing account access are reviewed in a full manual audit.</div>';
+
+  document.getElementById('reportBody').innerHTML=h;
+  document.getElementById('rbDomain').textContent=domain;
+  document.title='Plastic Ultimate Marketing Audit — '+domain;
+}
+
+/* ---------- Progress bar (estimated while the Worker scans) ---------- */
+var progTimer=null, progDone=false;
+function startProgress(){
+  var listEl=document.getElementById('plist');
+  var rowsHtml='';
+  PILLARS.forEach(function(p){rowsHtml+='<div class="prow"><span class="pstat">✓</span>'+esc(p.title)+'<span class="picon">'+p.icon+'</span></div>';});
+  listEl.innerHTML=rowsHtml;
+  var prows=listEl.querySelectorAll('.prow');
+  var fill=document.getElementById('pbFill'), pct=document.getElementById('pbPct'), now=document.getElementById('pbNow');
+  var total=PILLARS.length, idx=0, pctVal=0, elapsed=0;
+  progDone=false;
+  function tickPillar(){
+    prows.forEach(function(r,j){r.classList.remove('active');if(j<idx)r.classList.add('done');});
+    if(idx<total){prows[idx].classList.add('active');now.textContent='Analysing: '+PILLARS[idx].title+'…';
+      var top=prows[idx].offsetTop-listEl.clientHeight/2; listEl.scrollTop=Math.max(0,top); listEl.style.overflow='auto';}
+    idx=Math.min(total-1,idx+1);
+  }
+  tickPillar();
+  progTimer=setInterval(function(){
+    if(progDone)return;
+    elapsed+=200;
+    pctVal+=Math.max(0.35,(93-pctVal)*0.05); if(pctVal>93)pctVal=93;
+    fill.style.width=Math.round(pctVal)+'%'; pct.textContent=Math.round(pctVal)+'%';
+    if(elapsed%1400<200)tickPillar();
+  },200);
+}
+function stopProgress(){progDone=true;if(progTimer){clearInterval(progTimer);progTimer=null;}}
+
+function finishAndRender(domain,data){
+  stopProgress();
+  var fill=document.getElementById('pbFill'), pct=document.getElementById('pbPct'), now=document.getElementById('pbNow');
+  fill.style.width='100%'; pct.textContent='100%'; now.textContent='Audit complete';
+  var listEl=document.getElementById('plist');
+  listEl.querySelectorAll('.prow').forEach(function(r){r.classList.remove('active');r.classList.add('done');});
+  renderReport(domain,data);
+  setTimeout(function(){
+    document.getElementById('progressView').style.display='none';
+    document.getElementById('resultView').classList.add('show');
+    window.scrollTo(0,0);
+  },450);
+}
+
+function showError(domain,resp){
+  stopProgress();
+  var reason=(resp&&resp.reason)||'network';
+  var msg = reason==='timeout' ? 'The audit took too long to respond. Large or slow sites can time out — please try again.'
+    : reason==='unreachable' ? 'We couldn’t reach '+esc(domain)+'. Check the address is public and correct, then try again.'
+    : reason==='bad_url' ? 'That doesn’t look like a valid website address.'
+    : reason==='config' ? 'The audit service isn’t connected yet. (Set WORKER_URL in audit.html to your deployed Worker.)'
+    : reason==='insufficient' ? 'We reached '+esc(domain)+' but couldn’t gather enough data to score it — it may block automated scans.'
+    : 'Something went wrong reaching '+esc(domain)+'. Please try again in a moment.';
+  document.getElementById('progressView').innerHTML='<div class="empty"><h2>Audit couldn’t complete</h2><p>'+msg+'</p><div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;"><a class="btn btn-primary" href="marketing.html#audit">Try another site →</a><button class="btn btn-ghost" onclick="location.reload()">Retry</button></div></div>';
+}
+
+function fetchAudit(raw){
+  var ctrl=new AbortController();
+  var to=setTimeout(function(){ctrl.abort();},85000);
+  var u=WORKER_URL+(WORKER_URL.indexOf('?')>=0?'&':'?')+'url='+encodeURIComponent(raw);
+  return fetch(u,{signal:ctrl.signal}).then(function(r){return r.json();}).then(function(j){clearTimeout(to);return j;},function(e){clearTimeout(to);throw e;});
+}
+
+/* ---------- Orchestrate ---------- */
+function run(){
+  var raw=param('url');
+  if(!raw){
+    document.getElementById('progressView').innerHTML='<div class="empty"><h2>No website provided</h2><p>Start an audit by entering your website on the marketing page.</p><a class="btn btn-primary" href="marketing.html#audit">Start an audit →</a></div>';
+    return;
+  }
+  var domain=domainOf(raw);
+  document.getElementById('progDomain').textContent=domain;
+
+  if(WORKER_URL.indexOf('YOUR-SUBDOMAIN')>=0){ showError(domain,{reason:'config'}); return; }
+
+  startProgress();
+  fetchAudit(raw).then(function(resp){
+    if(!resp || !resp.ok){ showError(resp&&resp.finalUrl?domainOf(resp.finalUrl):domain, resp||{}); return; }
+    var data=applyResults(resp.checks);
+    if(!data.autoCount){ showError(domain,{reason:'insufficient'}); return; }
+    finishAndRender(resp.finalUrl?domainOf(resp.finalUrl):domain, data);
+  }).catch(function(err){
+    showError(domain,{reason:(err&&err.name==='AbortError')?'timeout':'network'});
+  });
+}
+
+document.getElementById('downloadBtn').addEventListener('click',function(){window.print();});
+run();
+</script>
+</body>
+</html>
