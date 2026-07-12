@@ -18,6 +18,7 @@
   .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
   .nav-logo img{width:32px;height:32px;object-fit:contain;}
   .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-toggle{display:none;background:none;border:none;color:var(--black);cursor:pointer;padding:.4rem;line-height:0;}
   .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
   .nav-links a:hover,.nav-links a.active{color:var(--black);}
   .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
@@ -90,7 +91,12 @@
 
   @media(max-width:860px){
     nav{padding:0 1rem;}
-    .nav-links li:not(:last-child){display:none;}
+    .nav-toggle{display:flex;}
+    .nav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);box-shadow:0 10px 24px rgba(0,0,0,.07);padding:.5rem 1rem 1rem;display:none;}
+    nav.open .nav-links{display:flex;}
+    .nav-links li{width:100%;}
+    .nav-links a{display:block;padding:.85rem .5rem;font-size:1rem;border-bottom:1px solid var(--grey-08);}
+    .nav-links li:last-child a{border-bottom:none;margin-top:.5rem;text-align:center;}
     .page-top{padding:3rem 1.25rem 2rem;}
     .shop-wrap{padding:2.5rem 1.25rem 3.5rem;}
     .hero-product{grid-template-columns:1fr;gap:0;}
@@ -104,6 +110,7 @@
 
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var n=this.closest('nav');this.setAttribute('aria-expanded',n.classList.toggle('open'));"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="news.html">News</a></li>
