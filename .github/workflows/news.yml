@@ -1,0 +1,56 @@
+name: Update news log
+
+# Pulls the Ultimate feeds, appends anything new to news.json, and rebuilds
+# news.html. Append-only: existing articles are never removed or rewritten.
+#
+# Free: this repo is public, so GitHub Actions minutes are unlimited.
+
+on:
+  schedule:
+    # Mondays and Thursdays at 07:15 UTC. GitHub runs cron on UTC and may delay
+    # jobs by a few minutes at busy times — that's fine for a news log.
+    - cron: "15 7 * * 1,4"
+  workflow_dispatch:        # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write           # needed to commit the updated log
+
+concurrency:
+  group: news-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install: the scripts are standard library only.
+      - name: Fetch new articles
+        run: python3 scripts/fetch_news.py
+
+      - name: Retry images for articles still missing one
+        run: python3 scripts/fetch_news.py --refresh-images
+        continue-on-error: true
+
+      - name: Rebuild news.html
+        run: python3 scripts/build_news.py
+
+      - name: Commit if anything changed
+        run: |
+          if [ -z "$(git status --porcelain news.json news.html)" ]; then
+            echo "No new articles — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json news.html
+          COUNT=$(python3 -c "import json;print(len(json.load(open('news.json'))['articles']))")
+          git commit -m "News: update log (${COUNT} articles total)"
+          git push

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="logo.png">
+<title>Recovery — Plastic Ultimate Academy</title>
+<meta name="description" content="The recovery kit list from Plastic Ultimate Academy — sleep, soft tissue, resistance, nutrition and breath training gear we use and recommend personally.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{max-width:100%;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
+  .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .nav-logo img{width:32px;height:32px;object-fit:contain;}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+  .nav-toggle{display:none;background:none;border:none;color:var(--black);cursor:pointer;padding:.4rem;line-height:0;}
+  .nav-links a{color:var(--grey-50);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .15s;}
+  .nav-links a:hover,.nav-links a.active{color:var(--black);}
+  .btn-nav{background:var(--orange)!important;color:var(--white)!important;padding:.45rem 1.2rem;border-radius:6px;font-size:.8rem!important;font-weight:600!important;}
+  .btn-nav:hover{background:var(--orange-light)!important;}
+
+  .page-top{margin-top:64px;padding:4rem 2.5rem 3rem;background:var(--orange);text-align:center;}
+  .breadcrumb{font-size:.78rem;color:rgba(255,255,255,.75);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:.4rem;}
+  .breadcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .15s;}
+  .breadcrumb a:hover{color:var(--white);}
+  .page-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--white);margin-bottom:.85rem;}
+  .page-sub{font-size:1.05rem;font-weight:500;color:var(--white);max-width:620px;line-height:1.7;margin-left:auto;margin-right:auto;}
+  .update-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;background:var(--white);border:1px solid transparent;color:var(--grey-70);font-size:.78rem;font-weight:500;padding:.4rem .9rem;border-radius:100px;}
+  .update-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+  .update-badge strong{color:var(--black);font-weight:600;}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:3.5rem 2.5rem 5rem;}
+
+  /* INTRO */
+  .intro{max-width:720px;margin:0 auto 3.5rem;text-align:center;}
+  .intro p{font-size:1.02rem;color:var(--grey-50);line-height:1.8;}
+  .intro p + p{margin-top:1rem;}
+  .intro strong{color:var(--black);font-weight:600;}
+
+  /* CARDS */
+  .kit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;align-items:start;}
+  .kit{display:flex;flex-direction:column;border:1px solid var(--orange-border);border-radius:16px;background:var(--white);overflow:hidden;transition:transform .15s,box-shadow .15s;}
+  .kit:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);}
+  .kit-media{height:255px;display:flex;align-items:center;justify-content:center;padding:1.25rem;background:var(--white);border-bottom:1px solid var(--grey-08);}
+  .kit-media img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;transition:transform .25s ease;}
+  .kit:hover .kit-media img{transform:scale(1.035);}
+  .kit-body{display:flex;flex-direction:column;flex:1;padding:1.75rem 1.9rem 1.9rem;}
+  .tag{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:.55rem;}
+  .kit h3{font-size:1.15rem;font-weight:700;letter-spacing:-.02em;line-height:1.25;color:var(--black);margin-bottom:.6rem;}
+  .hook{font-size:.92rem;color:var(--grey-70);line-height:1.65;}
+
+  /* EXPANDABLE DETAIL */
+  .more{margin-top:.35rem;}
+  .more > summary{display:flex;align-items:center;gap:.4rem;cursor:pointer;list-style:none;color:var(--orange);font-size:.82rem;font-weight:600;padding:.6rem 0;min-height:40px;-webkit-tap-highlight-color:transparent;}
+  .more > summary::-webkit-details-marker{display:none;}
+  .more > summary::marker{content:'';}
+  .more > summary:hover{color:var(--orange-light);}
+  .more > summary:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px;}
+  .chev{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;transition:transform .2s ease;}
+  .more[open] .chev{transform:rotate(180deg);}
+  .lbl-less{display:none;}
+  .more[open] .lbl-more{display:none;}
+  .more[open] .lbl-less{display:inline;}
+  .more-body{padding-bottom:.2rem;}
+  .more-body p{font-size:.88rem;color:var(--grey-50);line-height:1.7;}
+  .more-body p + p{margin-top:.7rem;}
+  @keyframes reveal{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:none;}}
+  @media(prefers-reduced-motion:no-preference){.more[open] .more-body{animation:reveal .22s ease;}}
+
+  /* NOTE CALLOUT */
+  .note{margin-top:.85rem;background:var(--grey-04);border-radius:10px;padding:.9rem 1.05rem;font-size:.82rem;color:var(--grey-50);line-height:1.6;}
+  .note strong{color:var(--grey-70);font-weight:600;}
+
+  /* BUTTONS */
+  .kit-actions{margin-top:auto;padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:.6rem;}
+  .btn-buy,.btn-buy-alt{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.65rem 1.15rem;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none;min-height:42px;transition:background .15s,border-color .15s,color .15s;}
+  .btn-buy{background:var(--orange);color:var(--white);}
+  .btn-buy:hover{background:var(--orange-light);}
+  .btn-buy-alt{background:var(--white);color:var(--orange);border:1px solid var(--orange-border);}
+  .btn-buy-alt:hover{background:var(--orange-pale);border-color:var(--orange);}
+
+  /* FLAVOURS */
+  .flavour-block{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--grey-08);}
+  .flavour-block > summary{display:flex;align-items:center;gap:.4rem;cursor:pointer;list-style:none;color:var(--grey-70);font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.35rem 0;min-height:38px;-webkit-tap-highlight-color:transparent;}
+  .flavour-block > summary::-webkit-details-marker{display:none;}
+  .flavour-block > summary::marker{content:'';}
+  .flavour-block > summary:hover{color:var(--orange);}
+  .flavour-block > summary:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px;}
+  .flavours{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding-top:.5rem;}
+  .flavours a{display:inline-flex;align-items:center;background:var(--orange-pale);border:1px solid var(--orange-border);color:var(--grey-70);font-size:.78rem;font-weight:500;padding:.45rem .85rem;border-radius:100px;text-decoration:none;min-height:36px;transition:background .15s,color .15s,border-color .15s;}
+  .flavours a:hover{background:var(--orange);border-color:var(--orange);color:var(--white);}
+  @media(prefers-reduced-motion:no-preference){.flavour-block[open] .flavours{animation:reveal .22s ease;}}
+
+  /* DISCLOSURE */
+  .disclosure{margin-top:3.5rem;border:1px solid var(--orange-border);background:var(--orange-pale);border-radius:16px;padding:2rem 2.25rem;text-align:center;}
+  .disclosure h4{font-size:1rem;font-weight:700;letter-spacing:-.01em;color:var(--black);margin-bottom:.6rem;}
+  .disclosure p{font-size:.88rem;color:var(--grey-50);line-height:1.75;max-width:640px;margin:0 auto;}
+  .disclosure a{color:var(--orange);text-decoration:none;font-weight:600;}
+  .disclosure a:hover{text-decoration:underline;}
+
+  .footer-wrap{border-top:1px solid var(--orange-border);background:var(--orange-pale);}
+  footer{padding:2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem;max-width:1080px;margin:0 auto;}
+  .footer-logo{font-size:.9rem;font-weight:700;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
+  .footer-logo img{width:26px;height:26px;object-fit:contain;}
+  .footer-links{display:flex;gap:1.8rem;list-style:none;}
+  .footer-links a{color:var(--grey-50);text-decoration:none;font-size:.82rem;transition:color .15s;}
+  .footer-links a:hover{color:var(--orange);}
+  .footer-copy{font-size:.78rem;color:var(--grey-30);}
+
+  @media(max-width:860px){
+    nav{padding:0 1rem;}
+    .nav-toggle{display:flex;}
+    .nav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);box-shadow:0 10px 24px rgba(0,0,0,.07);padding:.5rem 1rem 1rem;display:none;}
+    nav.open .nav-links{display:flex;}
+    .nav-links li{width:100%;}
+    .nav-links a{display:block;padding:.85rem .5rem;font-size:1rem;border-bottom:1px solid var(--grey-08);}
+    .nav-links li:last-child a{border-bottom:none;margin-top:.5rem;text-align:center;}
+    .page-top{padding:3rem 1.25rem 2rem;}
+    .wrap{padding:2.5rem 1.25rem 3.5rem;}
+    .intro{margin-bottom:2.5rem;text-align:left;}
+    .kit-grid{grid-template-columns:1fr;gap:1.25rem;}
+    .kit:hover{transform:none;box-shadow:none;}
+    .kit:hover .kit-media img{transform:none;}
+    .kit-media{height:210px;}
+    .kit-body{padding:1.5rem;}
+    .disclosure{margin-top:2.5rem;padding:1.75rem 1.35rem;text-align:left;}
+    footer{padding:2rem 1.25rem;flex-direction:column;align-items:flex-start;gap:1.1rem;}
+    .footer-links{flex-wrap:wrap;gap:1.1rem;}
+  }
+
+  @media(max-width:520px){
+    .page-top{padding:2.5rem 1.1rem 1.85rem;}
+    .breadcrumb{margin-bottom:1.1rem;}
+    .page-sub{font-size:.95rem;}
+    .wrap{padding:2.25rem 1.1rem 3rem;}
+    .intro p{font-size:.96rem;line-height:1.75;}
+    .kit-media{height:180px;padding:1rem;}
+    .kit-body{padding:1.35rem 1.25rem 1.5rem;}
+    .kit h3{font-size:1.08rem;}
+    .more > summary,.flavour-block > summary{min-height:44px;}
+    .kit-actions{gap:.5rem;}
+    .btn-buy,.btn-buy-alt{flex:1 1 100%;min-height:46px;font-size:.85rem;}
+    .flavours{gap:.45rem;}
+    .flavours a{min-height:40px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate</a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var n=this.closest('nav');this.setAttribute('aria-expanded',n.classList.toggle('open'));"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="recovery.html" class="active">Recovery</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform" target="_blank" class="btn-nav">Apply now →</a></li>
+  </ul>
+</nav>
+
+<div class="page-top">
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Recovery</div>
+  <h1 class="page-title">Recovery.</h1>
+  <p class="page-sub">The kit that has shaped my personal development throughout my Ultimate career — every item used, tested and recommended personally.</p>
+  <div class="update-badge"><span class="update-dot"></span><strong>Living list</strong> · Updated as we go</div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro">
+    <p>I have put together a list of items that have shaped my personal development throughout my Ultimate career. I highly recommend each item as I have used them personally and on many occasions has helped me to make small or large jumps in my development.</p>
+    <p>I will continue to add as I see fit — for the meantime this is very solid, but feel free to <strong>experiment outside of this list</strong>.</p>
+  </div>
+
+  <div class="kit-grid">
+
+    <!-- MAGNESIUM SPRAY -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-magnesium.jpg" alt="BetterYou Magnesium Oil body spray, 100ml bottle in its box" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Sleep &amp; recovery</div>
+        <h3>Magnesium Sulphate Spray</h3>
+        <p class="hook">Deeper, longer sleep — the foundation everything else is built on.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>Great for sleep and general recovery — go easy on your first couple of sprays as this will genuinely put you to sleep. Getting deeper, longer sleep will help you recover better, solidifying any gains and preventing injuries. If your recovery protocol is stronger then you can push yourself more.</p>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4eh02Pe" target="_blank" rel="noopener sponsored nofollow">View on Amazon →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESISTANCE BANDS -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-bands.jpg" alt="Set of five Gritin resistance loop bands from light to XX-heavy" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Warm-up &amp; strength</div>
+        <h3>Gritin Resistance Bands</h3>
+        <p class="hook">Warmup kit you can use at home, any day of the week.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>The same bands we use for warmups. Aim to do our warmup daily in your own time — practising the technique of movements at low resistance will help you get stronger for our warmups.</p>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4uTdCyJ" target="_blank" rel="noopener sponsored nofollow">View on Amazon →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MASSAGE BAR -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-massage-bar.jpg" alt="SKLZ black and yellow handheld massage roller bar" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Soft tissue</div>
+        <h3>SKLZ Massage Bar</h3>
+        <p class="hook">Muscle recovery and knot removal — myofascial release. Dave's pick.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>Great for muscle recovery and removing knots, aka myofascial release. This comes highly recommended from Dave — he has more than 10 years experience training Ultimate players and knows the exact high quality equipment that works well. Whether you pick the travel or extended size, both are exceptionally good massage rollers.</p>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4a1CNHz" target="_blank" rel="noopener sponsored nofollow">Travel size →</a>
+          <a class="btn-buy-alt" href="https://amzn.to/3QHKjkm" target="_blank" rel="noopener sponsored nofollow">Extended size →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROTEIN -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-purition.jpg" alt="Purition Wholefood Nutrition taster kit — fourteen flavour sachets with box" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Nutrition</div>
+        <h3>Puriton Nutrition Protein Powder</h3>
+        <p class="hook">Clean protein that genuinely tastes good — find your flavour first.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>This is hands down the nicest and cleanest protein powder I have ever consumed. Your dietary needs are body type dependent (Ectomorph, Endomorph or Mesomorph) but having additional protein is needed to notice the gains from daily exercise. Once you've found your favourite flavours from the taster kit you can buy bigger packs.</p>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4xqYpHx" target="_blank" rel="noopener sponsored nofollow">Taster kit →</a>
+        </div>
+        <details class="flavour-block">
+          <summary><span>Big packs — 6 flavours</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <ul class="flavours">
+            <li><a href="https://amzn.to/4xqYpHx" target="_blank" rel="noopener sponsored nofollow">Strawberry</a></li>
+            <li><a href="https://amzn.to/4uzGoEe" target="_blank" rel="noopener sponsored nofollow">Macadamia &amp; Vanilla</a></li>
+            <li><a href="https://amzn.to/4veVm3C" target="_blank" rel="noopener sponsored nofollow">Chocolate &amp; Hazelnut</a></li>
+            <li><a href="https://amzn.to/4ek2CE3" target="_blank" rel="noopener sponsored nofollow">Coffee &amp; Vanilla</a></li>
+            <li><a href="https://amzn.to/4eKJsrp" target="_blank" rel="noopener sponsored nofollow">Vanilla</a></li>
+            <li><a href="https://amzn.to/4vNAbph" target="_blank" rel="noopener sponsored nofollow">Banana</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <!-- CREATINE -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-creatine.jpg" alt="MyProtein Impact Creatine resealable pouch" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Supplement</div>
+        <h3>Creatine</h3>
+        <p class="hook">Neural health, muscle recovery, and far less downtime between sets.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>Great for general well being including neural health and muscle recovery. Creatine allows more water to be held in the muscles — during high intensity exercise your muscles readily absorb this and allow you to continue exercising with very little downtime between sets.</p>
+            <div class="note"><strong>On the hair loss question:</strong> there is some small research stating creatine can cause hair loss, but this affects less than 1% of the population. Note that creatine is naturally occurring in steak, so chances are you'll be ok if you've ever eaten a cheeseburger — and in those extremely rare cases, simply not taking it reverts the changes.</div>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4aGxaPv" target="_blank" rel="noopener sponsored nofollow">View on Amazon →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AIROFIT -->
+    <div class="kit">
+      <div class="kit-media"><img src="rec-airofit.jpg" alt="Airofit breath trainer device alongside its companion phone app" loading="lazy"></div>
+      <div class="kit-body">
+        <div class="tag">Conditioning</div>
+        <h3>Airofit Breath Trainer</h3>
+        <p class="hook">Massively underrated at mid-elite level — trains both anaerobic and aerobic capacity.</p>
+        <details class="more">
+          <summary><span class="lbl-more">Read more</span><span class="lbl-less">Show less</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <div class="more-body">
+            <p>A highly underrated area of training that goes amiss at most of the mid-elite level. Most top football players use this, especially Cristiano Ronaldo — although he uses a slightly different one. In general this is a great piece of kit to improve anaerobic and aerobic ability, with each being key to Ultimate, especially when sprinting at max capacity or running at a lower capacity in a zone or clearing space.</p>
+          </div>
+        </details>
+        <div class="kit-actions">
+          <a class="btn-buy" href="https://amzn.to/4wl0pzF" target="_blank" rel="noopener sponsored nofollow">View on Amazon →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="disclosure">
+    <h4>Supporting the Academy</h4>
+    <p>Please note that anything purchased through clicking the links earns the Academy a small commission that goes back to supporting all athletes in the academy. If you wish to make <em>any</em> purchases from Amazon, consider <a href="https://www.instagram.com/plasticultimate?igsh=MXh1aGtwN2JpNDM0aw==" target="_blank" rel="noopener">reaching out</a> to obtain a product link and support the academy.</p>
+  </div>
+
+</div>
+
+<div class="footer-wrap">
+  <footer>
+    <a href="index.html" class="footer-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate Academy</a>
+    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="recovery.html">Recovery</a></li><li><a href="merch.html">Merch</a></li><li><a href="join.html">Join</a></li></ul>
+    <div class="footer-copy">© 2026 Plastic Ultimate Academy · London</div>
+  </footer>
+</div>
+
+</body>
+</html>

@@ -5,15 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="logo.png">
 <title>News — Plastic Ultimate Academy</title>
-<meta name="description" content="Ultimate Frisbee news from around the world — world championships, results and the stories shaping the sport. Updated twice a month.">
+<meta name="description" content="Ultimate Frisbee news from around the world — world championships, results and the stories shaping the sport, gathered from federations across the US, Europe and Asia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- GENERATED FILE — do not edit by hand.
+     Source of truth: news.json  ·  Rebuild: python3 scripts/build_news.py -->
 <style>
   :root{--black:#0a0a0a;--grey-90:#1a1a1a;--grey-70:#333;--grey-50:#666;--grey-30:#999;--grey-15:#d4d4d4;--grey-08:#ebebeb;--grey-04:#f5f5f5;--white:#fff;--orange:#f5640a;--orange-light:#ff7f2a;--orange-pale:#fff4ed;--orange-mid:#fde8d8;--orange-border:rgba(245,100,10,0.2);}
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{background:var(--white);color:var(--black);font-family:'Inter',-apple-system,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{max-width:100%;}
 
   nav{position:fixed;top:0;left:0;right:0;z-index:100;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--orange-border);}
   .nav-logo{font-size:.95rem;font-weight:700;letter-spacing:-.01em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:.6rem;}
@@ -29,36 +32,50 @@
   .breadcrumb{font-size:.78rem;color:var(--grey-30);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:.4rem;}
   .breadcrumb a{color:var(--grey-30);text-decoration:none;}
   .page-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--black);margin-bottom:.75rem;}
-  .page-sub{font-size:1rem;color:var(--grey-50);max-width:560px;line-height:1.7;margin-left:auto;margin-right:auto;}
+  .page-sub{font-size:1rem;color:var(--grey-50);max-width:620px;line-height:1.7;margin-left:auto;margin-right:auto;}
   .update-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;background:var(--white);border:1px solid var(--orange-border);color:var(--grey-70);font-size:.78rem;font-weight:500;padding:.4rem .9rem;border-radius:100px;}
   .update-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0;}
   .update-badge strong{color:var(--black);font-weight:600;}
 
   .news-wrap{max-width:1080px;margin:0 auto;padding:3.5rem 2.5rem 5rem;}
 
+  .cover{overflow:hidden;background:var(--grey-04);height:150px;}
+  .cover img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+  .cover-lg{height:280px;}
+
   /* FEATURED */
   .featured{display:block;text-decoration:none;background:var(--orange-pale);border:1px solid var(--orange-border);border-radius:16px;overflow:hidden;margin-bottom:2.5rem;transition:transform .15s,box-shadow .15s;}
   .featured:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,100,10,.1);}
-  .cover{position:relative;overflow:hidden;background:var(--orange-mid);}
-  .art{display:block;width:100%;height:100%;}
-  .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;}
-  .featured .cover{height:240px;}
   .featured-body{padding:2.5rem;}
-  .card-meta{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem;}
+  .card-meta{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem;}
   .tag{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);background:var(--white);border:1px solid var(--orange-border);border-radius:100px;padding:.25rem .7rem;}
+  .lang{font-size:.7rem;font-weight:500;color:var(--grey-50);background:var(--grey-04);border-radius:100px;padding:.25rem .6rem;}
   .date{font-size:.78rem;color:var(--grey-30);font-weight:500;}
-  .featured h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:700;letter-spacing:-.025em;line-height:1.15;color:var(--black);margin-bottom:.9rem;}
+  .featured h2{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:700;letter-spacing:-.025em;line-height:1.15;color:var(--black);margin-bottom:.9rem;}
   .featured p{font-size:.975rem;color:var(--grey-50);line-height:1.7;max-width:720px;margin-bottom:1.25rem;}
   .read-more{font-size:.85rem;font-weight:600;color:var(--orange);display:inline-flex;align-items:center;gap:.35rem;}
 
   /* GRID */
-  .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
+  .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;align-items:start;}
   .news-card{display:flex;flex-direction:column;text-decoration:none;background:var(--white);border:1px solid var(--orange-border);border-radius:14px;overflow:hidden;transition:transform .15s,box-shadow .15s,background .15s;}
   .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(245,100,10,.08);background:var(--orange-pale);}
-  .news-card .cover{height:150px;}
   .news-body{display:flex;flex-direction:column;flex:1;padding:1.6rem 1.75rem 1.75rem;}
-  .news-card h3{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.25;color:var(--black);margin-bottom:.6rem;}
+  .news-card h3{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.3;color:var(--black);margin-bottom:.6rem;}
   .news-card p{font-size:.875rem;color:var(--grey-50);line-height:1.65;margin-bottom:1.1rem;flex-grow:1;}
+
+  /* ARCHIVE */
+  .archive{margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--orange-border);}
+  .archive-head h2{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;color:var(--black);margin-bottom:1.75rem;}
+  .ar-month h3{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--grey-30);margin:2rem 0 .5rem;display:flex;align-items:center;gap:.6rem;}
+  .ar-month:first-of-type h3{margin-top:0;}
+  .ar-month h3 span{background:var(--orange-pale);color:var(--orange);border-radius:100px;padding:.1rem .55rem;font-size:.68rem;letter-spacing:0;}
+  .ar-list{list-style:none;border-top:1px solid var(--grey-08);}
+  .ar-list a{display:flex;align-items:baseline;gap:1rem;padding:.85rem .35rem;border-bottom:1px solid var(--grey-08);text-decoration:none;transition:background .15s;}
+  .ar-list a:hover{background:var(--orange-pale);}
+  .ar-date{flex:0 0 62px;font-size:.76rem;color:var(--grey-30);font-weight:500;font-variant-numeric:tabular-nums;}
+  .ar-title{flex:1;font-size:.9rem;color:var(--grey-90);line-height:1.5;}
+  .ar-list a:hover .ar-title{color:var(--orange);}
+  .ar-src{flex:0 0 auto;font-size:.72rem;color:var(--grey-30);white-space:nowrap;}
 
   .news-foot{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--orange-border);font-size:.85rem;color:var(--grey-50);line-height:1.7;}
   .news-foot a{color:var(--orange);text-decoration:none;font-weight:600;}
@@ -83,10 +100,19 @@
     .nav-links li:last-child a{border-bottom:none;margin-top:.5rem;text-align:center;}
     .page-top{padding:3rem 1.25rem 2rem;}
     .news-wrap{padding:2.5rem 1.25rem 3.5rem;}
-    .featured .cover{height:190px;}
-    .featured-body{padding:1.75rem;}
-    .news-grid{grid-template-columns:1fr;}
-    footer{padding:2rem 1.25rem;}
+    .cover-lg{height:200px;}
+    .featured{margin-bottom:1.75rem;}
+    .featured-body{padding:1.6rem 1.5rem 1.75rem;}
+    .news-grid{grid-template-columns:1fr;gap:1.25rem;}
+    .news-card:hover,.featured:hover{transform:none;box-shadow:none;}
+    .news-body{padding:1.4rem 1.5rem 1.6rem;}
+    .archive{margin-top:3rem;padding-top:2rem;}
+    .ar-list a{flex-wrap:wrap;gap:.15rem .75rem;padding:.9rem .25rem;}
+    .ar-date{flex:0 0 auto;order:1;}
+    .ar-src{order:2;}
+    .ar-title{order:3;flex:1 1 100%;font-size:.92rem;}
+    footer{padding:2rem 1.25rem;flex-direction:column;align-items:flex-start;gap:1.1rem;}
+    .footer-links{flex-wrap:wrap;gap:1.1rem;}
   }
 </style>
 </head>
@@ -98,6 +124,7 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="news.html" class="active">News</a></li>
+    <li><a href="recovery.html">Recovery</a></li>
     <li><a href="merch.html">Merch</a></li>
     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejl_A42zerhqujVrLGKBe6hxJUETIFZT-razD8FwH_9sLFWQ/viewform" target="_blank" class="btn-nav">Apply now →</a></li>
   </ul>
@@ -106,168 +133,198 @@
 <div class="page-top">
   <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> News</div>
   <h1 class="page-title">Ultimate news.</h1>
-  <p class="page-sub">The latest from the world of Ultimate Frisbee — world championships, results and the stories shaping the sport, from London to Limerick and beyond.</p>
-  <div class="update-badge"><span class="update-dot"></span><strong>Updated twice a month</strong> · Last updated 9 July 2026</div>
+  <p class="page-sub">The latest from the world of Ultimate Frisbee, gathered automatically from federations and outlets across the US, Europe and Asia — and kept as a permanent archive.</p>
+  <div class="update-badge"><span class="update-dot"></span><strong>75 articles logged</strong> · Updated 2 August 2026</div>
 </div>
 
 <div class="news-wrap">
 
   <!-- FEATURED -->
-  <a class="featured" href="https://wfdf.sport/2026/07/gb-joins-usa-and-canada-among-gold-medalists-at-the-wfdf-2026-wmucc/" target="_blank" rel="noopener">
-    <div class="cover">
-    <svg class="art" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a flying disc arcing over an Ultimate Frisbee field">
-      <defs>
-        <linearGradient id="fSky" x1="0" y1="0" x2="0.35" y2="1">
-          <stop offset="0" stop-color="#ff9a4d"/><stop offset="0.55" stop-color="#f5640a"/><stop offset="1" stop-color="#e04e00"/>
-        </linearGradient>
-        <radialGradient id="fSun" cx="0.5" cy="0.5" r="0.5">
-          <stop offset="0" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <rect width="800" height="240" fill="url(#fSky)"/>
-      <circle cx="620" cy="80" r="150" fill="url(#fSun)"/>
-      <path d="M0 190 Q400 168 800 190 V240 H0 Z" fill="#0a0a0a" opacity="0.10"/>
-      <path d="M0 210 Q400 196 800 210 V240 H0 Z" fill="#0a0a0a" opacity="0.12"/>
-      <g stroke="#fff" stroke-opacity="0.18" stroke-width="2">
-        <line x1="130" y1="195" x2="95" y2="240"/><line x1="320" y1="190" x2="300" y2="240"/>
-        <line x1="500" y1="190" x2="525" y2="240"/><line x1="670" y1="195" x2="710" y2="240"/>
-      </g>
-      <path d="M70 196 Q300 10 560 118" fill="none" stroke="#fff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
-      <ellipse cx="150" cy="158" rx="14" ry="5" fill="#fff" opacity="0.32"/>
-      <ellipse cx="300" cy="60" rx="11" ry="4" fill="#fff" opacity="0.5"/>
-      <g transform="translate(560,118) rotate(-16)">
-        <ellipse cy="0" rx="54" ry="17" fill="#d9741f"/>
-        <ellipse cy="-10" rx="54" ry="17" fill="#ffffff"/>
-        <ellipse cy="-10" rx="35" ry="10" fill="none" stroke="#f5640a" stroke-opacity="0.25" stroke-width="2"/>
-      </g>
-    </svg>
-      <img class="cover-img" src="https://wfdf.sport/wp-content/uploads/2026/07/GB-Joins-USA-and-Canada-Among-Gold-Medalists-at-the-WFDF-2026-WMUCC-1600x900.jpg" alt="Gold medallists celebrate at the WFDF 2026 World Masters Ultimate Club Championships in Nottingham" loading="lazy" onerror="this.remove()">
-    </div>
+  <a class="featured" href="https://wfdf.sport/2026/08/ultim4tes-launched-to-grow-grassroots-ultimate-leagues-globally/" target="_blank" rel="noopener">
+      <div class="cover cover-lg"><img src="https://wfdf.sport/wp-content/uploads/2026/08/Ultim4tes-scaled.jpg" alt="UltiM4TES Launched to Grow Grassroots Ultimate Leagues Globally" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
     <div class="featured-body">
-      <div class="card-meta">
-        <span class="tag">World Masters · Nottingham</span>
-        <span class="date">4 July 2026</span>
-      </div>
-      <h2>USA dominate the 2026 World Masters Club Championships — and Clapham make history at home</h2>
-      <p>The WFDF 2026 World Masters Ultimate Club Championships wrapped up in Nottingham, with the United States claiming seven of the nine world titles on offer. On home soil, Great Britain's Clapham Masters won the Masters Open crown for the very first time, downing reigning champions Boneyard in front of a roaring local crowd — with Canada also celebrating gold on finals weekend.</p>
-      <span class="read-more">Read the report on WFDF →</span>
+      <div class="card-meta"><span class="tag">Global</span><span class="date">1 August 2026</span></div>
+      <h2>UltiM4TES Launched to Grow Grassroots Ultimate Leagues Globally</h2>
+      <p>WFDF and New Zealand Ultimate have launched UltiM4TES, a beginner-friendly league program that equips National Federations and local communities with the tools and resources to grow grassroots Ultimate and welcome new players worldwide.</p>
+      <span class="read-more">Read on WFDF →</span>
     </div>
   </a>
 
-  <!-- GRID -->
+  <!-- RECENT -->
   <div class="news-grid">
 
-    <a class="news-card" href="https://wfdf.sport/2026/07/first-world-champions-crowned-at-2026-wmucc/" target="_blank" rel="noopener">
-      <div class="cover">
-      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="gA" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#ff9a4d"/><stop offset="1" stop-color="#f5640a"/></linearGradient>
-          <radialGradient id="sA" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="400" height="150" fill="url(#gA)"/>
-        <circle cx="300" cy="52" r="82" fill="url(#sA)"/>
-        <path d="M30 120 Q170 18 320 66" fill="none" stroke="#fff" stroke-opacity="0.65" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
-        <g transform="translate(318,66) rotate(-15)">
-          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
-          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
-        </g>
-      </svg>
-      <img class="cover-img" src="https://wfdf.sport/wp-content/uploads/2026/07/First-World-Champions-Crowned-at-2026-WMUCC-1600x900.jpg" alt="Great Grand Masters champions crowned at the 2026 WMUCC in Nottingham" loading="lazy" onerror="this.remove()">
-      </div>
+    <a class="news-card no-img" href="https://ultiworld.com/2026/08/01/us-open-2026-whats-old-and-whats-new-from-day-one-womens-div/" target="_blank" rel="noopener">
       <div class="news-body">
-        <div class="card-meta">
-          <span class="tag">Results</span>
-          <span class="date">3 July 2026</span>
-        </div>
-        <h3>First world champions crowned in Nottingham</h3>
-        <p>Finals weekend opened with the Great Grand Masters titles: Canada's Vintage edged Nor'Easter 12–11 for women's gold, while Surly (15–9) and Endless Sunset (15–8) sealed divisions for the USA.</p>
-        <span class="read-more">Read more →</span>
+        <div class="card-meta"><span class="tag">USA</span><span class="date">1 August 2026</span></div>
+        <h3>US Open 2026: What’s Old and What’s New from Day One (Women’s Div.)</h3>
+        <p>The old guard stays put with new reserves</p>
+        <span class="read-more">Read on Ultiworld →</span>
       </div>
     </a>
 
-    <a class="news-card" href="https://wfdf.sport/" target="_blank" rel="noopener">
-      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="gB" x1="0.1" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#ffb15e"/><stop offset="1" stop-color="#f5640a"/></linearGradient>
-          <radialGradient id="sB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="400" height="150" fill="url(#gB)"/>
-        <circle cx="110" cy="48" r="80" fill="url(#sB)"/>
-        <path d="M360 118 Q220 14 80 68" fill="none" stroke="#fff" stroke-opacity="0.65" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
-        <g transform="translate(82,68) rotate(14)">
-          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
-          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
-        </g>
-      </svg>
+    <a class="news-card no-img" href="https://ultiworld.com/2026/08/01/us-open-2026-real-and-fake-awards-nominees-for-us-open-teams-on-day-1-mens-div-recap/" target="_blank" rel="noopener">
       <div class="news-body">
-        <div class="card-meta">
-          <span class="tag">World U20 · Spain</span>
-          <span class="date">Preview · 11 July 2026</span>
-        </div>
-        <h3>World U20 Championships begin in Logroño</h3>
-        <p>The next generation takes the stage as the WFDF World U20 Ultimate Championships get underway in Logroño, Spain from 11–18 July, with junior national teams from across the globe chasing world titles.</p>
-        <span class="read-more">Follow on WFDF →</span>
+        <div class="card-meta"><span class="tag">USA</span><span class="date">1 August 2026</span></div>
+        <h3>US Open 2026: Real (and Fake) Awards Nominees for US Open Teams on Day 1 (Men’s Div. Recap)</h3>
+        <p>Surveying the end of season awards landscape (and inventing a few awards in the process) and prematurely handing them out based on Friday play at the US Open.</p>
+        <span class="read-more">Read on Ultiworld →</span>
       </div>
     </a>
 
-    <a class="news-card" href="https://wucc.sport/" target="_blank" rel="noopener">
-      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="gC" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#f5640a"/><stop offset="1" stop-color="#d94500"/></linearGradient>
-          <radialGradient id="sC" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="400" height="150" fill="url(#gC)"/>
-        <circle cx="205" cy="46" r="88" fill="url(#sC)"/>
-        <path d="M40 122 Q200 6 360 84" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
-        <ellipse cx="120" cy="96" rx="15" ry="5" fill="#fff" opacity="0.3"/>
-        <g transform="translate(300,74) rotate(-12)">
-          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
-          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
-        </g>
-      </svg>
+    <a class="news-card no-img" href="https://ultiworld.com/2026/08/01/us-open-2026-means-motive-and-alibi-the-murder-mystery-of-the-us-open-day-1-mixed-div/" target="_blank" rel="noopener">
       <div class="news-body">
-        <div class="card-meta">
-          <span class="tag">World Clubs · Ireland</span>
-          <span class="date">Coming 15 Aug 2026</span>
-        </div>
-        <h3>Road to Limerick: 136 clubs set for the 2026 World Ultimate Club Championships</h3>
-        <p>The biggest club event of the year lands at the University of Limerick from 15–22 August. A record 136 teams — 48 open, 48 mixed and 40 women's — from more than 30 nations will chase world club glory.</p>
-        <span class="read-more">See the teams →</span>
+        <div class="card-meta"><span class="tag">USA</span><span class="date">1 August 2026</span></div>
+        <h3>US Open 2026: Means, Motive, and Alibi: The Murder Mystery of the US Open Day 1 (Mixed Div.)</h3>
+        <p>Four teams are dead, eight teams are suspect. Can you help our onsite detective figure out the perpetrator?</p>
+        <span class="read-more">Read on Ultiworld →</span>
       </div>
     </a>
 
-    <a class="news-card" href="https://results.wfdf.sport/wmucc-2026/" target="_blank" rel="noopener">
-      <svg class="art" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <defs>
-          <linearGradient id="gD" x1="0" y1="0" x2="0.45" y2="1"><stop offset="0" stop-color="#ff8a3d"/><stop offset="1" stop-color="#e85400"/></linearGradient>
-          <radialGradient id="sD" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-        </defs>
-        <rect width="400" height="150" fill="url(#gD)"/>
-        <circle cx="300" cy="58" r="80" fill="url(#sD)"/>
-        <path d="M40 116 Q160 24 300 60" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
-        <g transform="translate(300,60) rotate(-18)">
-          <ellipse cy="0" rx="36" ry="11" fill="#d9741f"/><ellipse cy="-6" rx="36" ry="11" fill="#fff"/>
-          <ellipse cy="-6" rx="22" ry="6" fill="none" stroke="#f5640a" stroke-opacity="0.2" stroke-width="1.5"/>
-        </g>
-      </svg>
+    <a class="news-card" href="https://usaultimate.org/news/2026/08/u-s-open-features-top-club-teams/" target="_blank" rel="noopener">
+      <div class="cover"><img src="https://usaultimate.org/wp-content/uploads/2026/08/IMG_1503-header.jpg" alt="U.S. Open Features Top Club Teams" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
       <div class="news-body">
-        <div class="card-meta">
-          <span class="tag">Scores</span>
-          <span class="date">Live archive</span>
-        </div>
-        <h3>Every result from WMUCC 2026</h3>
-        <p>Browse the full schedule, pools and finals scores across all nine divisions from the World Masters Club Championships in Nottingham.</p>
-        <span class="read-more">Open the results hub →</span>
+        <div class="card-meta"><span class="tag">USA</span><span class="date">1 August 2026</span></div>
+        <h3>U.S. Open Features Top Club Teams</h3>
+        <p>Colorado Springs, Colo. (Aug. 1, 2026) – The U.S. Open kicked off yesterday in Aurora, Colorado. This premier event, co-hosted by USA Ultimate and Altitude Ultimate, is the first leg of the Triple Crown Tour. And, for many top teams, it is the first…</p>
+        <span class="read-more">Read on USA Ultimate →</span>
+      </div>
+    </a>
+
+    <a class="news-card" href="https://usaultimate.org/news/2026/07/team-usa-wins-gold-silver-at-world-junior-ultimate-championships/" target="_blank" rel="noopener">
+      <div class="cover"><img src="https://usaultimate.org/wp-content/uploads/2026/07/20260718IW_UP_WJUC_USAx.vs_.CAN0454-ZF-2428-96290-1-001-header-1200x450.jpg" alt="Team USA Wins Gold, Silver at World Junior Ultimate Championships" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+      <div class="news-body">
+        <div class="card-meta"><span class="tag">USA</span><span class="date">31 July 2026</span></div>
+        <h3>Team USA Wins Gold, Silver at World Junior Ultimate Championships</h3>
+        <p>Colorado Springs, Colo. (July 31, 2026) – The U-20 National Teams have returned from Spain, bringing home gold and silver in the mixed and open divisions respectively. The mixed team went undefeated across the eight-day tournament, becoming world champions in…</p>
+        <span class="read-more">Read on USA Ultimate →</span>
+      </div>
+    </a>
+
+    <a class="news-card" href="https://usaultimate.org/news/2026/07/masters-championships-crown-winners/" target="_blank" rel="noopener">
+      <div class="cover"><img src="https://usaultimate.org/wp-content/uploads/2026/07/20260720_095713_R5__2791.CR3_MBV_Masters-ZF-3562-92539-1-001-header-1200x450.jpg" alt="Masters Championships Crown Winners" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>
+      <div class="news-body">
+        <div class="card-meta"><span class="tag">USA</span><span class="date">31 July 2026</span></div>
+        <h3>Masters Championships Crown Winners</h3>
+        <p>Colorado Springs, Colo. (July 31, 2026) – The USA Ultimate Masters Championships concluded last week, as 109 teams competed across four days to crown winners in eight age and gender divisions. The Masters event is the largest championship event USA Ultimate…</p>
+        <span class="read-more">Read on USA Ultimate →</span>
       </div>
     </a>
 
   </div>
 
+  <!-- ARCHIVE -->
+  <div class="archive">
+    <div class="archive-head">
+      <h2>Full archive</h2>
+    </div>
+      <div class="ar-month">
+        <h3>August 2026 <span>5</span></h3>
+      </div>
+      <ul class="ar-list">
+        <li><a href="https://wfdf.sport/2026/08/ultim4tes-launched-to-grow-grassroots-ultimate-leagues-globally/" target="_blank" rel="noopener"><span class="ar-date">1 Aug</span><span class="ar-title">UltiM4TES Launched to Grow Grassroots Ultimate Leagues Globally</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://ultiworld.com/2026/08/01/us-open-2026-whats-old-and-whats-new-from-day-one-womens-div/" target="_blank" rel="noopener"><span class="ar-date">1 Aug</span><span class="ar-title">US Open 2026: What’s Old and What’s New from Day One (Women’s Div.)</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://ultiworld.com/2026/08/01/us-open-2026-real-and-fake-awards-nominees-for-us-open-teams-on-day-1-mens-div-recap/" target="_blank" rel="noopener"><span class="ar-date">1 Aug</span><span class="ar-title">US Open 2026: Real (and Fake) Awards Nominees for US Open Teams on Day 1 (Men’s Div. Recap)</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://ultiworld.com/2026/08/01/us-open-2026-means-motive-and-alibi-the-murder-mystery-of-the-us-open-day-1-mixed-div/" target="_blank" rel="noopener"><span class="ar-date">1 Aug</span><span class="ar-title">US Open 2026: Means, Motive, and Alibi: The Murder Mystery of the US Open Day 1 (Mixed Div.)</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/08/u-s-open-features-top-club-teams/" target="_blank" rel="noopener"><span class="ar-date">1 Aug</span><span class="ar-title">U.S. Open Features Top Club Teams</span><span class="ar-src">USA Ultimate</span></a></li>
+      </ul>
+      <div class="ar-month">
+        <h3>July 2026 <span>47</span></h3>
+      </div>
+      <ul class="ar-list">
+        <li><a href="https://usaultimate.org/news/2026/07/team-usa-wins-gold-silver-at-world-junior-ultimate-championships/" target="_blank" rel="noopener"><span class="ar-date">31 Jul</span><span class="ar-title">Team USA Wins Gold, Silver at World Junior Ultimate Championships</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/masters-championships-crown-winners/" target="_blank" rel="noopener"><span class="ar-date">31 Jul</span><span class="ar-title">Masters Championships Crown Winners</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/30/youth-club-championships-2026-tournament-preview/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">Youth Club Championships 2026: Tournament Preview</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/30/the-line-7-x-factors-from-pec-east-sunday-play/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">The Line: 7 X-Factors from PEC East Sunday Play</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/introducing-national-youth-ultimate-giving-week/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">Introducing National Youth Ultimate Giving Week</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/30/huckin-eh-cuc-masters-recap-sfi-east-west-ojcup/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">Huckin’ Eh: CUC Masters Recap, SFI East &amp; West, OJCUP</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/fpa-wfdf-2026-world-freestyle-flying-disc-championships-begin-in-munich/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">FPA &amp; WFDF 2026 World Freestyle Flying Disc Championships Begin in Munich</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/30/club-power-rankings-7-30-26/" target="_blank" rel="noopener"><span class="ar-date">30 Jul</span><span class="ar-title">Club Power Rankings [7/30/26]</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/more-than-a-game-how-maria-vargas-is-using-ultimate-to-transform-communities-in-mexico/" target="_blank" rel="noopener"><span class="ar-date">29 Jul</span><span class="ar-title">More Than a Game: How Maria Vargas Is Using Ultimate to Transform Communities in Mexico</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/29/7-observations-from-select-flight-invite-west-2026/" target="_blank" rel="noopener"><span class="ar-date">29 Jul</span><span class="ar-title">7 Observations from Select Flight Invite West 2026</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/29/7-observations-from-select-flight-invite-east-2026/" target="_blank" rel="noopener"><span class="ar-date">29 Jul</span><span class="ar-title">7 Observations from Select Flight Invite East 2026</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/wfdf-opens-nominations-for-2026-ultimate-subcommittee-elections/" target="_blank" rel="noopener"><span class="ar-date">28 Jul</span><span class="ar-title">WFDF Opens Nominations for 2026 Ultimate Subcommittee Elections</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/wfdf-launches-enhanced-ultimate-rules-accreditation-on-wfdf-academy-platform/" target="_blank" rel="noopener"><span class="ar-date">28 Jul</span><span class="ar-title">WFDF Launches Enhanced Ultimate Rules Accreditation on WFDF Academy Platform</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://ultiworld.com/2026/07/28/us-open-2026-tournament-preview/" target="_blank" rel="noopener"><span class="ar-date">28 Jul</span><span class="ar-title">US Open 2026: Tournament Preview</span><span class="ar-src">Ultiworld</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/showdown-im-mixed-ultimate-alles-bereit-fuer-die-finalwochenenden-der-deutschen-meisterschaft-2026/" target="_blank" rel="noopener"><span class="ar-date">24 Jul</span><span class="ar-title">Showdown im Mixed Ultimate: Alles bereit für die Finalwochenenden der Deutschen Meisterschaft 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/wfdf-advances-para-sport-disciplines-at-2026-ipc-annual-classification-meeting/" target="_blank" rel="noopener"><span class="ar-date">23 Jul</span><span class="ar-title">WFDF Advances Para Sport Disciplines at 2026 IPC Annual Classification Meeting</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/play-it-forward-partnerships-increase-access-to-youth-club-championships/" target="_blank" rel="noopener"><span class="ar-date">23 Jul</span><span class="ar-title">Play It Forward Partnerships Increase Access to Youth Club Championships</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/wfdf-publishes-updated-2025-2028-ultimate-rules-appendix/" target="_blank" rel="noopener"><span class="ar-date">22 Jul</span><span class="ar-title">WFDF Publishes Updated 2025-2028 Ultimate Rules Appendix</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/world-flying-disc-federation-and-world-youth-clubs-announce-partnership-to-empower-youth-through-sport/" target="_blank" rel="noopener"><span class="ar-date">21 Jul</span><span class="ar-title">World Flying Disc Federation and World Youth Clubs Announce Partnership to Empower Youth Through Sport</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/07/21/championnats-du-monde-u20-dultimate-2026-a-logrono/" target="_blank" rel="noopener"><span class="ar-date">21 Jul</span><span class="ar-title">Championnats du monde U20 d’Ultimate 2026 à Logroño</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://flyingdisc.it/news/featured/2026/5593/" target="_blank" rel="noopener"><span class="ar-date">20 Jul</span><span class="ar-title">WJUC 2026: il bilancio finale delle Nazionali Under 20 ai Mondiali in Spagna</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/wfdf-board-approves-conditional-reinstatement-framework-for-the-national-federations-of-belarus-and-russia/" target="_blank" rel="noopener"><span class="ar-date">20 Jul</span><span class="ar-title">WFDF Board Approves Conditional Reinstatement Framework for the National Federations of Belarus and Russia</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/three-nations-crowned-world-champions-at-2026-wjuc/" target="_blank" rel="noopener"><span class="ar-date">20 Jul</span><span class="ar-title">Three Nations Crowned World Champions at 2026 WJUC</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/salt-lake-city-awarded-2027-college-championships/" target="_blank" rel="noopener"><span class="ar-date">16 Jul</span><span class="ar-title">Salt Lake City Awarded 2027 College Championships</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/masters-championships-return-to-aurora/" target="_blank" rel="noopener"><span class="ar-date">15 Jul</span><span class="ar-title">Masters Championships Return to Aurora</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-vier-juli-2026/" target="_blank" rel="noopener"><span class="ar-date">15 Jul</span><span class="ar-title">Frisbeesport Nachrichtensplitter vier, Juli 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/zwei-dm-titel-fuer-bianca-kostelova/" target="_blank" rel="noopener"><span class="ar-date">14 Jul</span><span class="ar-title">Zwei DM-Titel für Bianca Kostelova</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5586/" target="_blank" rel="noopener"><span class="ar-date">14 Jul</span><span class="ar-title">WJUC 2026 – Team Italy Day 4 Recap</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/usa-ultimate-releases-results-of-participation-study/" target="_blank" rel="noopener"><span class="ar-date">14 Jul</span><span class="ar-title">USA Ultimate Releases Results of Participation Study</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5579/" target="_blank" rel="noopener"><span class="ar-date">13 Jul</span><span class="ar-title">WJUC 2026 – Team Italy Day 3 Recap</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/usa-ultimate-affiliate-program-expands-to-50/" target="_blank" rel="noopener"><span class="ar-date">13 Jul</span><span class="ar-title">USA Ultimate Affiliate Program Expands to 50</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5571/" target="_blank" rel="noopener"><span class="ar-date">12 Jul</span><span class="ar-title">WJUC 2026 – Team Italy Day 2 Recap</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://wfdf.sport/" target="_blank" rel="noopener"><span class="ar-date">11 Jul</span><span class="ar-title">World U20 Championships begin in Logroño</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5567/" target="_blank" rel="noopener"><span class="ar-date">11 Jul</span><span class="ar-title">WJUC 2026 – Team Italy Day 1 Recap</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://usaultimate.org/news/2026/07/u-20-national-teams-head-to-world-championships-in-spain/" target="_blank" rel="noopener"><span class="ar-date">10 Jul</span><span class="ar-title">U-20 National Teams Head to World Championships in Spain</span><span class="ar-src">USA Ultimate</span></a></li>
+        <li><a href="https://flyingdisc.it/news/featured/2026/5563/" target="_blank" rel="noopener"><span class="ar-date">9 Jul</span><span class="ar-title">WJUC 2026 – Le Nazionali Under 20 volano ai Mondiali in Spagna</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://wucc.sport/" target="_blank" rel="noopener"><span class="ar-date">9 Jul</span><span class="ar-title">Road to Limerick: 136 clubs set for the 2026 World Ultimate Club Championships</span><span class="ar-src">WUCC 2026</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-drei-juli-2026/" target="_blank" rel="noopener"><span class="ar-date">9 Jul</span><span class="ar-title">Frisbeesport Nachrichtensplitter drei, Juli 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://results.wfdf.sport/wmucc-2026/" target="_blank" rel="noopener"><span class="ar-date">9 Jul</span><span class="ar-title">Every result from WMUCC 2026</span><span class="ar-src">WFDF Results</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/das-deutsche-u17-women-ultimate-team-auf-dem-weg-nach-wien/" target="_blank" rel="noopener"><span class="ar-date">9 Jul</span><span class="ar-title">Das deutsche U17 Women Ultimate-Team auf dem Weg nach Wien</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/07/08/2026u23regionalselected-prep/" target="_blank" rel="noopener"><span class="ar-date">8 Jul</span><span class="ar-title">2026U23アルティメット地区選抜対抗戦 各地区活動について</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/07/07/wfdf2027-japan-nationalteam-wu24-main/" target="_blank" rel="noopener"><span class="ar-date">7 Jul</span><span class="ar-title">WFDF2027世界U24アルティメット選手権大会（2027WU24）日本代表特設ページ</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/07/06/2026alljapan-overall-flyingdisc-main/" target="_blank" rel="noopener"><span class="ar-date">5 Jul</span><span class="ar-title">第51回全日本フライングディスク個人総合選手権大会 大会特設ページ</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/gb-joins-usa-and-canada-among-gold-medalists-at-the-wfdf-2026-wmucc/" target="_blank" rel="noopener"><span class="ar-date">4 Jul</span><span class="ar-title">USA dominate the 2026 World Masters Club Championships — and Clapham make history at home</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-zwei-juli-2026/" target="_blank" rel="noopener"><span class="ar-date">3 Jul</span><span class="ar-title">Frisbeesport Nachrichtensplitter zwei, Juli 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://wfdf.sport/2026/07/first-world-champions-crowned-at-2026-wmucc/" target="_blank" rel="noopener"><span class="ar-date">3 Jul</span><span class="ar-title">First world champions crowned in Nottingham</span><span class="ar-src">WFDF</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-eins-juli-2026/" target="_blank" rel="noopener"><span class="ar-date">1 Jul</span><span class="ar-title">Frisbeesport Nachrichtensplitter eins, Juli 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+      </ul>
+      <div class="ar-month">
+        <h3>June 2026 <span>15</span></h3>
+      </div>
+      <ul class="ar-list">
+        <li><a href="https://www.jfda.or.jp/2026/06/30/2026alljapan-u18-ultimate-main/" target="_blank" rel="noopener"><span class="ar-date">29 Jun</span><span class="ar-title">第1回全日本U18アルティメット選手権大会 大会特設ページ</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/29/2026alljapan-masters-ultimate-main/" target="_blank" rel="noopener"><span class="ar-date">28 Jun</span><span class="ar-title">第14回全日本マスターズアルティメット選手権大会 大会特設ページ</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/outdoorsaison-der-ultimate-jugend-im-vollen-gange/" target="_blank" rel="noopener"><span class="ar-date">27 Jun</span><span class="ar-title">Outdoorsaison der Ultimate Jugend im vollen Gange</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/25/2026alljapan-university-ultimate-main/" target="_blank" rel="noopener"><span class="ar-date">24 Jun</span><span class="ar-title">第37回全日本大学アルティメット選手権大会 大会特設ページ</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/06/24/la-commission-medicale-2027/" target="_blank" rel="noopener"><span class="ar-date">24 Jun</span><span class="ar-title">La commission médicale 2027</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-zwei-juni-2026/" target="_blank" rel="noopener"><span class="ar-date">24 Jun</span><span class="ar-title">Frisbeesport Nachrichtensplitter zwei, Juni 2026</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://www.frisbeesportverband.de/bolognas-machtdemonstration/" target="_blank" rel="noopener"><span class="ar-date">23 Jun</span><span class="ar-title">Bolognas Machtdemonstration</span><span class="ar-src">Deutscher Frisbeesport-Verband</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/22/univ-ultimate-kousou-com-application-202606/" target="_blank" rel="noopener"><span class="ar-date">22 Jun</span><span class="ar-title">大学アルティメット構想委員会 1期生募集について</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/18/2027wu24-ultimate-host-in-japan/" target="_blank" rel="noopener"><span class="ar-date">18 Jun</span><span class="ar-title">WFDF2027世界U24アルティメット選手権大会の日本開催が決定しました</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/12/2026muo_member_mixed/" target="_blank" rel="noopener"><span class="ar-date">12 Jun</span><span class="ar-title">マレーシアアルティメットオープン2026（MUO）日本代表メンバー</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://flyingdisc.it/news/featured/2026/5426/" target="_blank" rel="noopener"><span class="ar-date">9 Jun</span><span class="ar-title">Finali Serie A Open e Women 2026: a Padova assegnati i titoli nazionali</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/06/08/championnats-de-france-unss-2026/" target="_blank" rel="noopener"><span class="ar-date">8 Jun</span><span class="ar-title">Championnats de France UNSS 2026</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/06/05/recherche-commentateurs-phases-finales/" target="_blank" rel="noopener"><span class="ar-date">5 Jun</span><span class="ar-title">Recherche commentateurs phases finales (13 &amp;14 juin 2026)</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.jfda.or.jp/2026/06/04/wfdf2026_wjuc_member_women/" target="_blank" rel="noopener"><span class="ar-date">4 Jun</span><span class="ar-title">WFDF2026世界ジュニアアルティメット選手権大会（2026WJUC）ウィメン部門日本代表メンバー</span><span class="ar-src">Japan Flying Disc Association</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5423/" target="_blank" rel="noopener"><span class="ar-date">4 Jun</span><span class="ar-title">Finali CIU 2026: Padova pronta a incoronare campionesse e campioni d’Italia</span><span class="ar-src">FIFD Italia</span></a></li>
+      </ul>
+      <div class="ar-month">
+        <h3>May 2026 <span>3</span></h3>
+      </div>
+      <ul class="ar-list">
+        <li><a href="https://www.ff-flyingdisc.fr/2026/05/29/agissons-ensemble-contre-les-violences-sexistes-sexuelles-le-harcelement-et-les-discriminations/" target="_blank" rel="noopener"><span class="ar-date">29 May</span><span class="ar-title">Agissons ensemble contre les violences sexistes, sexuelles, le harcèlement et les discriminations</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5418/" target="_blank" rel="noopener"><span class="ar-date">20 May</span><span class="ar-title">Recap Terza Tappa CIU Serie A 2026</span><span class="ar-src">FIFD Italia</span></a></li>
+        <li><a href="https://flyingdisc.it/news/ultimate/2026/5412/" target="_blank" rel="noopener"><span class="ar-date">15 May</span><span class="ar-title">Preview Terza Tappa CIU Serie A 2026</span><span class="ar-src">FIFD Italia</span></a></li>
+      </ul>
+      <div class="ar-month">
+        <h3>March 2026 <span>5</span></h3>
+      </div>
+      <ul class="ar-list">
+        <li><a href="https://www.ff-flyingdisc.fr/2026/03/27/demande-dorganisation-de-tournois-nationaux-disc-golf/" target="_blank" rel="noopener"><span class="ar-date">27 Mar</span><span class="ar-title">Demande d’organisation de Tournois Nationaux – Disc Golf</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/03/23/championnat-de-france-universitaire-dultimate-26-27-mars-2026/" target="_blank" rel="noopener"><span class="ar-date">23 Mar</span><span class="ar-title">Championnat de France Universitaire d’Ultimate – 26 &amp; 27 mars 2026</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/03/20/partenariat-tokay-ultimate/" target="_blank" rel="noopener"><span class="ar-date">20 Mar</span><span class="ar-title">Partenariat TOKAY Ultimate</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/03/20/partenariat-bb-hotels/" target="_blank" rel="noopener"><span class="ar-date">20 Mar</span><span class="ar-title">Partenariat B&amp;B Hôtels</span><span class="ar-src">FFDF France</span></a></li>
+        <li><a href="https://www.ff-flyingdisc.fr/2026/03/19/partenariat-fffd-force-greatest/" target="_blank" rel="noopener"><span class="ar-date">19 Mar</span><span class="ar-title">Partenariat FFFD, FORCE &amp; GREATEST</span><span class="ar-src">FFDF France</span></a></li>
+      </ul>
+  </div>
+
   <div class="news-foot">
-    Want the full firehose of Ultimate news, highlights and analysis? Follow
-    <a href="https://ultiworld.com/" target="_blank" rel="noopener">Ultiworld</a> and the
-    <a href="https://wfdf.sport/" target="_blank" rel="noopener">World Flying Disc Federation</a>.
-    This page is curated by the Plastic Ultimate Academy team and refreshed twice a month.
+    Headlines are collected automatically from
+    <a href="https://wfdf.sport/" target="_blank" rel="noopener">WFDF</a>,
+    <a href="https://ultiworld.com/" target="_blank" rel="noopener">Ultiworld</a>,
+    USA Ultimate and the national federations of Germany, Italy, France and Japan.
+    Each headline links straight to the original publisher.
   </div>
 
 </div>
@@ -275,7 +332,7 @@
 <div class="footer-wrap">
   <footer>
     <a href="index.html" class="footer-logo"><img src="logo.png" alt="Plastic Ultimate">Plastic Ultimate Academy</a>
-    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="merch.html">Merch</a></li><li><a href="join.html">Join</a></li></ul>
+    <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="news.html">News</a></li><li><a href="recovery.html">Recovery</a></li><li><a href="merch.html">Merch</a></li><li><a href="join.html">Join</a></li></ul>
     <div class="footer-copy">© 2026 Plastic Ultimate Academy · London</div>
   </footer>
 </div>
