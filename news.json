@@ -1,7 +1,101 @@
 {
-  "updated": "2026-08-03",
-  "count": 78,
+  "updated": "2026-08-06",
+  "count": 86,
   "articles": [
+    {
+      "title": "From the Park to the Himalayas: How a Simple Plastic Disc is Changing Lives in Nepal",
+      "url": "https://wfdf.sport/2026/08/from-the-park-to-the-himalayas-how-a-simple-plastic-disc-is-changing-lives-in-nepal/",
+      "summary": "From informal park games to a nationally recognised federation, discover how flying disc sports are transforming communities in Nepal through inclusion, youth development, and the Spirit of the Game.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-06",
+      "added": "2026-08-06",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/NEP-impact-webpost-scaled.jpg"
+    },
+    {
+      "title": "“Caring Climate” Course Added to WFDF Academy",
+      "url": "https://wfdf.sport/2026/08/caring-climate-course-added-to-wfdf-academy/",
+      "summary": "WFDF has launched the “Caring Climate” course on WFDF Academy, equipping coaches with evidence-based tools to create supportive, psychologically safe team environments that help girls develop confidence, feel a sense of belonging, and stay engaged in Flying…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-05",
+      "added": "2026-08-06",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/CARING-CLIMATE.jpg"
+    },
+    {
+      "title": "Club Power Rankings [8/5/26]",
+      "url": "https://ultiworld.com/2026/08/05/club-power-rankings-8-5-26/",
+      "summary": "New number ones in every division after US Open!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-05",
+      "added": "2026-08-06"
+    },
+    {
+      "title": "Winners Awarded at the Youth Club Championships",
+      "url": "https://usaultimate.org/news/2026/08/winners-awarded-at-the-youth-club-championships/",
+      "summary": "Colorado Springs, Colo. (August 4, 2026) – The Youth Club Championships (YCC) wrapped Monday as finals played out across all seven age and gender divisions. Cohosted by USA Ultimate and Altitude Ultimate, this year was the largest YCC event to date with 103…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-04",
+      "added": "2026-08-06",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/08/20260803_143802_R6__5322.CR3_YCC-ZF-9220-97056-1-003-header-1200x450.jpg"
+    },
+    {
+      "title": "WFDF Officially Confirms and Publishes Technical Rules for Dodge Disc",
+      "url": "https://wfdf.sport/2026/08/wfdf-officially-confirms-and-publishes-technical-rules-for-dodge-disc/",
+      "summary": "WFDF has officially published the Technical Rules for Dodge Disc, establishing the discipline’s first global regulatory framework and supporting its continued international growth under the principles of Spirit of the Game.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-04",
+      "added": "2026-08-06",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/DodgeDisc-webpost-scaled.jpg"
+    },
+    {
+      "title": "Deep Look LIVE: US Open Recap, UFA Playoffs Preview",
+      "url": "https://ultiworld.com/2026/08/04/deep-look-live-us-open-recap-ufa-playoffs-preview/",
+      "summary": "What do the US Open results mean for WUCC?",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-04",
+      "added": "2026-08-06"
+    },
+    {
+      "title": "WFDF Announces Maria Fernanda Meza Bonilla as Elected Representative for Other Disciplines on Athletes’ Commission",
+      "url": "https://wfdf.sport/2026/08/wfdf-announces-maria-fernanda-meza-bonilla-as-elected-representative-for-other-disciplines-on-athletes-commission/",
+      "summary": "WFDF has elected Maria Fernanda “Mafer” Meza Bonilla from Colombia as the Athletes’ Commission representative for Other Disciplines. With a strong background in Freestyle, Disc Golf, Ultimate, and community development, she brings a valuable…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-03",
+      "added": "2026-08-06",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/mafer-athletes-commission-scaled.jpg"
+    },
+    {
+      "title": "U.S. Open Crowns Winners",
+      "url": "https://usaultimate.org/news/2026/08/u-s-open-crowns-winners/",
+      "summary": "Colorado Springs, Colo. (Aug. 3, 2026) – The U.S. Open Finals, broadcast live on ESPN, have concluded and winners are determined across all three divisions. San Franciso Revolver and Ann Arbor Hybrid both pulled off back-to-back wins, and Washington Scandal…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-03",
+      "added": "2026-08-06",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/08/4AD2E3C4-C3CA-4F9E-AE51-E8764E814F9F-header.jpg"
+    },
     {
       "title": "Revolver, Hybrid, Scandal Win the 2026 US Open!",
       "url": "https://ultiworld.com/2026/08/02/revolver-hybrid-scandal-win-the-2026-us-open/",
