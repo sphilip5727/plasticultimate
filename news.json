@@ -1,7 +1,87 @@
 {
-  "updated": "2026-08-10",
-  "count": 95,
+  "updated": "2026-08-13",
+  "count": 103,
   "articles": [
+    {
+      "title": "Les Bleuets brillent aux Championnats d’Europe U17 à Vienne",
+      "url": "https://www.ff-flyingdisc.fr/2026/08/13/les-bleuets-brillent-aux-championnats-deurope-u17-a-vienne/",
+      "summary": "La relève française a une nouvelle fois démontré tout son talent lors des Championnats d’Europe U17 d’Ultimate disputés du 3 au 8 août à Vienne (Autriche). Face aux meilleures nations continentales, les équipes de France ont porté haut les couleurs…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-08-13",
+      "added": "2026-08-13"
+    },
+    {
+      "title": "Championnats du Monde des Clubs 2026 : 6 clubs français en lice !",
+      "url": "https://www.ff-flyingdisc.fr/2026/08/13/championnats-du-monde-des-clubs-2026-6-clubs-francais-en-lice/",
+      "summary": "Du 15 au 22 août 2026 à Limerick (Irlande), les meilleurs clubs d’Ultimate de la planète se retrouveront pour les Championnats du Monde des Clubs. La FFFD adresse tous ses encouragements à nos six représentants qui porteront les couleurs françaises au plus…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-08-13",
+      "added": "2026-08-13",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/08/limerick-26-1.png"
+    },
+    {
+      "title": "WUCC 2026: The Five Most Essential Worlds Storylines",
+      "url": "https://ultiworld.com/2026/08/12/wucc-2026-the-five-most-essential-worlds-storylines/",
+      "summary": "Taking a long look at the headlines heading into the World Ultimate Club Championships 2026",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-12",
+      "added": "2026-08-13"
+    },
+    {
+      "title": "WUCC 2026: Beat Charlie Challenge",
+      "url": "https://ultiworld.com/2026/08/12/wucc-2026-beat-charlie-challenge/",
+      "summary": "Pick how the brackets will go in Limerick and see if you know better than Charlie (and everyone else!)",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-12",
+      "added": "2026-08-13"
+    },
+    {
+      "title": "Returning Champions and New Stars Shine at FPA & WFDF 2026 World Freestyle Flying Disc Championships",
+      "url": "https://wfdf.sport/2026/08/returning-champions-and-new-stars-shine-at-fpa-wfdf-2026-world-freestyle-flying-disc-championships/",
+      "summary": "The FPA & WFDF 2026 World Freestyle Flying Disc Championships brought together 110 athletes from 13 countries for four days of spectacular competition in Munich. Discover the new World Champions, returning champions and standout performances from an…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-11",
+      "added": "2026-08-13",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/FPAWFDF-WFC2026-scaled.jpg"
+    },
+    {
+      "title": "Doppel-Bronze für deutsche U17 Mädchen und Jungs",
+      "url": "https://www.frisbeesportverband.de/doppel-bronze-fuer-deutsche-u17-maedchen-und-jungs/",
+      "summary": "Die beiden U17 Nationalteams des Deutschen Frisbeesportverbands krönen ihre Saison 2026 mit Medaillen und zeigen zudem einen überdurchschnittlichen Spirit of the Game.",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-08-10",
+      "added": "2026-08-13"
+    },
+    {
+      "title": "Development of Youth Ultimate Programs Focus of 2026 EUF Conference",
+      "url": "https://wfdf.sport/2026/08/development-of-youth-ultimate-programs-focus-of-2026-euf-conference/",
+      "summary": "The 2026 EUF Youth Conference brought together European National Federations in Vienna to explore how to build sustainable youth programmes and create new opportunities in Ultimate. Across two days, participants shared successful grassroots initiatives…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-10",
+      "added": "2026-08-13",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/EUF-youth-AUT-scaled.jpg"
+    },
     {
       "title": "Zweimal Gold für Team D bei heimischer Freestyle-WM",
       "url": "https://www.frisbeesportverband.de/zweimal-gold-fuer-team-d-bei-heimischer-freestyle-wm/",
@@ -92,6 +172,17 @@
       "published": "2026-08-06",
       "added": "2026-08-06",
       "image": "https://wfdf.sport/wp-content/uploads/2026/08/NEP-impact-webpost-scaled.jpg"
+    },
+    {
+      "title": "Frisbeesport Nachrichtensplitter eins, August 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-eins-august-2026/",
+      "summary": "Zwischenergebnisse der Jugend Ultimate-EM in Östereich Final Lead Berlin Open 2026 online",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-08-06",
+      "added": "2026-08-13"
     },
     {
       "title": "“Caring Climate” Course Added to WFDF Academy",
