@@ -1,7 +1,65 @@
 {
-  "updated": "2026-08-17",
-  "count": 113,
+  "updated": "2026-08-20",
+  "count": 119,
   "articles": [
+    {
+      "title": "WUCC 2026: Cutting to Eight in Each Division (Day Five Recap)",
+      "url": "https://ultiworld.com/2026/08/19/wucc-2026-cutting-to-eight-in-each-division-day-five-recap/",
+      "summary": "The bracket kicked off in earnest, with favorites falling and universe point games aplenty!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-20",
+      "added": "2026-08-20"
+    },
+    {
+      "title": "WWUCC 2026 Day 4: Women’s Division Delivers Must-Watch Action in Limerick",
+      "url": "https://wfdf.sport/2026/08/wwucc-2026-day-4-womens-division-delivers-must-watch-action-in-limerick/",
+      "summary": "WWUCC 2026 Day 4 in Limerick delivered thrilling Women’s Division action, with teams battling for places in the Round of 16 and the World Championship title.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-19",
+      "added": "2026-08-20",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/wucc-2026-day4-scaled.jpg"
+    },
+    {
+      "title": "Elite-Select Challenge 2026: Tournament Preview",
+      "url": "https://ultiworld.com/2026/08/19/elite-select-challenge-2026-tournament-preview/",
+      "summary": "Strength bids to Nationals are on the line in Indy!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-19",
+      "added": "2026-08-20"
+    },
+    {
+      "title": "WUCC 2026 Day 3: Women’s Division Moves Towards Knockout Stage",
+      "url": "https://wfdf.sport/2026/08/wucc-2026-day-3-womens-division-moves-towards-knockout-stage/",
+      "summary": "The Women’s Division heads to the crossover stage at the WUCC 2026, with teams battling for a place in the Round of 16.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-18",
+      "added": "2026-08-20",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/wucc-2026-day3-scaled.jpg"
+    },
+    {
+      "title": "WUCC 2026 Day 2: Competition Heats Up in Limerick",
+      "url": "https://wfdf.sport/2026/08/wucc-2026-day-2-competition-heats-up-in-limerick/",
+      "summary": "Day 2 of the WFDF 2026 World Ultimate Club Championships in Limerick featured close games, exciting comebacks and several major upsets across the Mixed, Open and Women’s divisions. The Netherlands’ GRUT defeated tournament top seed Macana 15–14 on universe…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-17",
+      "added": "2026-08-20",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/wucc-2026-day2-scaled.jpg"
+    },
     {
       "title": "WUCC 2026: Opening Day Intrigue in Two Divisions",
       "url": "https://ultiworld.com/2026/08/16/wucc-2026-opening-day-intrigue-in-two-divisions/",
@@ -59,6 +117,18 @@
       "lang": "en",
       "published": "2026-08-15",
       "added": "2026-08-17"
+    },
+    {
+      "title": "Top U.S. Teams Head to World Club Championships",
+      "url": "https://usaultimate.org/news/2026/08/top-u-s-teams-head-to-world-club-championships/",
+      "summary": "Colorado Springs, Colo. (August 13, 2026) – Nine top U.S. club teams are headed to Ireland this week to compete in the upcoming WFDF World Ultimate Club Championships (WUCC). An eight-day event starting August 15, WUCC features 136 club teams from 38…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-13",
+      "added": "2026-08-20",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/08/Club_Champs_20251026123525KZL_4374-ZF-2567-21414-1-001-header-1200x450.jpg"
     },
     {
       "title": "Top U.S. Teams Head to Word Club Championships",
