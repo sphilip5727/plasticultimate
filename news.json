@@ -1,7 +1,65 @@
 {
-  "updated": "2026-08-27",
-  "count": 133,
+  "updated": "2026-08-31",
+  "count": 143,
   "articles": [
+    {
+      "title": "Le Pass Sport revient pour la saison 2026/2027",
+      "url": "https://www.ff-flyingdisc.fr/2026/08/31/le-pass-sport-revient-pour-la-saison-2026-2027/",
+      "summary": "Le dispositif du Pass Sport évolue pour la rentrée 2026 avec une aide portée à 50 €, un public élargi et une aide complémentaire destinée aux familles modestes. Attendu par les familles et par l’ensemble du mouvement sportif, le retour des enfants de 6 à 13…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-08-31",
+      "added": "2026-08-31",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/08/pass-sport-2026-jpg-49945_0.jpg"
+    },
+    {
+      "title": "Breaking Barriers: How English Competency is Reshaping Ultimate in Japan",
+      "url": "https://wfdf.sport/2026/08/breaking-barriers-how-english-competency-is-reshaping-ultimate-in-japan/",
+      "summary": "WFDF’s English Language Training course is helping Japanese Ultimate players overcome language barriers and communicate with confidence in international competition.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-31",
+      "added": "2026-08-31",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/jpn-wfdf-ultimate.png"
+    },
+    {
+      "title": "WFDF Announces Broadcast Partnership with Pulsea as Vilnius Prepares to Become the World Capital of Disc Golf",
+      "url": "https://wfdf.sport/2026/08/wfdf-announces-broadcast-partnership-with-pulsea-as-vilnius-prepares-to-become-the-world-capital-of-disc-golf/",
+      "summary": "WFDF announces a broadcast partnership with Pulsea for the 2026 World Team Disc Golf Championships in Vilnius, bringing five days of live, free coverage to fans worldwide.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-29",
+      "added": "2026-08-31",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/WTDG_PULSEA-scaled.jpg"
+    },
+    {
+      "title": "Spiders Dominate Wind Chill to Win Third UFA Title [UFA 2026 Championship Game Recap]",
+      "url": "https://ultiworld.com/2026/08/29/spiders-dominate-wind-chill-to-win-third-ufa-title-ufa-2026-championship-game-recap/",
+      "summary": "Eight legs, third title.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-29",
+      "added": "2026-08-31"
+    },
+    {
+      "title": "PUL Wins Second Straight All-Star Game",
+      "url": "https://ultiworld.com/2026/08/29/pul-wins-second-straight-all-star-game/",
+      "summary": "Stars from both the PUL and WUL came to play in the second annual showcase.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-29",
+      "added": "2026-08-31"
+    },
     {
       "title": "Ultimate Representatives Elected to the Athletes’ Commission",
       "url": "https://wfdf.sport/2026/08/ultimate-representatives-elected-to-the-athletes-commission/",
@@ -13,6 +71,18 @@
       "published": "2026-08-27",
       "added": "2026-08-27",
       "image": "https://wfdf.sport/wp-content/uploads/2026/08/athletes-ultimate-elections-scaled.png"
+    },
+    {
+      "title": "U.S. Teams Sweep Gold at World Club Championships",
+      "url": "https://usaultimate.org/news/2026/08/us-teams-sweep-gold-at-world-club-championships/",
+      "summary": "Colorado Springs, Colo. (August 27, 2026) – U.S. teams brought home the gold in all three divisions of the 2026 World Ultimate Club Championships. The week-long tournament wrapped up last weekend in Limerick, Ireland, with seven of the nine U.S. teams…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-08-27",
+      "added": "2026-08-31",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/08/20260822OH_0829-ZF-8639-73303-1-001-header.jpg"
     },
     {
       "title": "Staffs des équipes de France Juniors (Il ne vous reste que quelques jours pour candidater) :",
@@ -74,6 +144,18 @@
       "added": "2026-08-27"
     },
     {
+      "title": "Clean Sport Highlighted at 2026 World Ultimate Club Championships Through Interactive Anti-Doping Education",
+      "url": "https://wfdf.sport/2026/08/clean-sport-highlighted-at-2026-world-ultimate-club-championships-through-interactive-anti-doping-education/",
+      "summary": "Discover how interactive anti-doping education at the 2026 World Ultimate Club Championships in Limerick empowered athletes, promoted clean sport, and strengthened the Spirit of the Game.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-26",
+      "added": "2026-08-31",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/wucc-2026-anti-doping-edu-scaled.jpg"
+    },
+    {
       "title": "Buzzer Beater: Championship Weekend Preview [2026 UFA Semifinals]",
       "url": "https://ultiworld.com/2026/08/26/buzzer-beater-championship-weekend-preview-2026-ufa-semifinals/",
       "summary": "Just three games left in the UFA season to decide the 2026 champion!",
@@ -83,6 +165,18 @@
       "lang": "en",
       "published": "2026-08-26",
       "added": "2026-08-27"
+    },
+    {
+      "title": "WFDF Launches New Language and Portrayal Policy to Promote Inclusive Communications",
+      "url": "https://wfdf.sport/2026/08/wfdf-launches-new-language-and-portrayal-policy-to-promote-inclusive-communications/",
+      "summary": "WFDF launches a new Language and Portrayal Policy promoting inclusive communication, gender equality, diversity and fair representation in Flying Disc sports.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-25",
+      "added": "2026-08-31",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/language-portrayal-policy-gedi-scaled.jpg"
     },
     {
       "title": "Nightlock, Pacmen, Tower Earn Elite-Select Challenge Crowns",
@@ -975,6 +1069,18 @@
       "image": "https://flyingdisc.it/wp-content/uploads/2026/07/Copertine-Articolo-Blog-1.jpg"
     },
     {
+      "title": "WJUC 2026: il bilancio finale delle Nazionali Under 20 ai Mondiali in Spagna",
+      "url": "https://flyingdisc.it/news/ultimate/2026/5593/",
+      "summary": "",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-07-20",
+      "added": "2026-08-31",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/07/Copertine-Articolo-Blog-1.jpg"
+    },
+    {
       "title": "WFDF Board Approves Conditional Reinstatement Framework for the National Federations of Belarus and Russia",
       "url": "https://wfdf.sport/2026/07/wfdf-board-approves-conditional-reinstatement-framework-for-the-national-federations-of-belarus-and-russia/",
       "summary": "The World Flying Disc Federation (WFDF) Board of Directors has approved a revised and conditional framework governing the membership, participation and future reintegration of the Member National Federations of Belarus and Russia. The decision rescinds the…",
@@ -1150,6 +1256,17 @@
       "lang": "it",
       "published": "2026-07-09",
       "added": "2026-08-02"
+    },
+    {
+      "title": "WJUC 2026 – Le Nazionali Under 20 volano ai Mondiali in Spagna",
+      "url": "https://flyingdisc.it/news/ultimate/2026/5563/",
+      "summary": "",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-07-09",
+      "added": "2026-08-31"
     },
     {
       "title": "Road to Limerick: 136 clubs set for the 2026 World Ultimate Club Championships",
