@@ -1,7 +1,63 @@
 {
-  "updated": "2026-08-31",
-  "count": 143,
+  "updated": "2026-09-03",
+  "count": 150,
   "articles": [
+    {
+      "title": "WTDGC 2026 en Lituanie",
+      "url": "https://www.ff-flyingdisc.fr/2026/09/02/wtdgc-2026-en-lituanie/",
+      "summary": "Les championnats du monde de disc golf par équipes WFDF 2026 (WTDGC) se dérouleront du 8 au 12 septembre 2026 à Vilnius (Lituanie). Vous trouverez ci-dessous toutes les informations nécessaires pour suivre cette compétition. Résumé : Pendant cinq jours de…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-09-02",
+      "added": "2026-09-03"
+    },
+    {
+      "title": "WFDF Impact Program Empowers Local Youth Coaches in Gatagara, Rwanda Through Ultimate Workshop",
+      "url": "https://wfdf.sport/2026/09/wfdf-impact-program-empowers-local-youth-coaches-in-gatagara-rwanda-through-ultimate-workshop/",
+      "summary": "WFDF’s Impact Program empowered over 25 local youth coaches in Gatagara, Rwanda through an Ultimate Coaching Workshop delivered in partnership with the Rwanda Flying Disc Federation and Kids Play International.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-02",
+      "added": "2026-09-03",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/rwanda-ultimate-workshop-scaled.png"
+    },
+    {
+      "title": "Pro Championships 2026: How to Watch, Tournament Preview",
+      "url": "https://ultiworld.com/2026/09/02/pro-championships-2026-how-to-watch-tournament-preview/",
+      "summary": "27 games will be broadcast from this year's Pro Championships!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-02",
+      "added": "2026-09-03"
+    },
+    {
+      "title": "Deep Look LIVE: UFA Championship Weekend Recap, Pro Championships Preview",
+      "url": "https://ultiworld.com/2026/09/02/deep-look-live-ufa-championship-weekend-recap-pro-championships-preview/",
+      "summary": "The Spiders take another title!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-02",
+      "added": "2026-09-03"
+    },
+    {
+      "title": "第3回全日本ディスクゴルフマッチプレー選手権大会 大会特設ページ",
+      "url": "https://www.jfda.or.jp/2026/09/01/2026alljapan-discgolf-matchplay-main/",
+      "summary": "大会趣旨 フライングディスク競技「ディスクゴルフ」において、マッチプレー形式の日本一を決定する全国大会です。 オフィシャルスポンサー 大会情報 2026年11月14日（土）-15日（日） 公式練習日（任意）：2026年1[...] The post 第3回全日本ディスクゴルフマッチプレー選手権大会 大会特設ページ first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-08-31",
+      "added": "2026-09-03"
+    },
     {
       "title": "Le Pass Sport revient pour la saison 2026/2027",
       "url": "https://www.ff-flyingdisc.fr/2026/08/31/le-pass-sport-revient-pour-la-saison-2026-2027/",
@@ -177,6 +233,18 @@
       "published": "2026-08-25",
       "added": "2026-08-31",
       "image": "https://wfdf.sport/wp-content/uploads/2026/08/language-portrayal-policy-gedi-scaled.jpg"
+    },
+    {
+      "title": "WFDF Hosts Youth Clinic in support of UNAOC’s ‘Sport for #OneHumanity’ Campaign at WUCC 2026",
+      "url": "https://wfdf.sport/2026/08/wfdf-hosts-youth-clinic-in-support-of-unaocs-sport-for-onehumanity-campaign-at-wucc-2026/",
+      "summary": "WFDF hosted a free Youth Development Clinic at WUCC 2026 in Ireland, promoting inclusion, diversity and teamwork through Flying Disc sports as part of UNAOC’s Sport for #OneHumanity campaign.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-08-24",
+      "added": "2026-09-03",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/08/unaoc-wucc2026-scaled.jpg"
     },
     {
       "title": "Nightlock, Pacmen, Tower Earn Elite-Select Challenge Crowns",
@@ -1517,6 +1585,17 @@
       "lang": "it",
       "published": "2026-06-09",
       "added": "2026-08-02"
+    },
+    {
+      "title": "Finali Serie A Open e Women 2026: a Padova assegnati i titoli nazionali",
+      "url": "https://flyingdisc.it/news/ultimate/2026/5426/",
+      "summary": "",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-06-09",
+      "added": "2026-09-03"
     },
     {
       "title": "Championnats de France UNSS 2026",
