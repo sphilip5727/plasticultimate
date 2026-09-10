@@ -1,7 +1,87 @@
 {
-  "updated": "2026-09-07",
-  "count": 159,
+  "updated": "2026-09-10",
+  "count": 166,
   "articles": [
+    {
+      "title": "Record-Breaking World Team Disc Golf Championships 2026 in Full Swing in Vilnius, Lithuania",
+      "url": "https://wfdf.sport/2026/09/record-breaking-world-team-disc-golf-championships-2026-in-full-swing-in-vilnius-lithuania/",
+      "summary": "WFDF 2026 World Team Disc Golf Championships open in Vilnius, Lithuania, with 47 teams from 29 countries competing across Open and Masters divisions. Follow the latest standings, competition updates and live coverage as teams battle for the 2026 World Team…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-10",
+      "added": "2026-09-10",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-opening.jpg"
+    },
+    {
+      "title": "E-FlyingDisc évolue",
+      "url": "https://www.ff-flyingdisc.fr/2026/09/09/e-flyingdisc-evolue/",
+      "summary": "Une interface repensée pour une expérience plus précise. Exalto fait évoluer E-FlyingDisc (Extranet fédéral) avec un nouveau visuel pour la page d’accueil et une nouvelle page « Profil / Compte ». Cette mise à jour a été pensée par le prestataire pour…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-09-09",
+      "added": "2026-09-10",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/09/ExaltoNew.png"
+    },
+    {
+      "title": "Club Power Rankings [9/9/26]",
+      "url": "https://ultiworld.com/2026/09/09/club-power-rankings-9-9-26/",
+      "summary": "The last power rankings of the regular season!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-09",
+      "added": "2026-09-10"
+    },
+    {
+      "title": "Better Box Score Metrics: Championship Weekend & The Meaning of MVP",
+      "url": "https://ultiworld.com/2026/09/09/better-box-score-metrics-championship-weekend-the-meaning-of-mvp/",
+      "summary": "Oakland's balanced approach reigned surpeme.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-09",
+      "added": "2026-09-10"
+    },
+    {
+      "title": "2026 Championship Bid Allocations Set",
+      "url": "https://usaultimate.org/news/2026/09/2026-championship-bid-allocations-set/",
+      "summary": "Colorado Springs, Colo. (Sept. 9, 2026) – Today USA Ultimate, the national governing body for the sport of ultimate in the United States and member of the U.S. Olympic & Paralympic Committee, released the 2026 final regular season rankings, and Championship…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-09",
+      "added": "2026-09-10",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/09/Pro_Champs_20260907102043KL8_7774-ZF-9239-01982-1-006-header-1200x450.jpg"
+    },
+    {
+      "title": "Zwei Ungeschlagene pro Division – und ein Wochenende, das alles entscheidet",
+      "url": "https://www.frisbeesportverband.de/zwei-ungeschlagene-pro-division-und-ein-wochenende-das-alles-entscheidet/",
+      "summary": "Vorbericht zum Finalwochenende der Outdoor-Meisterschaften 2026, 12./13. September Nach dem ersten Spielwochenende Ende August steht in beiden Divisionen ein Bild …",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-08",
+      "added": "2026-09-10"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 2, September 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-2-september-2026/",
+      "summary": "Discgolf Team-WM: Solider Auftakt gegen Spanien DelayMaster-Spende an DFV Freestyle-Abteilung Rollstuhl Ultimate-Workshop am 14. November in Hamburg WFDF veröffentlicht Paradiscgolf-Regularien",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-08",
+      "added": "2026-09-10"
+    },
     {
       "title": "懲罰規程に基づく処分について（2026/09/07）",
       "url": "https://www.jfda.or.jp/2026/09/07/disciplinary-action-202609/",
