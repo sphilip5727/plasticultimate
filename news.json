@@ -1,7 +1,77 @@
 {
-  "updated": "2026-09-10",
-  "count": 166,
+  "updated": "2026-09-14",
+  "count": 175,
   "articles": [
+    {
+      "title": "USA claim Masters gold after late surge in Vilnius",
+      "url": "https://wfdf.sport/2026/09/usa-claim-masters-gold-after-late-surge-in-vilnius/",
+      "summary": "The United States claimed Masters gold at the WFDF 2026 World Team Disc Golf Championships in Vilnius after a late surge against Estonia. Finland secured bronze, while the Open medal matches will decide the remaining titles.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-12",
+      "added": "2026-09-14",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-usa-masters-scaled.jpg"
+    },
+    {
+      "title": "Norway crowned Open World Champions in Vilnius",
+      "url": "https://wfdf.sport/2026/09/norway-crowned-open-world-champions-in-vilnius/",
+      "summary": "Norway are crowned Open World Champions at the WFDF 2026 World Team Disc Golf Championships in Vilnius, defeating Finland in an all-Nordic Final. Estonia claimed Bronze.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-12",
+      "added": "2026-09-14",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-awarding-scaled.jpg"
+    },
+    {
+      "title": "WUCC 2026: Beat Charlie Challenge Results",
+      "url": "https://ultiworld.com/2026/09/11/wucc-2026-beat-charlie-challenge-results/",
+      "summary": "The winners and the results from this year's D-I contests, including our revamped and refreshed #TheGame",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-11",
+      "added": "2026-09-14"
+    },
+    {
+      "title": "Nordic showdown set for WTDGC 2026 Final after dramatic semifinals",
+      "url": "https://wfdf.sport/2026/09/nordic-showdown-set-for-wtdgc-2026-final-after-dramatic-semifinals/",
+      "summary": "Norway and Finland will meet in the Open Division Gold Medal match at the WFDF World Team Disc Golf Championships 2026, while Great Britain and Estonia will compete for Bronze after dramatic semifinals in Vilnius.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-11",
+      "added": "2026-09-14",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-norway-scaled.jpg"
+    },
+    {
+      "title": "Five Best Plays from the WUL/PUL All-Star Game",
+      "url": "https://ultiworld.com/2026/09/11/five-best-plays-from-the-wul-pul-all-star-game/",
+      "summary": "Despite a late surge from the WUL, the PUL All-Star Team took home the win for the second year in a row. We're reliving the five most exciting moments from another thrilling showdown between the best of the best!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-11",
+      "added": "2026-09-14"
+    },
+    {
+      "title": "Estonia, Norway, Great Britain and Finland Reach WTDGC 2026 Open Semifinals",
+      "url": "https://wfdf.sport/2026/09/estonia-norway-great-britain-and-finland-reach-wtdgc-2026-open-semifinals/",
+      "summary": "Estonia, Norway, Great Britain and Finland advance to the WTDGC 2026 Open Semifinals in Vilnius, with the World Championship title on the line.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-11",
+      "added": "2026-09-14",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc2026-semifinals-scaled.jpg"
+    },
     {
       "title": "Record-Breaking World Team Disc Golf Championships 2026 in Full Swing in Vilnius, Lithuania",
       "url": "https://wfdf.sport/2026/09/record-breaking-world-team-disc-golf-championships-2026-in-full-swing-in-vilnius-lithuania/",
@@ -13,6 +83,29 @@
       "published": "2026-09-10",
       "added": "2026-09-10",
       "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-opening.jpg"
+    },
+    {
+      "title": "Invitations Issued for U-24 National Team Tryouts",
+      "url": "https://usaultimate.org/news/2026/09/invitations-issued-for-u-24-national-team-tryouts/",
+      "summary": "Colorado Springs, Colo. (September 10, 2026) — Today USA Ultimate, the national governing body for the sport of ultimate in the United States and member of the U.S. Olympic & Paralympic Committee, announced the names of the 219 athletes who are invited to try…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-10",
+      "added": "2026-09-14",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/09/WU24_20250625182407KWL_3902-ZF-5480-43978-1-003-header-1200x450.jpg"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 3, September 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-3-september-2026/",
+      "summary": "Aufruf zur Teilnahme am U27 Safe Sport-Workshop kostenfrei Leistungssport-Lehrgang U24 für den Ultimate Nachwuchskader I Jetzt noch anmelden für Ultimate Nationalteam-Tryouts U17 und U20 Erster Strandtag Frisbeesport erfolgreich durchgeführt",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-10",
+      "added": "2026-09-14"
     },
     {
       "title": "E-FlyingDisc évolue",
@@ -148,6 +241,17 @@
       "lang": "de",
       "published": "2026-09-05",
       "added": "2026-09-07"
+    },
+    {
+      "title": "Coaches und Spieler*innen für adult Ultimate Nationalteams gesucht",
+      "url": "https://www.frisbeesportverband.de/coaches-und-spielerinnen-fuer-adult-ultimate-nationalteams-gesucht/",
+      "summary": "Die Planungen für die kommende Saison laufen beim Deutschen Frisbeesport-Verband bereits auf Hochtouren – und dafür braucht es engagierte Menschen, die bereit sind, Verantwortung zu übernehmen. Ob an der Seitenlinie oder auf dem Feld: Die Adult Nationalteams…",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-04",
+      "added": "2026-09-14"
     },
     {
       "title": "Pro Championships Offer Chance to Secure Postseason Bids",
