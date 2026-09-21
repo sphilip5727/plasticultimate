@@ -1,7 +1,40 @@
 {
-  "updated": "2026-09-17",
-  "count": 186,
+  "updated": "2026-09-21",
+  "count": 194,
   "articles": [
+    {
+      "title": "DM-Jugendtitel für Bad Rappenau, München und Leipzig",
+      "url": "https://www.frisbeesportverband.de/dm-jugendtitel-fuer-bad-rappenau-muenchen-und-leipzig/",
+      "summary": "Erfolgreiche Deutsche Jugend Ultimate-Meisterschaften im September 2026 in Chemnitz In Chemnitz hat am Wochenende 19. und 20. September 2026 die …",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-21",
+      "added": "2026-09-21"
+    },
+    {
+      "title": "WFDF2027世界U24アルティメット選手権大会(2027WU24) チームスタッフ選考について",
+      "url": "https://www.jfda.or.jp/2026/09/19/2027-japan-nationalteam-wu24-teamstaff-application/",
+      "summary": "2027年6月に日本・茨城県神栖市にて開催される「WFDF2027世界U24アルティメット選手権大会（2027WU24）」に向けて、代表チームを支えてくださるスタッフを広く募集し、多くの皆様と共に世界と戦うチームづくりを[...] The post WFDF2027世界U24アルティメット選手権大会(2027WU24) チームスタッフ選考について first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-09-19",
+      "added": "2026-09-21"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 5, September 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-5-september-2026/",
+      "summary": "Aufruf zur Bewerbung für Ultimate-Nationalteams der Erwachsenen U20 Open Ultimate-Nationalteam ruft zum Tryout auf Prominenter Feature Flight zum Auftakt der Discgolf-DM Vorbericht zur Jugend Ultimate-DM im September in Chemnitz",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-18",
+      "added": "2026-09-21"
+    },
     {
       "title": "WTDGC 2026: l’Italia chiude al 26° posto i Mondiali a squadre di Disc Golf",
       "url": "https://flyingdisc.it/news/2026/5986/",
@@ -27,6 +60,29 @@
       "image": "https://wfdf.sport/wp-content/uploads/2026/09/disc-golf-para-rules-scaled.png"
     },
     {
+      "title": "Huckin’ Eh: Sectionals Recap, University Regionals Preview",
+      "url": "https://ultiworld.com/2026/09/17/huckin-eh-sectionals-recap-university-regionals-preview/",
+      "summary": "The uni season is here!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-17",
+      "added": "2026-09-21"
+    },
+    {
+      "title": "Field Set for Regional Events",
+      "url": "https://usaultimate.org/news/2026/09/field-set-for-regional-events/",
+      "summary": "Colorado Springs, Colo. (Sept. 17, 2026) – The USA Ultimate club postseason has begun. This past weekend, over 500 teams competed in sectional championship events nationwide. With winners crowned, the field narrows as top teams from each of the more than 70…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-17",
+      "added": "2026-09-21",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/09/2026NorCalSectionals_RC_20260913_130342_109-ZF-9617-95033-1-002-header-1200x450.jpg"
+    },
+    {
       "title": "CIBU 2026: a Caorle i Campionati Italiani di Beach Ultimate, il 26 e 27 settembre",
       "url": "https://flyingdisc.it/news/2026/5992/",
       "summary": "15 squadre Open e 10 Mixed sulla Spiaggia di Levante. Per la prima volta l’evento si svolgerà in contemporanea con i campionati austriaci di beach ultimate, nella stessa sede. La Spiaggia di Levante di Caorle ospiterà, sabato 26 e domenica 27 settembre, i…",
@@ -37,6 +93,17 @@
       "published": "2026-09-17",
       "added": "2026-09-17",
       "image": "https://flyingdisc.it/wp-content/uploads/2026/09/Campionati-Italiani-Beach-Ultimate.jpg"
+    },
+    {
+      "title": "2026 Club Awards Watchlist",
+      "url": "https://ultiworld.com/2026/09/17/2026-club-awards-watchlist/",
+      "summary": "Taking a look at early contenders for the season's top individual honors.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-17",
+      "added": "2026-09-21"
     },
     {
       "title": "Disc Golf Representatives Elected to WFDF Athletes’ Commission",
@@ -109,6 +176,18 @@
       "image": "https://wfdf.sport/wp-content/uploads/2026/09/nina-javier-enpower-ultimate-academy-Philippines-scaled.jpg"
     },
     {
+      "title": "Norway and United States Crowned World Champions as Record-Breaking WTDGC 2026 Concludes in Vilnius",
+      "url": "https://wfdf.sport/2026/09/norway-and-united-states-crowned-world-champions-as-record-breaking-wtdgc-2026-concludes-in-vilnius/",
+      "summary": "Norway and the United States of America have been crowned World Champions as the record-breaking WFDF 2026 WTDGC concluded in Vilnius, Lithuania.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-14",
+      "added": "2026-09-21",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-champions-scaled.jpg"
+    },
+    {
       "title": "Heidees Damen und MUC Open on top",
       "url": "https://www.frisbeesportverband.de/heidees-damen-und-muc-open-on-top/",
       "summary": "Die Ultimate-Teams der Heidees Damen (TV Eppelheim, Foto oben) und des Munich Ultimate Club (ESV München) gewinnen 2026 ihre ersten …",
@@ -164,6 +243,18 @@
       "lang": "en",
       "published": "2026-09-11",
       "added": "2026-09-14"
+    },
+    {
+      "title": "WTDGC 2026 Semifinal Race Takes Shape After Day 3 in Vilnius",
+      "url": "https://wfdf.sport/2026/09/wtdgc-2026-semifinal-race-takes-shape-after-day-3-in-vilnius/",
+      "summary": "The WTDGC 2026 semifinal race heats up in Vilnius as Estonia, Finland and the USA lead the Open and Masters standings ahead of the final preliminary round.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-09-11",
+      "added": "2026-09-21",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/09/wtdgc-2026-day3-scaled.jpg"
     },
     {
       "title": "Nordic showdown set for WTDGC 2026 Final after dramatic semifinals",
