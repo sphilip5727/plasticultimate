@@ -1,7 +1,75 @@
 {
-  "updated": "2026-09-28",
-  "count": 202,
+  "updated": "2026-10-01",
+  "count": 208,
   "articles": [
+    {
+      "title": "Umgang mit Herausforderungen",
+      "url": "https://www.frisbeesportverband.de/umgang-mit-herausforderungen/",
+      "summary": "Erfolgreicher Lehrgang des Frauen Masters Ultimate-Nationalteams in Eppelheim Am 26./27. September 2026 fand in Eppelheim bei Heidelberg ein offenes Trainingslager …",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-10-01",
+      "added": "2026-10-01"
+    },
+    {
+      "title": "The Line: 7 Most Surprising Regionals Results",
+      "url": "https://ultiworld.com/2026/09/30/the-line-7-most-surprising-regionals-results/",
+      "summary": "With nine new teams attending Nationals and multiple bids stolen last weekend, we're diving into the most shocking results from Regionals!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-30",
+      "added": "2026-10-01"
+    },
+    {
+      "title": "Road to Germany: 102 convocati per le Nazionali Italiane Ultimate verso gli Europei 2027",
+      "url": "https://flyingdisc.it/news/2026/6002/",
+      "summary": "Definiti i gruppi Women, Mixed, Open e gli staff tecnici per la prossima stagione. Primo raduno il 14 novembre a Bologna. Il percorso triennale punta alla qualificazione ai World Games 2029. Il progetto Road to Germany entra in una nuova fase. Con la…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-09-30",
+      "added": "2026-10-01",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/09/cropped-Copertine-Articolo-Blog-1.jpg"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 7, September 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-7-september-2026/",
+      "summary": "Neue DFV-Sitzungsprotokolle online verfügbar Deutsche Teams beim 25. europäischen Ultimate-Clubfinale in Wroclaw Lena Alter und Martin Cronacher siegen bei 7. Harz Open Ultimate Frisbee und Discgolf am Oberstufen-Gymnasium Bruchköbel",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-30",
+      "added": "2026-10-01"
+    },
+    {
+      "title": "USA Ultimate Seeking Candidates for Board of Directors",
+      "url": "https://usaultimate.org/news/2026/09/usa-ultimate-seeking-candidates-for-board-of-directors-5/",
+      "summary": "Colorado Springs, Colo. (September 26, 2026)—USA Ultimate is currently seeking potential candidates to run for its board of directors, the national governing body for the sport of ultimate in the United States announced today. Individuals interested in…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-29",
+      "added": "2026-10-01",
+      "image": "https://usaultimate.org/wp-content/uploads/2023/03/USAU-Beach-20150502_103638_KWL_4687-ZF-3448-22678-1-002-e1679670920844.jpg"
+    },
+    {
+      "title": "Here Are The Women’s Pools at 2026 Club Nationals",
+      "url": "https://ultiworld.com/2026/09/29/here-are-the-womens-pools-at-2026-club-nationals/",
+      "summary": "A new pool draw format makes its debut.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-09-29",
+      "added": "2026-10-01"
+    },
     {
       "title": "Club National Championships 2026 Qualifying Thread",
       "url": "https://ultiworld.com/2026/09/26/club-national-championships-2026-qualifying-thread/",
