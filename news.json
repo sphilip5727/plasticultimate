@@ -1,7 +1,41 @@
 {
-  "updated": "2026-10-01",
-  "count": 208,
+  "updated": "2026-10-05",
+  "count": 215,
   "articles": [
+    {
+      "title": "第14回全日本ミックスアルティメット選手権大会 大会特設ページ",
+      "url": "https://www.jfda.or.jp/2026/10/05/2026alljapan-mixed-ultimate-main/",
+      "summary": "大会趣旨 フライングディスク競技「アルティメット」において、ミックス部門の日本一を決定する全国大会です。 オフィシャルスポンサー 大会情報 2026年12月5日(土)-6日(日) 静岡県掛川市 つま恋リゾート彩の郷 開催[...] The post 第14回全日本ミックスアルティメット選手権大会 大会特設ページ first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-10-05",
+      "added": "2026-10-05"
+    },
+    {
+      "title": "WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会（2027AOUCC）日本代表監督・コーチについて",
+      "url": "https://www.jfda.or.jp/2026/10/05/2027aoucc-headcoach/",
+      "summary": "2027年に開催予定の「WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会(2027AOUCC)」に派遣する日本代表監督・コーチを決定しましたので、お知らせいたします。ベストを尽くし本大会に臨みます[...] The post WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会（2027AOUCC）日本代表監督・コーチについて first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-10-05",
+      "added": "2026-10-05"
+    },
+    {
+      "title": "WFDF Signs United Against Online Abuse Charter to Protect Global Community",
+      "url": "https://wfdf.sport/2026/10/wfdf-signs-united-against-online-abuse-charter-to-protect-global-community/",
+      "summary": "WFDF has signed the United Against Online Abuse Charter, strengthening its commitment to combat online abuse, promote digital safety, and create a safe, inclusive environment for the global Flying Disc community.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-10-05",
+      "added": "2026-10-05",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/10/UAOA-x-WFDF-1-scaled.jpg"
+    },
     {
       "title": "Umgang mit Herausforderungen",
       "url": "https://www.frisbeesportverband.de/umgang-mit-herausforderungen/",
@@ -12,6 +46,40 @@
       "lang": "de",
       "published": "2026-10-01",
       "added": "2026-10-01"
+    },
+    {
+      "title": "Mexico Debuts Ultimate at the National School Games",
+      "url": "https://wfdf.sport/2026/10/mexico-debuts-ultimate-at-the-national-school-games/",
+      "summary": "Mexico debuts 4v4 mixed Ultimate at the 2026 Gimnasiada Nacional, expanding school sport opportunities for youth across the country through WFDF and ISF collaboration.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-10-01",
+      "added": "2026-10-05",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/10/mex-school-ultimate.jpg"
+    },
+    {
+      "title": "Huckin’ Eh: University and Club Regionals Recap",
+      "url": "https://ultiworld.com/2026/10/01/huckin-eh-university-and-club-regionals-recap/",
+      "summary": "Bids have been decided!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-01",
+      "added": "2026-10-05"
+    },
+    {
+      "title": "Club Power Rankings [10/1/26]",
+      "url": "https://ultiworld.com/2026/10/01/club-power-rankings-10-1-26/",
+      "summary": "Four new teams enter the rankings after a thrilling Regionals weekend!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-01",
+      "added": "2026-10-05"
     },
     {
       "title": "The Line: 7 Most Surprising Regionals Results",
@@ -69,6 +137,17 @@
       "lang": "en",
       "published": "2026-09-29",
       "added": "2026-10-01"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 6, September 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-6-september-2026/",
+      "summary": "Spirit-Siegerteams der Jugend Ultimate DM bekannt gegeben Neue Ultimate Frisbee-Angebote bei Lübeck und in Bochum Familie.de empfiehlt Ultimate Frisbee für Kinder Mitteilungsblatt würdigt die Ultimate-Jugend des TV Bad Rappenau",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-09-29",
+      "added": "2026-10-05"
     },
     {
       "title": "Club National Championships 2026 Qualifying Thread",
