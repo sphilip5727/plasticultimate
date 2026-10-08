@@ -1,7 +1,75 @@
 {
-  "updated": "2026-10-05",
-  "count": 215,
+  "updated": "2026-10-08",
+  "count": 221,
   "articles": [
+    {
+      "title": "Indoorsaison 2027: Saisongebühr, Anmeldung und Ausrichtersuche",
+      "url": "https://www.frisbeesportverband.de/indoorsaison-2027-saisongebuehr-anmeldung-und-ausrichtersuche/",
+      "summary": "Erste Turnierorte der kommenden Indoor-Saison stehen fest. Vielen Dank an alle Teams die sich bereits um die Ausrichtung einer Indoorliga …",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-10-08",
+      "added": "2026-10-08"
+    },
+    {
+      "title": "WFDF takes part in key international sports governance meetings in Lausanne",
+      "url": "https://wfdf.sport/2026/10/wfdf-takes-part-in-key-international-sports-governance-meetings-in-lausanne/",
+      "summary": "WFDF officers joined international sports leaders in Lausanne for key IWGA, ARISF, and SportAccord meetings, contributing to discussions on sports governance, leadership, and the future of global sport.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-10-07",
+      "added": "2026-10-08",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/10/IWGA-EGM-2026-scaled.jpg"
+    },
+    {
+      "title": "National Beach Championships Return to West Coast",
+      "url": "https://usaultimate.org/news/2026/10/national-beach-championships-return-to-west-coast/",
+      "summary": "Colorado Springs, Colo. (October 7, 2026) – USA Ultimate, the national governing body for the sport of ultimate in the United States and member of the U.S. Olympic & Paralympic Committee, announced today that the 2027 USA Ultimate Beach Championships have…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-07",
+      "added": "2026-10-08",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/10/Beach-Champs-20260509132750KWL_0628-ZF-7822-41330-1-009-header-1200x450.jpg"
+    },
+    {
+      "title": "Pré-sélection EdF Séniors (EUC 2027 Vichy)",
+      "url": "https://www.ff-flyingdisc.fr/2026/10/06/pre-selection-edf-seniors-euc-2027-vichy/",
+      "summary": "La liste des athlètes pré-sélectionné.e.s a été communiquée aux clubs. Vous pouvez la retrouver en cliquant ici. Le prochain stage de sélection des équipes de France se déroulera les samedi 24 et dimanche 25 octobre 2026 au CRJS de Blois. – Début du stage…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-10-06",
+      "added": "2026-10-08"
+    },
+    {
+      "title": "Here Are The Mixed Pools at 2026 Club Nationals",
+      "url": "https://ultiworld.com/2026/10/06/here-are-the-mixed-pools-at-2026-club-nationals/",
+      "summary": "A new pool draw format makes its debut.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-06",
+      "added": "2026-10-08"
+    },
+    {
+      "title": "Here Are The Men’s Pools at 2026 Club Nationals",
+      "url": "https://ultiworld.com/2026/10/06/here-are-the-mens-pools-at-2026-club-nationals/",
+      "summary": "A new pool draw format makes its debut.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-06",
+      "added": "2026-10-08"
+    },
     {
       "title": "第14回全日本ミックスアルティメット選手権大会 大会特設ページ",
       "url": "https://www.jfda.or.jp/2026/10/05/2026alljapan-mixed-ultimate-main/",
