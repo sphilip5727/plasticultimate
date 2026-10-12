@@ -1,7 +1,29 @@
 {
-  "updated": "2026-10-08",
-  "count": 221,
+  "updated": "2026-10-12",
+  "count": 226,
   "articles": [
+    {
+      "title": "Deep Look LIVE: Top 25 Club Player Rankings, Nationals Tier Lists",
+      "url": "https://ultiworld.com/2026/10/12/deep-look-live-top-25-club-player-rankings-nationals-tier-lists/",
+      "summary": "Who are the best players of the year?",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-12",
+      "added": "2026-10-12"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 1, Oktober 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-1-oktober-2026/",
+      "summary": "Aufruf zur Teilnahme am Safe Sport-Workshop kostenfrei Erfolgreiche Tagung der Deutschen Frisbeesport-Jugend Kids-Seite des kicker-Portals informiert über Ultimate Frisbee Münstersche Zeitung feiert Deutsche Meisterin im Discgolf Martje Sumowski",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-10-09",
+      "added": "2026-10-12"
+    },
     {
       "title": "Indoorsaison 2027: Saisongebühr, Anmeldung und Ausrichtersuche",
       "url": "https://www.frisbeesportverband.de/indoorsaison-2027-saisongebuehr-anmeldung-und-ausrichtersuche/",
@@ -12,6 +34,18 @@
       "lang": "de",
       "published": "2026-10-08",
       "added": "2026-10-08"
+    },
+    {
+      "title": "CIBU 2026: Risultati Finali a Caorle",
+      "url": "https://flyingdisc.it/news/ultimate/2026/6009/",
+      "summary": "BFD BBK e Bronx in Love campioni italiani di Beach Ultimate nelle divisioni Open e Mixed. A One Tribe e Ichnos i premi Spirit of the Game. Si sono conclusi domenica 27 settembre, sulla Spiaggia di Levante di Caorle, i Campionati Italiani di Beach Ultimate…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-10-08",
+      "added": "2026-10-12",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/10/Copertine-Articolo-Blog.jpg"
     },
     {
       "title": "WFDF takes part in key international sports governance meetings in Lausanne",
@@ -69,6 +103,17 @@
       "lang": "en",
       "published": "2026-10-06",
       "added": "2026-10-08"
+    },
+    {
+      "title": "Club Update 2026: The Nationals Field is Set",
+      "url": "https://ultiworld.com/2026/10/05/club-update-2026-the-nationals-field-is-set/",
+      "summary": "After men's and mixed North Central Regionals this past weekend, 48 teams are now set for San Diego!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-06",
+      "added": "2026-10-12"
     },
     {
       "title": "第14回全日本ミックスアルティメット選手権大会 大会特設ページ",
@@ -170,6 +215,18 @@
       "lang": "it",
       "published": "2026-09-30",
       "added": "2026-10-01",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/09/cropped-Copertine-Articolo-Blog-1.jpg"
+    },
+    {
+      "title": "Road to Germany: 102 convocati per le Nazionali Italiane Ultimate verso gli Europei 2027",
+      "url": "https://flyingdisc.it/news/ultimate/2026/6002/",
+      "summary": "Definiti i gruppi Women, Mixed, Open e gli staff tecnici per la prossima stagione. Primo raduno il 14 novembre a Bologna. Il percorso triennale punta alla qualificazione ai World Games 2029. Il progetto Road to Germany entra in una nuova fase. Con la…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-09-30",
+      "added": "2026-10-12",
       "image": "https://flyingdisc.it/wp-content/uploads/2026/09/cropped-Copertine-Articolo-Blog-1.jpg"
     },
     {
