@@ -1,7 +1,29 @@
 {
-  "updated": "2026-10-12",
-  "count": 226,
+  "updated": "2026-10-15",
+  "count": 230,
   "articles": [
+    {
+      "title": "The Top 25 Club Mixed Division Players in 2026",
+      "url": "https://ultiworld.com/2026/10/14/the-top-25-club-mixed-division-players-in-2026/",
+      "summary": "The best players in the mixed division right now",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-14",
+      "added": "2026-10-15"
+    },
+    {
+      "title": "The Top 25 Club Men’s Division Players in 2026",
+      "url": "https://ultiworld.com/2026/10/14/the-top-25-club-mens-division-players-in-2026/",
+      "summary": "The best players in the game right now",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-14",
+      "added": "2026-10-15"
+    },
     {
       "title": "Deep Look LIVE: Top 25 Club Player Rankings, Nationals Tier Lists",
       "url": "https://ultiworld.com/2026/10/12/deep-look-live-top-25-club-player-rankings-nationals-tier-lists/",
@@ -353,6 +375,18 @@
       "image": "https://flyingdisc.it/wp-content/uploads/2026/09/cropped-Copertine-Articolo-Blog.jpg"
     },
     {
+      "title": "Mondiali Freestyle 2026: oro per Montanari, Nizzo e Prati, altri 2 argenti a Monaco",
+      "url": "https://flyingdisc.it/news/freestyle/2026/5997/",
+      "summary": "Il trio italiano conquista il titolo Open Co-op. Nizzo e Prati sono secondi nell’Open Pairs, mentre Prati sale sul podio anche nel Mixed con Ilka Simon. Nel ranking mondiale Open, Riccardo Montanari è 1° e sono 4 gli italiani nella top 10. Un titolo mondiale…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-09-22",
+      "added": "2026-10-15",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/09/cropped-Copertine-Articolo-Blog.jpg"
+    },
+    {
       "title": "DM-Jugendtitel für Bad Rappenau, München und Leipzig",
       "url": "https://www.frisbeesportverband.de/dm-jugendtitel-fuer-bad-rappenau-muenchen-und-leipzig/",
       "summary": "Erfolgreiche Deutsche Jugend Ultimate-Meisterschaften im September 2026 in Chemnitz In Chemnitz hat am Wochenende 19. und 20. September 2026 die …",
@@ -453,6 +487,18 @@
       "lang": "it",
       "published": "2026-09-17",
       "added": "2026-09-17",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/09/Campionati-Italiani-Beach-Ultimate.jpg"
+    },
+    {
+      "title": "CIBU 2026: a Caorle i Campionati Italiani di Beach Ultimate, il 26 e 27 settembre",
+      "url": "https://flyingdisc.it/news/ultimate/2026/5992/",
+      "summary": "15 squadre Open e 10 Mixed sulla Spiaggia di Levante. Per la prima volta l’evento si svolgerà in contemporanea con i campionati austriaci di beach ultimate, nella stessa sede. La Spiaggia di Levante di Caorle ospiterà, sabato 26 e domenica 27 settembre, i…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-09-17",
+      "added": "2026-10-15",
       "image": "https://flyingdisc.it/wp-content/uploads/2026/09/Campionati-Italiani-Beach-Ultimate.jpg"
     },
     {
