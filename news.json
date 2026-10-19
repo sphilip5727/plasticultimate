@@ -1,7 +1,75 @@
 {
-  "updated": "2026-10-15",
-  "count": 230,
+  "updated": "2026-10-19",
+  "count": 237,
   "articles": [
+    {
+      "title": "The Line: 7 Key Nationals Pool Play Rematches",
+      "url": "https://ultiworld.com/2026/10/18/the-line-7-key-nationals-pool-play-rematches/",
+      "summary": "Pool play at the Club Championships will feature some familiar matchups from the 2026 season. Revisit the past results to see which rematches could determine the course to the title!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-18",
+      "added": "2026-10-19"
+    },
+    {
+      "title": "WFDF2027世界フライングディスク個人総合選手権大会（2027WOC）日本代表特設ページ",
+      "url": "https://www.jfda.or.jp/2026/10/17/wfdf2027-japan-nationalteam-woc-main/",
+      "summary": "2027年9月に日本・熊本県水俣市にて開催される「WFDF2027世界フライングディスク個人総合選手権大会 （2027WOC）」に派遣する日本代表に関する特設ページです。 大会情報 WFDF2027 世界フライングディス[...] The post WFDF2027世界フライングディスク個人総合選手権大会（2027WOC）日本代表特設ページ first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-10-17",
+      "added": "2026-10-19"
+    },
+    {
+      "title": "WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会（2027AOUCC）日本代表特設ページ",
+      "url": "https://www.jfda.or.jp/2026/10/17/wfdf2027-japan-nationalteam-aoucc-main/",
+      "summary": "2027年に開催予定の「WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会（2027AOUCC）」に派遣する日本代表に関する特設ページです。 大会情報 WFDF2027 アジア・オセアニアアルティメ[...] The post WFDF2027 アジア・オセアニアアルティメットクラブチーム選手権大会（2027AOUCC）日本代表特設ページ first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-10-16",
+      "added": "2026-10-19"
+    },
+    {
+      "title": "The Line: 7 Nationals Droughts that Could Be Snapped in Each Division",
+      "url": "https://ultiworld.com/2026/10/16/the-line-7-nationals-droughts-that-could-be-snapped-in-each-division/",
+      "summary": "From a national title to just making the bracket, teams have a wide range of goals at the Club Championships.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-16",
+      "added": "2026-10-19"
+    },
+    {
+      "title": "WFDF Impact Program Supports Safe and Inclusive Ultimate for Girls in Burundi",
+      "url": "https://wfdf.sport/2026/10/wfdf-impact-program-supports-safe-and-inclusive-ultimate-for-girls-in-burundi/",
+      "summary": "WFDF’s Impact Program supports safe and inclusive Ultimate for girls in Burundi through its collaboration with the Burundi Ultimate Federation and PLAY International. The “Toutes en Sport” project has reached hundreds of children, trained over 100 teachers…",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-10-15",
+      "added": "2026-10-19",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/10/burundi-ultimate-x-Play-int_WFDF-scaled.png"
+    },
+    {
+      "title": "The Race for the National Title Begins Next Week",
+      "url": "https://usaultimate.org/news/2026/10/the-race-for-the-national-title-begins-next-week/",
+      "summary": "Colorado Springs, Colo. (October 15, 2026) – The 2026 USA Ultimate National Championships kick off next week in San Diego as top club teams from across North America gather to compete in an event that represents the sport’s highest level of competition. As…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-15",
+      "added": "2026-10-19",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/10/Pro_Champs_20260907070754KL8_6671-ZF-10415-92767-1-001-header-1200x450.jpg"
+    },
     {
       "title": "The Top 25 Club Mixed Division Players in 2026",
       "url": "https://ultiworld.com/2026/10/14/the-top-25-club-mixed-division-players-in-2026/",
@@ -440,6 +508,18 @@
       "lang": "it",
       "published": "2026-09-17",
       "added": "2026-09-17",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/09/Italia-ai-Mondiali-di-disc-golf-2026.jpg"
+    },
+    {
+      "title": "WTDGC 2026: l’Italia chiude al 26° posto i Mondiali a squadre di Disc Golf",
+      "url": "https://flyingdisc.it/news/disc-golf/2026/5986/",
+      "summary": "La Nazionale italiana ha concluso al 26° posto della divisione Open i WFDF World Team Disc Golf Championships 2026, disputati dall’8 al 12 settembre a Vilnius, in Lituania. Il percorso azzurro si è articolato su 8 round, con incontri di singolo e doppio che…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-09-17",
+      "added": "2026-10-19",
       "image": "https://flyingdisc.it/wp-content/uploads/2026/09/Italia-ai-Mondiali-di-disc-golf-2026.jpg"
     },
     {
