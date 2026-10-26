@@ -1,7 +1,87 @@
 {
-  "updated": "2026-10-22",
-  "count": 242,
+  "updated": "2026-10-26",
+  "count": 249,
   "articles": [
+    {
+      "title": "Raleigh Ring of Fire Win the 2026 Club National Championships!",
+      "url": "https://ultiworld.com/2026/10/25/raleigh-ring-of-fire-win-the-2026-club-national-championships/",
+      "summary": "Ring won their first title since 2021 and second overall with a wire-to-wire victory over top seeded Chicago Machine",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-26",
+      "added": "2026-10-26"
+    },
+    {
+      "title": "Boston Brute Squad Win the 2026 Club National Championships!",
+      "url": "https://ultiworld.com/2026/10/25/boston-brute-squad-win-the-2026-club-national-championships/",
+      "summary": "Brute Squad go back-to-back, once again knocking off the undefeated overall no.1 seed to claim the USAU title",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-26",
+      "added": "2026-10-26"
+    },
+    {
+      "title": "Field Narrows as National Championships Head Into Semifinals",
+      "url": "https://usaultimate.org/news/2026/10/field-narrows-as-national-championships-head-into-semifinals/",
+      "summary": "San Diego, Calif. (October 25, 2026) – Saturday brought the excitement of bracket play, as the field continues to narrow in the USA Ultimate National Championships. Only four teams remain in contention for each divisional title, as the semifinals kick off…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-25",
+      "added": "2026-10-26",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/10/USAU_CC-SOH-261024-171729-ZF-3693-38910-1-001-header-1200x450.jpg"
+    },
+    {
+      "title": "National Championships Underway in San Diego",
+      "url": "https://usaultimate.org/news/2026/10/national-championships-underway-in-san-diego/",
+      "summary": "San Diego, Calif. (October 24, 2026) – The race for the title is underway in the USA Ultimate National Championships, as teams across all three divisions completed pool play yesterday in San Diego. Despite a one-day delay due to weather conditions that closed…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-24",
+      "added": "2026-10-26",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/10/USAU_CC-SOH-261023-112211-ZF-0075-34003-1-002-header.jpg"
+    },
+    {
+      "title": "「WFDF2027世界U24アルティメット選手権大会」開催地変更に関する大切なお知らせとお願い",
+      "url": "https://www.jfda.or.jp/2026/10/23/2027wu24-relocation-message-from-president/",
+      "summary": "JFDA会員の皆様、選考に励む選手の皆様、そして日頃よりフライングディスク競技を支えてくださっている関係者の皆様へ いつも当協会の活動に温かいご理解とご支援をいただき、心より感謝申し上げます。 昨日（2026年10月[...] The post 「WFDF2027世界U24アルティメット選手権大会」開催地変更に関する大切なお知らせとお願い first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-10-23",
+      "added": "2026-10-26"
+    },
+    {
+      "title": "WFDF Confirms Venue Change for 2027 World Under-24 Ultimate Championships",
+      "url": "https://wfdf.sport/2026/10/wfdf-confirms-venue-change-for-2027-world-under-24-ultimate-championships/",
+      "summary": "WFDF confirms Logroño, Spain, as the host city for the 2027 World Under-24 Ultimate Championships (WU24), taking place from 19–26 June 2027, replacing the originally planned venue of Kamisu, Japan.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-10-23",
+      "added": "2026-10-26",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/10/wu24-2027-announcement.png"
+    },
+    {
+      "title": "Frisbeesport-Nachrichtensplitter 2, Oktober 2026",
+      "url": "https://www.frisbeesportverband.de/frisbeesport-nachrichtensplitter-2-oktober-2026/",
+      "summary": "Nur noch 1.000 Tage bis zu den World Games 2029 in Karlsruhe U24 Ultimate-WM 2027 wird von Japan nach Spanien verlegt Leistungskader Ultimate mit Sichtungslehrgängen für 2027 Letzte Chance zur Teilnahme am Safe Sport-Workshop am 26. Oktober",
+      "source": "Deutscher Frisbeesport-Verband",
+      "source_key": "dfv",
+      "region": "Germany",
+      "lang": "de",
+      "published": "2026-10-23",
+      "added": "2026-10-26"
+    },
     {
       "title": "The Line: 7 Budget-Friendly Players for Fantasy Frisbee",
       "url": "https://ultiworld.com/2026/10/21/the-line-7-budget-friendly-players-for-fantasy-frisbee/",
