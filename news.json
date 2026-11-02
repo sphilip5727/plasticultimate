@@ -1,7 +1,41 @@
 {
-  "updated": "2026-10-29",
-  "count": 259,
+  "updated": "2026-11-02",
+  "count": 262,
   "articles": [
+    {
+      "title": "Vermont Ultimate’s Nolan Benoit on Belonging, and the Importance of Saying “Yes”",
+      "url": "https://usaultimate.org/news/2026/11/nolan-benoit-on-belonging-and-the-importance-of-saying-yes/",
+      "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investment in the…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-11-01",
+      "added": "2026-11-02",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/11/Vermont-Header-1200x450.jpg"
+    },
+    {
+      "title": "Huckin’ Eh: USAU Club Nationals Recap",
+      "url": "https://ultiworld.com/2026/10/30/huckin-eh-usau-club-nationals-recap/",
+      "summary": "Back from California!",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-30",
+      "added": "2026-11-02"
+    },
+    {
+      "title": "2026 Club National Championships: Back to Brute (Women’s Div. Final Recap)",
+      "url": "https://ultiworld.com/2026/10/30/2026-club-national-championships-back-to-brute-womens-div-final-recap/",
+      "summary": "Brute Squad's back-to-back titles only reaffirmed their reputation as a staunch and well-coached defensive team.",
+      "source": "Ultiworld",
+      "source_key": "ultiworld",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-10-30",
+      "added": "2026-11-02"
+    },
     {
       "title": "WFDF Joins Global Movement to Prevent Child Trafficking in Sport",
       "url": "https://wfdf.sport/2026/10/wfdf-joins-global-movement-to-prevent-child-trafficking-in-sport/",
