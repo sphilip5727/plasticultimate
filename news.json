@@ -1,7 +1,78 @@
 {
-  "updated": "2026-11-05",
-  "count": 267,
+  "updated": "2026-11-09",
+  "count": 273,
   "articles": [
+    {
+      "title": "World Flying Disc Federation Officially Becomes an Affiliate Member of APSO",
+      "url": "https://wfdf.sport/2026/11/world-flying-disc-federation-officially-becomes-an-affiliate-member-of-apso/",
+      "summary": "WFDF joins APSO as an Affiliate Member, strengthening its commitment to Para Sport development, inclusion, and collaboration across the Paralympic Movement.",
+      "source": "WFDF",
+      "source_key": "wfdf",
+      "region": "Global",
+      "lang": "en",
+      "published": "2026-11-09",
+      "added": "2026-11-09",
+      "image": "https://wfdf.sport/wp-content/uploads/2026/11/WFDF-x-APSO-scaled.jpg"
+    },
+    {
+      "title": "Liste des athlètes sélectionnés pour les EUC Vichy 2027",
+      "url": "https://www.ff-flyingdisc.fr/2026/11/09/26594/",
+      "summary": "Suite au stage de sélection des 24 et 25 octobre 2026 à Blois, les staffs des équipes de France Féminine, Mixte et Open ont constitué leurs équipes. Cliquez ICI pour télécharger la liste des athlètes qui participeront au championnat d’Europe à Vichy du 3 au…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-11-09",
+      "added": "2026-11-09",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/11/899790208_1173368702023438_2882681229782594916_n-Copie-1.jpg"
+    },
+    {
+      "title": "AAP 2026 – Enveloppe FFFD :",
+      "url": "https://www.ff-flyingdisc.fr/2026/11/09/aap-2026-enveloppe-fffd/",
+      "summary": "Deux campagnes de financement distinctes : Cette année la commission Aide au développement a décidé de mener deux campagnes distinctes avec des temporalités différentes pour les enveloppes ANS et FFFD. La part FFFD a été créée avec pour objectif de soutenir…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-11-09",
+      "added": "2026-11-09",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/11/Appel-a-projets-federal-2026.png"
+    },
+    {
+      "title": "2026U23アルティメット地区選抜対抗戦 大会特設ページ",
+      "url": "https://www.jfda.or.jp/2026/11/09/2026u23ultimate-regionalselected-main/",
+      "summary": "大会趣旨 「2026U23アルティメット地区選抜対抗戦」は、U23世代を対象として、将来的な日本代表選手及び指導者の育成環境を向上させることで「世界一のニッポン」を目指すことを目的としたプロジェクトです。全国5地区より選[...] The post 2026U23アルティメット地区選抜対抗戦 大会特設ページ first appeared on JFDA .",
+      "source": "Japan Flying Disc Association",
+      "source_key": "jfda",
+      "region": "Japan",
+      "lang": "ja",
+      "published": "2026-11-09",
+      "added": "2026-11-09"
+    },
+    {
+      "title": "Triangle Ultimate’s Lauren Fayn on Leveraging Local Partnerships",
+      "url": "https://usaultimate.org/news/2026/11/triangle-ultimates-lauren-fayn-on-leveraging-local-partnerships/",
+      "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investments in…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-11-07",
+      "added": "2026-11-09",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/11/YCC-JMA-20260801154620-IMG_6641_e-ZF-1389-36519-1-001-header.jpg"
+    },
+    {
+      "title": "BUDA’s Malachi Raymond on Reinvesting in Local Community",
+      "url": "https://usaultimate.org/news/2026/11/budas-malachi-raymond-on-reinvesting-in-local-community/",
+      "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investments in…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-11-06",
+      "added": "2026-11-09",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/11/BUDA-Disc-header.jpg"
+    },
     {
       "title": "2026U23アルティメット地区選抜対抗戦 各地区選抜代表選手",
       "url": "https://www.jfda.or.jp/2026/11/05/2026u23regionalseleted-members/",
