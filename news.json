@@ -1,7 +1,31 @@
 {
-  "updated": "2026-11-09",
-  "count": 273,
+  "updated": "2026-11-12",
+  "count": 277,
   "articles": [
+    {
+      "title": "CIU Mixed 2026: risultati e classifiche dopo la seconda tappa",
+      "url": "https://flyingdisc.it/news/ultimate/2026/6054/",
+      "summary": "BFD Mix White e 360 Mixed A chiudono in testa ai gironi di Serie A. In Serie B guidano Frisbaobab, Discobolo e METACARPI. Il campionato si concluderà il 21 e 22 novembre a San Biagio (PD). Il 7 e 8 novembre si è disputata la seconda tappa dei Campionati…",
+      "source": "FIFD Italia",
+      "source_key": "fifd",
+      "region": "Italy",
+      "lang": "it",
+      "published": "2026-11-12",
+      "added": "2026-11-12",
+      "image": "https://flyingdisc.it/wp-content/uploads/2026/11/Copertine-Articolo-Blog.jpg"
+    },
+    {
+      "title": "Sécurisation des comptes E-FlyingDisc : l’authentification à deux facteurs devient obligatoire",
+      "url": "https://www.ff-flyingdisc.fr/2026/11/10/securisation-des-comptes-e-flyingdisc-lauthentification-a-deux-facteurs-devient-obligatoire/",
+      "summary": "Afin de renforcer la sécurité de l’extranet fédéral (E-FlyingDisc), Exalto a mis en place un dispositif d’authentification à deux facteurs (2FA). L’activation de cette fonctionnalité est désormais obligatoire pour l’ensemble des utilisateurs de l’extranet…",
+      "source": "FFDF France",
+      "source_key": "ffdf",
+      "region": "France",
+      "lang": "fr",
+      "published": "2026-11-10",
+      "added": "2026-11-12",
+      "image": "https://www.ff-flyingdisc.fr/wp-content/uploads/2026/08/2FA.png"
+    },
     {
       "title": "World Flying Disc Federation Officially Becomes an Affiliate Member of APSO",
       "url": "https://wfdf.sport/2026/11/world-flying-disc-federation-officially-becomes-an-affiliate-member-of-apso/",
@@ -74,6 +98,18 @@
       "image": "https://usaultimate.org/wp-content/uploads/2026/11/BUDA-Disc-header.jpg"
     },
     {
+      "title": "Josh Feng from AFDC Juniors on Making Ultimate Accessible",
+      "url": "https://usaultimate.org/news/2026/11/josh-feng-from-afdc-juniors-on-making-ultimate-accessible/",
+      "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investments in…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-11-05",
+      "added": "2026-11-12",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/11/2026SFIAATL-189-header-1200x450.jpg"
+    },
+    {
       "title": "2026U23アルティメット地区選抜対抗戦 各地区選抜代表選手",
       "url": "https://www.jfda.or.jp/2026/11/05/2026u23regionalseleted-members/",
       "summary": "2026U23アルティメット地区選抜対抗戦 大会特設ページ 2026年11月14日(土)～15日(日)の日程で、石川県金沢市 西部緑地公園にて開催する「2026U23アルティメット地区選抜対抗戦」に出場する各地区代表選手[...] The post 2026U23アルティメット地区選抜対抗戦 各地区選抜代表選手 first appeared on JFDA .",
@@ -132,6 +168,18 @@
       "image": "https://flyingdisc.it/wp-content/uploads/2026/11/Copertine-Articolo-Blog.webp"
     },
     {
+      "title": "Nickel City Ultimate on Building a Sustainable Community",
+      "url": "https://usaultimate.org/news/2026/11/nickel-city-ultimate-on-building-a-sustainable-community/",
+      "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investments in…",
+      "source": "USA Ultimate",
+      "source_key": "usau",
+      "region": "USA",
+      "lang": "en",
+      "published": "2026-11-02",
+      "added": "2026-11-12",
+      "image": "https://usaultimate.org/wp-content/uploads/2026/11/PXL_20260803_132801284-scaled-e1793659782855-1200x450.jpg"
+    },
+    {
       "title": "Vermont Ultimate’s Nolan Benoit on Belonging, and the Importance of Saying “Yes”",
       "url": "https://usaultimate.org/news/2026/11/nolan-benoit-on-belonging-and-the-importance-of-saying-yes/",
       "summary": "In recognition of National Youth Ultimate Giving Week, Tristan Green, Director of the Ultimate Foundation, sat down with participating USA Ultimate Affiliates from across the U.S. to gain insight into their organizations, youth programs, and investment in the…",
@@ -163,7 +211,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-30",
-      "added": "2026-11-02"
+      "added": "2026-11-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/USAU_CC-SOH-261025-135815-ZF-10632-81077-1-001.jpg"
     },
     {
       "title": "WFDF Joins Global Movement to Prevent Child Trafficking in Sport",
@@ -209,7 +258,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-28",
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/USAU_CC-SOH-261025-170920-ZF-8327-29270-1-001.jpg"
     },
     {
       "title": "Vichy 2027 recrute ses bénévoles pour les EUC !",
@@ -266,7 +316,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-27",
-      "added": "2026-10-29"
+      "added": "2026-10-29",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/DL-Thumbnail-10.28.2026.jpg"
     },
     {
       "title": "CIU Mixed 2026: i risulati della 1° tappa del 25 ottobre",
@@ -289,7 +340,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-26",
-      "added": "2026-10-26"
+      "added": "2026-10-26",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/Champions4.jpg"
     },
     {
       "title": "Boston Brute Squad Win the 2026 Club National Championships!",
@@ -300,7 +352,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-26",
-      "added": "2026-10-26"
+      "added": "2026-10-26",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/Champions1.jpg"
     },
     {
       "title": "Field Narrows as National Championships Head Into Semifinals",
@@ -369,7 +422,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-21",
-      "added": "2026-10-22"
+      "added": "2026-10-22",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/DAF-ICC_Saturday_Highlights-20260801-113626-0439-ZF-3269-72192-1-001.jpg"
     },
     {
       "title": "First Day of USAU Club Nationals Postponed to Friday",
@@ -380,7 +434,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-21",
-      "added": "2026-10-22"
+      "added": "2026-10-22",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/2024ClubNationals_RC_20241026_073935_283-ZF-6481-02595-1-002.jpg"
     },
     {
       "title": "First Day of National Championships Postponed Due to Inclement Weather",
@@ -426,7 +481,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-18",
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Pro_Champs_20260906101829KL8_4429-ZF-3978-54208-1-001.jpg"
     },
     {
       "title": "WFDF2027世界フライングディスク個人総合選手権大会（2027WOC）日本代表特設ページ",
@@ -459,7 +515,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-16",
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/10/USAU_CC-SOH-251025-162200-ZF-9772-30837-1-008.jpg"
     },
     {
       "title": "WFDF Impact Program Supports Safe and Inclusive Ultimate for Girls in Burundi",
@@ -494,7 +551,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-14",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DAF-ICC_Saturday_Highlights-20260801-082014-3577-ZF-8965-54156-1-001.jpg"
     },
     {
       "title": "The Top 25 Club Men’s Division Players in 2026",
@@ -505,7 +563,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-14",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/Mooncatchers_PoNY_O_308_2026WUCC_lkcultimate-1024x683.jpg"
     },
     {
       "title": "Deep Look LIVE: Top 25 Club Player Rankings, Nationals Tier Lists",
@@ -516,7 +575,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-12",
-      "added": "2026-10-12"
+      "added": "2026-10-12",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/DL-Thumbnail-10.13.2026.jpg"
     },
     {
       "title": "Frisbeesport-Nachrichtensplitter 1, Oktober 2026",
@@ -596,7 +656,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-06",
-      "added": "2026-10-08"
+      "added": "2026-10-08",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/2026-CLub-Mixed-Pools.jpg"
     },
     {
       "title": "Here Are The Men’s Pools at 2026 Club Nationals",
@@ -607,7 +668,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-06",
-      "added": "2026-10-08"
+      "added": "2026-10-08",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/10/2026-CLub-Mens-Pools-1.jpg"
     },
     {
       "title": "Club Update 2026: The Nationals Field is Set",
@@ -618,7 +680,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-06",
-      "added": "2026-10-12"
+      "added": "2026-10-12",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Pro-Champs-20260906130641KWL_7315-ZF-2041-46711-1-002.jpg"
     },
     {
       "title": "第14回全日本ミックスアルティメット選手権大会 大会特設ページ",
@@ -697,7 +760,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-10-01",
-      "added": "2026-10-05"
+      "added": "2026-10-05",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "The Line: 7 Most Surprising Regionals Results",
@@ -708,7 +772,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-30",
-      "added": "2026-10-01"
+      "added": "2026-10-01",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/MidAtlanticRegionals_Highlights_Sunday_20260927_124832_DAF_-ZF-8149-06811-1-007.jpg"
     },
     {
       "title": "Road to Germany: 102 convocati per le Nazionali Italiane Ultimate verso gli Europei 2027",
@@ -766,7 +831,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-29",
-      "added": "2026-10-01"
+      "added": "2026-10-01",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Womens-Pools.png"
     },
     {
       "title": "Frisbeesport-Nachrichtensplitter 6, September 2026",
@@ -788,7 +854,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-27",
-      "added": "2026-09-28"
+      "added": "2026-09-28",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/2024ClubNationals_RC_20241026_073935_283-ZF-6481-02595-1-002.jpg"
     },
     {
       "title": "Swiped: Regionals Bid Drama in the Northeast",
@@ -799,7 +866,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-25",
-      "added": "2026-09-28"
+      "added": "2026-09-28",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/LehighValleyInvite2026_BZ_20260801_04607-ZF-1115-88145-1-007.jpg"
     },
     {
       "title": "Neue DFV-Kaderkriterien veröffentlicht",
@@ -821,7 +889,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-23",
-      "added": "2026-09-24"
+      "added": "2026-09-24",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Lehigh_Valley_Invite_20260801_1551SJK-2-ZF-3158-51219-1-001.jpg"
     },
     {
       "title": "Club Regionals 2026: Streaming Schedule, How to Watch",
@@ -832,7 +901,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-23",
-      "added": "2026-09-24"
+      "added": "2026-09-24",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Screenshot-2026-09-23-at-10.08.26-AM.jpg"
     },
     {
       "title": "Timo Hartmann behauptet sich gegen Simon Lizotte",
@@ -1005,7 +1075,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-17",
-      "added": "2026-09-21"
+      "added": "2026-09-21",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/2026WUCC_-Lucis_lens_-33.jpg"
     },
     {
       "title": "Disc Golf Representatives Elected to WFDF Athletes’ Commission",
@@ -1051,7 +1122,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-15",
-      "added": "2026-09-17"
+      "added": "2026-09-17",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "Championnats du Monde de Disc Golf par équipes : la France dans le Top 10 mondial",
@@ -1109,7 +1181,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-14",
-      "added": "2026-09-17"
+      "added": "2026-09-17",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/DL-Thumbnail-9.15.2026.jpg"
     },
     {
       "title": "USA claim Masters gold after late surge in Vilnius",
@@ -1144,7 +1217,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-11",
-      "added": "2026-09-14"
+      "added": "2026-09-14",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2023/05/BCC.png"
     },
     {
       "title": "WTDGC 2026 Semifinal Race Takes Shape After Day 3 in Vilnius",
@@ -1179,7 +1253,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-11",
-      "added": "2026-09-14"
+      "added": "2026-09-14",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/55501344786_8a63133a56_c.jpg"
     },
     {
       "title": "Estonia, Norway, Great Britain and Finland Reach WTDGC 2026 Open Semifinals",
@@ -1249,7 +1324,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-09",
-      "added": "2026-09-10"
+      "added": "2026-09-10",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "Better Box Score Metrics: Championship Weekend & The Meaning of MVP",
@@ -1260,7 +1336,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-09",
-      "added": "2026-09-10"
+      "added": "2026-09-10",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/20260828_MINN_vs_OAK_JVN_0385-1024x683.jpg"
     },
     {
       "title": "2026 Championship Bid Allocations Set",
@@ -1316,7 +1393,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-07",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/Pro_Champs_20260906124531KL8_5808-ZF-3978-54208-1-003.jpg"
     },
     {
       "title": "Global Disc Golf Forum Marks Groundbreaking Moment",
@@ -1339,7 +1417,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-06",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/ESC_RD_20260823_247806-ZF-5914-83825-1-001.jpg"
     },
     {
       "title": "Discgolf-Kräftemessen auf höchstem Niveau",
@@ -1442,7 +1521,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-02",
-      "added": "2026-09-03"
+      "added": "2026-09-03",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/pro-champs-1.jpg"
     },
     {
       "title": "Deep Look LIVE: UFA Championship Weekend Recap, Pro Championships Preview",
@@ -1453,7 +1533,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-09-02",
-      "added": "2026-09-03"
+      "added": "2026-09-03",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/09/DL-Thumbnail-9.2.2026.jpg"
     },
     {
       "title": "第3回全日本ディスクゴルフマッチプレー選手権大会 大会特設ページ",
@@ -1511,7 +1592,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-29",
-      "added": "2026-08-31"
+      "added": "2026-08-31",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/UFA.jpeg"
     },
     {
       "title": "PUL Wins Second Straight All-Star Game",
@@ -1522,7 +1604,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-29",
-      "added": "2026-08-31"
+      "added": "2026-08-31",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/WUL-PUL.jpg"
     },
     {
       "title": "Ultimate Representatives Elected to the Athletes’ Commission",
@@ -1605,7 +1688,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-26",
-      "added": "2026-08-27"
+      "added": "2026-08-27",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "Clean Sport Highlighted at 2026 World Ultimate Club Championships Through Interactive Anti-Doping Education",
@@ -1628,7 +1712,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-26",
-      "added": "2026-08-27"
+      "added": "2026-08-27",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/Justin-Burnett.jpg"
     },
     {
       "title": "WFDF Launches New Language and Portrayal Policy to Promote Inclusive Communications",
@@ -1663,7 +1748,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-24",
-      "added": "2026-08-24"
+      "added": "2026-08-24",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/ESC_RD_20260823_246581-ZF-5676-50712-1-003.jpg"
     },
     {
       "title": "WUCC 2026 Final’s Day: Hybrid, Scandal and Revolver Crowned World Champions in Limerick",
@@ -1686,7 +1772,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-23",
-      "added": "2026-08-24"
+      "added": "2026-08-24",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/ESC_RD_20260822_232569-ZF-10456-62238-1-002.jpg"
     },
     {
       "title": "WUCC 2026 Day 7: First Medals Awarded, World Titles Up Next",
@@ -1732,7 +1819,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-20",
-      "added": "2026-08-20"
+      "added": "2026-08-20",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/20260816OH_0394-ZF-2921-55438-1-003.jpg"
     },
     {
       "title": "WUCC 2026 Day 5: Championship Brackets Take Center Stage in Limerick",
@@ -1767,7 +1855,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-19",
-      "added": "2026-08-20"
+      "added": "2026-08-20",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/ICC-20260731162332KL8_5873-ZF-1629-65297-1-008.jpg"
     },
     {
       "title": "WUCC 2026 Day 3: Women’s Division Moves Towards Knockout Stage",
@@ -1802,7 +1891,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-16",
-      "added": "2026-08-17"
+      "added": "2026-08-17",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/20260815OH_0110-ZF-4530-73447-1-001.jpg"
     },
     {
       "title": "WFDF Statement on Participation, Safety and Social Expression at WUCC 2026",
@@ -1849,7 +1939,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-15",
-      "added": "2026-08-17"
+      "added": "2026-08-17",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/10/club_nationals_pony_machine_semifinal7057_20251025-ZF-7902-22597-1-012.jpg"
     },
     {
       "title": "Top U.S. Teams Head to World Club Championships",
@@ -1919,7 +2010,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-12",
-      "added": "2026-08-13"
+      "added": "2026-08-13",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/08/ICC_20250801110346KWL_9494-ZF-9910-33479-1-003.jpg"
     },
     {
       "title": "WUCC 2026: Beat Charlie Challenge",
@@ -1930,7 +2022,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-12",
-      "added": "2026-08-13"
+      "added": "2026-08-13",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2023/05/BCC.png"
     },
     {
       "title": "Returning Champions and New Stars Shine at FPA & WFDF 2026 World Freestyle Flying Disc Championships",
@@ -2011,7 +2104,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-07",
-      "added": "2026-08-10"
+      "added": "2026-08-10",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/YCC-20260803145050KWL_6508-ZF-8308-03183-1-002.jpg"
     },
     {
       "title": "US Open 2026: Late Game Push Earns Revolver’s Fifth US Open Title (Men’s Final Recap)",
@@ -2022,7 +2116,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-07",
-      "added": "2026-08-10"
+      "added": "2026-08-10",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DAF-ICC_Sunday_MensFinal_Highlights-20260802-102409-2706-ZF-7943-47357-1-003.jpg"
     },
     {
       "title": "Ouverture des candidatures aux équipes de France – EUC 2027 Vichy & U24 Mixte Kamisu",
@@ -2114,7 +2209,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-05",
-      "added": "2026-08-06"
+      "added": "2026-08-06",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "Winners Awarded at the Youth Club Championships",
@@ -2160,7 +2256,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-04",
-      "added": "2026-08-06"
+      "added": "2026-08-06",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DL-Thumbnail-7.28.2026.jpg"
     },
     {
       "title": "WFDF Announces Maria Fernanda Meza Bonilla as Elected Representative for Other Disciplines on Athletes’ Commission",
@@ -2195,7 +2292,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-03",
-      "added": "2026-08-03"
+      "added": "2026-08-03",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DAF-ICC_Sunday_MensFinal_Highlights-20260802-102409-2706-ZF-7943-47357-1-003.jpg"
     },
     {
       "title": "EYUC 2026 – Al via gli Europei Under 17 a Vienna",
@@ -2230,7 +2328,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-02",
-      "added": "2026-08-03"
+      "added": "2026-08-03",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DAF-ICC_PoolPlay_R1-20260731-090145-7721-ZF-10090-89394-1-006.jpg"
     },
     {
       "title": "2025 U.S. Open Winners Headed Back to Finals",
@@ -2265,7 +2364,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-01",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/07/ICC_20260731114229KL8_3833-ZF-9860-17349-1-015.jpg"
     },
     {
       "title": "US Open 2026: Real (and Fake) Awards Nominees for US Open Teams on Day 1 (Men’s Div. Recap)",
@@ -2276,7 +2376,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-01",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/07/ICC_20260731105229KL8_3387-ZF-9860-17349-1-005.jpg"
     },
     {
       "title": "US Open 2026: Means, Motive, and Alibi: The Murder Mystery of the US Open Day 1 (Mixed Div.)",
@@ -2287,7 +2388,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-08-01",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/08/DAF-ICC_PoolPlay_R1-20260731-090145-7721-ZF-10090-89394-1-006.jpg"
     },
     {
       "title": "U.S. Open Features Top Club Teams",
@@ -2334,7 +2436,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-30",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/08/YCC_RD_20250802_54439-ZF-4225-95272-1-004.jpg"
     },
     {
       "title": "The Line: 7 X-Factors from PEC East Sunday Play",
@@ -2345,7 +2448,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-30",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/10/ESC_RD_20250816_69779-ZF-4873-20533-1-009.jpg"
     },
     {
       "title": "Introducing National Youth Ultimate Giving Week",
@@ -2391,7 +2495,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-30",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2017/02/Ultiworld-Power-Rankings.png"
     },
     {
       "title": "More Than a Game: How Maria Vargas Is Using Ultimate to Transform Communities in Mexico",
@@ -2414,7 +2519,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-29",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/07/2025SWRegionals_RC_20250921_121504_345-ZF-2459-10053-1-005.jpg"
     },
     {
       "title": "7 Observations from Select Flight Invite East 2026",
@@ -2425,7 +2531,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-29",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2026/07/GLR_RD_20250921_94977-ZF-2459-10053-1-001.jpg"
     },
     {
       "title": "WFDF Opens Nominations for 2026 Ultimate Subcommittee Elections",
@@ -2460,7 +2567,8 @@
       "region": "USA",
       "lang": "en",
       "published": "2026-07-28",
-      "added": "2026-08-02"
+      "added": "2026-08-02",
+      "image": "https://cdn.ultiworld.com/wordpress/wp-content/uploads/2025/10/USAUltimate_YCC_08022025_BSG_2108-ZF-4873-20533-1-007.jpg"
     },
     {
       "title": "Showdown im Mixed Ultimate: Alles bereit für die Finalwochenenden der Deutschen Meisterschaft 2026",
